@@ -4,7 +4,7 @@
 <metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m58763</md:content-id>
   <md:title>The Compton Effect</md:title>
-  <md:abstract><para>By the end of this section, you will be able to:</para>
+  <md:abstract>By the end of this section, you will be able to:
 <list>
 <item>Describe Compton’s experiment</item>
 <item>Explain the Compton wavelength shift</item>
@@ -111,7 +111,7 @@ The largest shift in wavelength is detected for the backscattered radiation; how
 <note id="fs-id1163713155814" class="check-understanding">
 <exercise id="fs-id1163713284347">
 <problem id="fs-id1163713280227">
-<para id="fs-id1163709681157">An incident 71-pm X-ray is incident on a calcite target. Find the wavelength of the X-ray scattered at a <m:math><m:mrow><m:mn>60</m:mn><m:mtext>°</m:mtext></m:mrow></m:math> angle. What is the smallest shift that can be expected in this experiment?</para>
+<para id="fs-id1163709681157"><emphasis effect="bold">Check Your Understanding</emphasis> An incident 71-pm X-ray is incident on a calcite target. Find the wavelength of the X-ray scattered at a <m:math><m:mrow><m:mn>60</m:mn><m:mtext>°</m:mtext></m:mrow></m:math> angle. What is the smallest shift that can be expected in this experiment?</para>
 </problem>
 <solution id="fs-id1163713163716">
 <para id="fs-id1163713163718"><m:math><m:mrow><m:msub><m:mrow><m:mo stretchy="false">(</m:mo><m:mtext>Δ</m:mtext><m:mi>λ</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mtext>min</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mn>0</m:mn><m:mtext>m</m:mtext></m:mrow></m:math> at a <m:math><m:mrow><m:mn>0</m:mn><m:mtext>°</m:mtext></m:mrow></m:math> angle; <m:math><m:mrow><m:mn>71.0</m:mn><m:mspace width="0.2em"/><m:mtext>pm</m:mtext><m:mo>+</m:mo><m:mn>0.5</m:mn><m:msub><m:mi>λ</m:mi><m:mi>c</m:mi></m:msub><m:mo>=</m:mo><m:mn>72.</m:mn><m:mn>215</m:mn><m:mspace width="0.2em"/><m:mtext>pm</m:mtext></m:mrow></m:math></para>

@@ -4,7 +4,7 @@
 <metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m58611</md:content-id>
   <md:title>Fission</md:title>
-  <md:abstract><para>By the end of this section, you will be able to:</para>
+  <md:abstract>By the end of this section, you will be able to:
 <list>
 <item>Describe the process of nuclear fission in terms of its product and reactants</item>
 <item>Calculate the energies of particles produced by a fission reaction</item>
@@ -99,7 +99,7 @@ This is another impressively large amount of energy, equivalent to about 14,000 
 <note id="fs-id1170902286668" class="check-understanding">
 <exercise id="fs-id1170902150509">
 <problem id="fs-id1170902271059">
-<para id="fs-id1170904040640">Which has a larger energy yield per fission reaction, a large or small sample of pure <m:math><m:mrow><m:msup><m:mrow/><m:mrow><m:mn>235</m:mn></m:mrow></m:msup><m:mtext>U</m:mtext><m:mo>?</m:mo></m:mrow></m:math></para>
+<para id="fs-id1170904040640"><emphasis effect="bold">Check Your Understanding</emphasis> Which has a larger energy yield per fission reaction, a large or small sample of pure <m:math><m:mrow><m:msup><m:mrow/><m:mrow><m:mn>235</m:mn></m:mrow></m:msup><m:mtext>U</m:mtext><m:mo>?</m:mo></m:mrow></m:math></para>
 </problem>
 <solution id="fs-id1170904170064">
 <para id="fs-id1170902153130">the same</para>

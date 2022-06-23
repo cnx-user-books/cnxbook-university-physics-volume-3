@@ -4,7 +4,7 @@
 <metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m58766</md:content-id>
   <md:title>Wave-Particle Duality</md:title>
-  <md:abstract><para>By the end of this section, you will be able to:</para>
+  <md:abstract>By the end of this section, you will be able to:
 <list>
 <item>Identify phenomena in which electromagnetic waves behave like a beam of photons and particles behave like waves</item>
 <item>Describe the physics principles behind electron microscopy</item>
@@ -49,7 +49,7 @@ Notice that this is also the angular resolution between two consecutive bright f
 <note id="fs-id1163712093643" class="check-understanding">
 <exercise id="fs-id1163712038952">
 <problem id="fs-id1163712316133">
-<para id="fs-id1163712315461">For the situation described in <link target-id="fs-id1163712332895"/>, find the angular position of the fifth-order bright fringe on the viewing screen.</para>
+<para id="fs-id1163712315461"><emphasis effect="bold">Check Your Understanding</emphasis> For the situation described in <link target-id="fs-id1163712332895"/>, find the angular position of the fifth-order bright fringe on the viewing screen.</para>
 </problem>
 <solution id="fs-id1163711960330">
 <para id="fs-id1163711941303"><m:math><m:mrow><m:mn>0.052</m:mn><m:mtext>°</m:mtext></m:mrow></m:math></para>
@@ -89,7 +89,7 @@ Note that if we used a conventional microscope with a 400-nm light, the resolvin
 <note id="fs-id1163711971554" class="check-understanding">
 <exercise id="fs-id1163710887795">
 <problem id="fs-id1163712313816">
-<para id="fs-id1163711903428">Suppose that the diameter of the aperture in <link target-id="fs-id1163711055785"/> is halved. How does it affect the resolving power?</para>
+<para id="fs-id1163711903428"><emphasis effect="bold">Check Your Understanding</emphasis> Suppose that the diameter of the aperture in <link target-id="fs-id1163711055785"/> is halved. How does it affect the resolving power?</para>
 </problem>
 <solution id="fs-id1163711052068">
 <para id="fs-id1163711908857">doubles it</para>

@@ -3,7 +3,7 @@
 <metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m58565</md:content-id>
   <md:title>Length Contraction</md:title>
-  <md:abstract><para>By the end of this section, you will be able to:</para>
+  <md:abstract>By the end of this section, you will be able to: 
 <list>
 <item>Explain how simultaneity and length contraction are related.</item>
 <item>Describe the relation between length contraction and time dilation and use it to derive the length-contraction equation.</item>
@@ -84,7 +84,7 @@ For part (a):</para>
 <item>Identify the knowns: <m:math><m:mrow><m:msub><m:mi>L</m:mi><m:mn>0</m:mn></m:msub><m:mo>=</m:mo><m:mn>4.300</m:mn><m:mspace width="0.2em"/><m:mtext>ly;</m:mtext><m:mspace width="0.2em"/><m:mi>γ</m:mi><m:mo>=</m:mo><m:mn>30.00</m:mn><m:mo>.</m:mo></m:mrow></m:math></item>
 <item>Identify the unknown: <emphasis effect="italics">L</emphasis>.</item>
 <item>Express the answer as an equation: <m:math><m:mrow><m:mi>L</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>L</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mi>γ</m:mi></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></item>
-<item>Do the calculation:
+<item>Do the calculation:<newline/>
 <equation id="fs-id1167793897478" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mi>L</m:mi></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>L</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mi>γ</m:mi></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>4.300</m:mn><m:mspace width="0.2em"/><m:mtext>ly</m:mtext></m:mrow><m:mrow><m:mn>30.00</m:mn></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>0.1433</m:mn><m:mspace width="0.2em"/><m:mtext>ly.</m:mtext></m:mtd></m:mtr></m:mtable></m:math></equation></item>
 </list>
 <para id="fs-id1163710844888"><title>Solution for (b)</title>
@@ -92,13 +92,13 @@ For part (b):</para>
 <list id="fs-id1167793991435" list-type="enumerated" number-style="lower-alpha">
 <item>Identify the known: <m:math><m:mrow><m:mi>γ</m:mi><m:mo>=</m:mo><m:mn>30.00</m:mn><m:mo>.</m:mo></m:mrow></m:math></item>
 <item>Identify the unknown: <emphasis effect="italics">v</emphasis> in terms of <emphasis effect="italics">c</emphasis>.</item>
-<item>Express the answer as an equation. Start with:
-<equation id="fs-id1167793450740" class="unnumbered"><label/><m:math><m:mrow><m:mi>γ</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mrow><m:msup><m:mi>v</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></equation>
-Then solve for the unknown <emphasis effect="italics">v/c</emphasis> by first squaring both sides and then rearranging:
+<item>Express the answer as an equation. Start with:<newline/>
+<equation id="fs-id1167793450740" class="unnumbered"><label/><m:math><m:mrow><m:mi>γ</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msqrt><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mrow><m:msup><m:mi>v</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+Then solve for the unknown <emphasis effect="italics">v/c</emphasis> by first squaring both sides and then rearranging:<newline/>
 <equation id="fs-id1167793877466" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:msup><m:mi>γ</m:mi><m:mn>2</m:mn></m:msup></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mrow><m:msup><m:mi>v</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mfrac><m:mrow><m:msup><m:mi>v</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>c</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>γ</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mfrac><m:mi>v</m:mi><m:mi>c</m:mi></m:mfrac></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:msqrt><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>γ</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:math></equation></item>
-<item>Do the calculation:
-<equation id="fs-id1167794226690" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mfrac><m:mi>v</m:mi><m:mi>c</m:mi></m:mfrac></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>γ</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>30.00</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>0.99944</m:mn></m:mtd></m:mtr></m:mtable></m:math></equation>
-or
+<item>Do the calculation:<newline/>
+<equation id="fs-id1167794226690" class="unnumbered"><label/><m:math><m:mtable><m:mtr><m:mtd columnalign="right"><m:mfrac><m:mi>v</m:mi><m:mi>c</m:mi></m:mfrac></m:mtd><m:mtd columnalign="left"><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mi>γ</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>30.00</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>0.99944</m:mn></m:mtd></m:mtr></m:mtable></m:math></equation><newline/>
+or<newline/>
 <equation id="fs-id1163723960934" class="unnumbered"><label/><m:math><m:mrow><m:mi>v</m:mi><m:mo>=</m:mo><m:mn>0.9994</m:mn><m:mspace width="0.2em"/><m:mi>c</m:mi><m:mo>.</m:mo></m:mrow></m:math></equation></item>
 </list>
 <para id="fs-id1167794167669"><title>Significance</title>
@@ -115,7 +115,7 @@ Remember not to round off calculations until the final answer, or you could get 
 <note id="fs-id1167794064721" class="check-understanding">
 <exercise id="fs-id1167794027162">
 <problem id="fs-id1167793366723">
-<para id="fs-id1167793259734">A particle is traveling through Earth’s atmosphere at a speed of 0.750<emphasis effect="italics">c</emphasis>. To an earthbound observer, the distance it travels is 2.50 km. How far does the particle travel as viewed from the particle’s reference frame?</para>
+<para id="fs-id1167793259734"><emphasis effect="bold">Check Your Understanding</emphasis> A particle is traveling through Earth’s atmosphere at a speed of 0.750<emphasis effect="italics">c</emphasis>. To an earthbound observer, the distance it travels is 2.50 km. How far does the particle travel as viewed from the particle’s reference frame?</para>
 </problem>
 <solution id="fs-id1167794128197">
 <para id="fs-id1167794128199"><m:math><m:mrow><m:mi>L</m:mi><m:mo>=</m:mo><m:msub><m:mrow><m:mi>L</m:mi></m:mrow><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:msqrt><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mrow><m:msup><m:mrow><m:mi>v</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mi>c</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2.50</m:mn><m:mspace width="0.2em"/><m:mtext>km</m:mtext><m:mo stretchy="false">)</m:mo><m:msqrt><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mfrac><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>0.750</m:mn><m:mi>c</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mi>c</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>=</m:mo><m:mn>1.65</m:mn><m:mspace width="0.2em"/><m:mtext>km</m:mtext></m:mrow></m:math></para>
@@ -175,7 +175,8 @@ Remember not to round off calculations until the final answer, or you could get 
 <problem id="fs-id1167793377364">
 <para id="fs-id1167793377366">(a) How far does the muon in <link target-id="fs-id1167793912924" document="m58563"/> travel according to the earthbound observer? (b) How far does it travel as viewed by an observer moving with it? Base your calculation on its velocity relative to the Earth and the time it lives (proper time). (c) Verify that these two distances are related through length contraction <m:math><m:mrow><m:mrow><m:mi>γ</m:mi><m:mo>=</m:mo><m:mn>3.20</m:mn></m:mrow><m:mo>.</m:mo></m:mrow></m:math></para></problem>
 <solution id="fs-id1167793918524">
-<para id="fs-id1167793918526">Using the values given in <link target-id="fs-id1167793912924" document="m58563"/>: a. 0.627 km; b. 2.00 km; c. 2.00 km</para></solution>
+<para id="fs-id1167793918526">Using the values given in <link target-id="fs-id1167793912924" document="m58563"/>: a. 1.39 km; b. 0.433 km; c. 0.433 km</para>
+</solution>
 </exercise>
 <exercise id="fs-id1167793432903">
 <problem id="fs-id1167793432905">

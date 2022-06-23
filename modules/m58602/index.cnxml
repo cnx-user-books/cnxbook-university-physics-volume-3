@@ -4,7 +4,7 @@
 <metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m58602</md:content-id>
   <md:title>Superconductivity</md:title>
-  <md:abstract><para>By the end of this section, you will be able to:</para>
+  <md:abstract>By the end of this section, you will be able to:
 <list>
 <item>Describe the main features of a superconductor</item>
 <item>Describe the BCS theory of superconductivity</item>
@@ -15,7 +15,7 @@
 
 <content>
 <para id="fs-id1172099576856">Electrical resistance can be considered as a measure of the frictional force in electrical current flow. Thus, electrical resistance is a primary source of energy dissipation in electrical systems such as electromagnets, electric motors, and transmission lines. Copper wire is commonly used in electrical wiring because it has one of the lowest room-temperature electrical resistivities among common conductors. (Actually, silver has a lower resistivity than copper, but the high cost and limited availability of silver outweigh its savings in energy over copper.)</para>
-<para id="fs-id1172101788444">Although our discussion of conductivity seems to imply that all materials must have electrical resistance, we know that this is not the case. When the temperature decreases below a critical value for many materials, their electrical resistivity drops to zero, and the materials become superconductors (see <link document="m58735">Superconductors</link>).</para><note id="fs-id1172099418397" class="media-2">
+<para id="fs-id1172101788444">Although our discussion of conductivity seems to imply that all materials must have electrical resistance, we know that this is not the case. When the temperature decreases below a critical value for many materials, their electrical resistivity drops to zero, and the materials become superconductors (see <link class="target-chapter" document="m58735">Superconductors</link>).</para><note id="fs-id1172099418397" class="media-2">
 <para id="fs-id1172099500386">Watch this <link url="https://openstax.org/l/21NOVA"><emphasis effect="italics">NOVA</emphasis> video</link> excerpt, Making Stuff Colder, as an introduction to the topic of superconductivity and its many applications.</para>
 </note>
 <section id="fs-id1172102011254">
@@ -160,7 +160,7 @@ Superconductivity requires low temperatures and low magnetic fields. These simul
 <note id="fs-id1172101698098" class="check-understanding">
 <exercise id="fs-id1172101918493">
 <problem id="fs-id1172102078517">
-<para id="fs-id1172099386880">What conditions are necessary for superconductivity?</para>
+<para id="fs-id1172099386880"><emphasis effect="bold">Check Your Understanding</emphasis> What conditions are necessary for superconductivity?</para>
 </problem>
 <solution id="fs-id1172099744318">
 <para id="fs-id1172099494400">a low temperature and low magnetic field</para>

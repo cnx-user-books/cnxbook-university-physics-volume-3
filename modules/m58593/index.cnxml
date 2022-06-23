@@ -4,7 +4,7 @@
 <metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m58593</md:content-id>
   <md:title>Molecular Spectra</md:title>
-  <md:abstract><para>By the end of this section, you will be able to:</para>
+  <md:abstract>By the end of this section, you will be able to:
 <list>
 <item>Use the concepts of vibrational and rotational energy to describe energy transitions in a diatomic molecule</item>
 <item>Explain key features of a vibrational-rotational energy spectrum of a diatomic molecule</item>
@@ -62,7 +62,7 @@ The rotational spectrum is associated with weak transitions (1/1000 to 1/100 of 
 <note id="fs-id1172098384590" class="check-understanding">
 <exercise id="fs-id1172100836957">
 <problem id="fs-id1172100642454">
-<para id="fs-id1172100727781">What does the energy separation between absorption lines in a rotational spectrum of a diatomic molecule tell you?</para>
+<para id="fs-id1172100727781"><emphasis effect="bold">Check Your Understanding</emphasis> What does the energy separation between absorption lines in a rotational spectrum of a diatomic molecule tell you?</para>
 </problem>
 <solution id="fs-id1172098453679">
 <para id="fs-id1172100781235">the moment of inertia</para>
