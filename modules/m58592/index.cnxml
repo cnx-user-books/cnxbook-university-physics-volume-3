@@ -4,7 +4,7 @@
 <metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m58592</md:content-id>
   <md:title>Types of Molecular Bonds</md:title>
-  <md:abstract><para>By the end of this section, you will be able to:</para>
+  <md:abstract>By the end of this section, you will be able to:
 <list>
 <item>Distinguish between the different types of molecular bonds</item>
 <item>Determine the dissociation energy of a molecule using the concepts ionization energy, electron affinity, and Coulomb force</item>
@@ -165,7 +165,7 @@ The formation of a NaCl formula unit by ionic bonding is energetically favorable
 <note id="fs-id1172100637244" class="check-understanding">
 <exercise id="fs-id1172100732076">
 <problem id="fs-id1172098315843">
-<para id="fs-id1172100635983">Why is the potential energy associated with the exclusion principle positive in <link target-id="fs-id1172098258255"/>?</para>
+<para id="fs-id1172100635983"><emphasis effect="bold">Check Your Understanding</emphasis> Why is the potential energy associated with the exclusion principle positive in <link target-id="fs-id1172098258255"/>?</para>
 </problem>
 <solution id="fs-id1172100546062">
 <para id="fs-id1172100813927">It corresponds to a repulsive force between core electrons in the ions.</para>

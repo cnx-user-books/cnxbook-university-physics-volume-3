@@ -4,7 +4,7 @@
 <metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m58775</md:content-id>
   <md:title>The Big Bang</md:title>
-  <md:abstract><para>By the end of this section, you will be able to:</para>
+  <md:abstract>By the end of this section, you will be able to: 
 <list>
 <item>Explain the expansion of the universe in terms of a Hubble graph and cosmological redshift</item>
 <item>Describe the analogy between cosmological expansion and an expanding balloon</item>
@@ -40,7 +40,7 @@
 <section id="fs-id1172102078529">
 <title>Big Bang Model</title>
 <para id="fs-id1172099485710">Scientists who study the origin, evolution, and ultimate fate of the universe (<term>cosmology</term>) believe that the universe began in an explosion, called the <term>Big Bang</term>, approximately 13.7 billion years ago. This explosion was not an explosion of particles through space, like fireworks, but a rapid expansion of space itself. The distances and velocities of the outward-going stars and galaxies permit us to estimate when all matter in the universe was once together—at the beginning of time.</para>
-<para id="fs-id1172099682057">Scientists often explain the Big Bang expansion using an inflated-balloon model (<link target-id="CNX_UPhysics_44_06_Analogy"/>). Dots marked on the surface of the balloon represent galaxies, and the balloon skin represents four-dimensional space-time (<link document="m58555">Relativity</link>). As the balloon is inflated, every dot “sees” the other dots moving away. This model yields two insights. First, the expansion is observed by all observers in the universe, no matter where they are located. The “center of expansion” does not exist, so Earth does not reside at the “privileged” center of the expansion (see <link target-id="fs-id1172102066532"/>).</para>
+<para id="fs-id1172099682057">Scientists often explain the Big Bang expansion using an inflated-balloon model (<link target-id="CNX_UPhysics_44_06_Analogy"/>). Dots marked on the surface of the balloon represent galaxies, and the balloon skin represents four-dimensional space-time (<link class="target-chapter" document="m58555">Relativity</link>). As the balloon is inflated, every dot “sees” the other dots moving away. This model yields two insights. First, the expansion is observed by all observers in the universe, no matter where they are located. The “center of expansion” does not exist, so Earth does not reside at the “privileged” center of the expansion (see <link target-id="fs-id1172102066532"/>).</para>
 <figure id="CNX_UPhysics_44_06_Analogy">
 <media id="fs-id1172102040764" alt="Figure a shows a balloon connected to a cylinder for inflation. The balloon is marked with a grid, and a few dots on the grid are highlighted. Figure b shows the same balloon, now inflated. The highlighted dots are further apart from each other.">
 <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_44_06_Analogy.jpg"/>
@@ -52,16 +52,17 @@
 <para id="fs-id1172101747829"><title>Calculating Speeds and Galactic Distances</title>
 A galaxy is observed to have a redshift:</para>
 <equation id="fs-id1172099751080" class="unnumbered"><label/><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>λ</m:mi><m:mrow><m:mtext>obs</m:mtext></m:mrow></m:msub><m:mo>−</m:mo><m:msub><m:mi>λ</m:mi><m:mrow><m:mtext>emit</m:mtext></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>λ</m:mi><m:mrow><m:mtext>emit</m:mtext></m:mrow></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>4.5</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
-<para id="fs-id1172102116219">This value indicates a galaxy moving close to the speed of light. Using the relativistic redshift formula (given in <link document="m58555">Relativity</link>), determine (a) How fast is the galaxy receding with respect to Earth? (b) How far away is the galaxy?</para>
+<para id="fs-id1172102116219">This value indicates a galaxy moving close to the speed of light. Using the relativistic redshift formula (given in <link class="target-chapter" document="m58555">Relativity</link>), determine (a) How fast is the galaxy receding with respect to Earth? (b) How far away is the galaxy?</para>
 <para id="fs-id1172102002007"><title>Strategy</title>
 We need to use the relativistic Doppler formula to determine speed from redshift and then use Hubble’s law to find the distance from the speed.</para>
 <para id="fs-id1172101655516"><title>Solution</title></para>
 <list id="fs-id1172099615231" list-type="enumerated" number-style="lower-alpha">
-<item>According to the relativistic redshift formula:
-<equation id="fs-id1172099541749" class="unnumbered"><label/><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>β</m:mi></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>β</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mspace width="0.2em"/><m:mn>−1</m:mn><m:mo>,</m:mo></m:mrow></m:math></equation>
+<item>According to the relativistic redshift formula:<newline/>
+<equation id="fs-id1172099541749" class="unnumbered"><label/><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>β</m:mi></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>β</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mspace width="0.2em"/><m:mn>−1</m:mn><m:mo>,</m:mo></m:mrow></m:math></equation><newline/>
 where <m:math><m:mrow><m:mi>β</m:mi><m:mo>=</m:mo><m:mi>v</m:mi><m:mtext>/</m:mtext><m:mi>c</m:mi><m:mo>.</m:mo></m:mrow></m:math> Substituting the value for <emphasis effect="italics">z</emphasis> and solving for <m:math><m:mi>β</m:mi></m:math>, we get <m:math><m:mrow><m:mi>β</m:mi><m:mo>=</m:mo><m:mn>0.93</m:mn><m:mo>.</m:mo></m:mrow></m:math> This value implies that the speed of the galaxy is <m:math><m:mrow><m:mn>2.8</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>8</m:mn></m:msup><m:mspace width="0.2em"/><m:mtext>m/s</m:mtext></m:mrow></m:math>.</item>
 <item>Using Hubble’s law, we can find the distance to the galaxy if we know its<newline/>
-recession velocity:<equation id="fs-id1172102015748" class="unnumbered"><label/><m:math><m:mrow><m:mi>d</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>v</m:mi><m:mrow><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2.8</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>8</m:mn></m:msup><m:mspace width="0.2em"/><m:mtext>m</m:mtext><m:mtext>/</m:mtext><m:mtext>s</m:mtext></m:mrow><m:mrow><m:mn>73.8</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>3</m:mn></m:msup><m:mspace width="0.2em"/><m:mtext>m</m:mtext><m:mtext>/</m:mtext><m:mtext>s</m:mtext><m:mspace width="0.2em"/><m:mtext>per Mpc</m:mtext></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>3.8</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>3</m:mn></m:msup><m:mspace width="0.2em"/><m:mtext>Mpc</m:mtext><m:mo>.</m:mo></m:mrow></m:math></equation></item>
+recession velocity:<newline/>
+<equation id="fs-id1172102015748" class="unnumbered"><label/><m:math><m:mrow><m:mi>d</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>v</m:mi><m:mrow><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2.8</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>8</m:mn></m:msup><m:mspace width="0.2em"/><m:mtext>m</m:mtext><m:mtext>/</m:mtext><m:mtext>s</m:mtext></m:mrow><m:mrow><m:mn>73.8</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>3</m:mn></m:msup><m:mspace width="0.2em"/><m:mtext>m</m:mtext><m:mtext>/</m:mtext><m:mtext>s</m:mtext><m:mspace width="0.2em"/><m:mtext>per Mpc</m:mtext></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>3.8</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>3</m:mn></m:msup><m:mspace width="0.2em"/><m:mtext>Mpc</m:mtext><m:mo>.</m:mo></m:mrow></m:math></equation></item>
 </list>
 <para id="fs-id1172099411220"><title>Significance</title>
 Distant galaxies appear to move very rapidly away from Earth. The redshift of starlight from these galaxies can be used to determine the precise speed of recession, over <m:math><m:mrow><m:mn>90</m:mn><m:mtext>%</m:mtext></m:mrow></m:math> of the speed of light in this case. This motion is not due to the motion of galaxy through space but by the expansion of space itself.</para>
@@ -69,7 +70,7 @@ Distant galaxies appear to move very rapidly away from Earth. The redshift of st
 <note id="fs-id1172102109404" class="check-understanding">
 <exercise id="fs-id1172101681503">
 <problem id="fs-id1172099721315">
-<para id="fs-id1172101782758">The light of a galaxy that moves away from us is “redshifted.” What occurs to the light of a galaxy that moves toward us?</para>
+<para id="fs-id1172101782758"><emphasis effect="bold">Check Your Understanding</emphasis> The light of a galaxy that moves away from us is “redshifted.” What occurs to the light of a galaxy that moves toward us?</para>
 </problem>
 <solution id="fs-id1172102061465">
 <para id="fs-id1172101999118">blueshifted</para>

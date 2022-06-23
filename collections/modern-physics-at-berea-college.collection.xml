@@ -1,16 +1,16 @@
 <col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="en">
   <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
-    <md:content-id>col12067</md:content-id>
-    <md:title>University Physics Volume 3</md:title>
+    <md:content-id>col26265</md:content-id>
+    <md:title>Modern Physics at Berea College</md:title>
     <md:language>en</md:language>
     <md:license url="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</md:license>
-    <md:uuid>af275420-6050-4707-995c-57b9cc13c358</md:uuid>
-<md:slug>university-physics-volume-3</md:slug>
+    <md:uuid>78fac326-fc6e-496b-a88e-c41b61522394</md:uuid>
+<md:slug>modern-physics-at-berea-college</md:slug>
 </metadata>
   <col:content>
     <col:module document="m62204"/>
     <col:subcollection>
-      <md:title>Optics</md:title>
+      <md:title>Unit 1. Optics</md:title>
       <col:content>
         <col:subcollection>
           <md:title>The Nature of Light</md:title>
@@ -66,7 +66,7 @@
       </col:content>
     </col:subcollection>
     <col:subcollection>
-      <md:title>Modern Physics</md:title>
+      <md:title>Unit 2. Modern Physics</md:title>
       <col:content>
         <col:subcollection>
           <md:title>Relativity</md:title>

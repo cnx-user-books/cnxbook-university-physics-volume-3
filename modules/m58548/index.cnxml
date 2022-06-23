@@ -4,7 +4,7 @@
 <metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m58548</md:content-id>
   <md:title>Circular Apertures and Resolution</md:title>
-  <md:abstract><para>By the end of this section, you will be able to:</para>
+  <md:abstract>By the end of this section, you will be able to:
 <list>
 <item>Describe the diffraction limit on resolution</item>
 <item>Describe the diffraction limit on beam propagation</item></list></md:abstract>
@@ -46,12 +46,12 @@ The primary mirror of the orbiting <term class="no-emphasis">Hubble Space Telesc
 The Rayleigh criterion stated in <link target-id="fs-id1172102052235"/>, <m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>1.22</m:mn><m:mrow><m:mtext>λ</m:mtext><m:mtext>/</m:mtext><m:mi>D</m:mi></m:mrow></m:mrow></m:math>, gives the smallest possible angle <m:math><m:mi>θ</m:mi></m:math> between point sources, or the best obtainable resolution. Once this angle is known, we can calculate the distance between the stars, since we are given how far away they are.</para>
 <para id="fs-id1172101781484"><title>Solution</title></para>
 <list id="fs-id1172101792823" list-type="enumerated" number-style="lower-alpha">
-<item>The Rayleigh criterion for the minimum resolvable angle is
-<equation id="fs-id1172101970991" class="unnumbered"><label/><m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>1.22</m:mn><m:mfrac><m:mtext>λ</m:mtext><m:mi>D</m:mi></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></equation>
-Entering known values gives
+<item>The Rayleigh criterion for the minimum resolvable angle is<newline/>
+<equation id="fs-id1172101970991" class="unnumbered"><label/><m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>1.22</m:mn><m:mfrac><m:mtext>λ</m:mtext><m:mi>D</m:mi></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+Entering known values gives<newline/>
 <equation id="fs-id1172101633667" class="unnumbered"><label/><m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>1.22</m:mn><m:mfrac><m:mrow><m:mn>550</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mn>10</m:mn><m:mrow><m:mtext>−</m:mtext><m:mn>9</m:mn></m:mrow></m:msup><m:mspace width="0.2em"/><m:mtext>m</m:mtext></m:mrow><m:mrow><m:mn>2.40</m:mn><m:mspace width="0.2em"/><m:mtext>m</m:mtext></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>2.80</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mn>10</m:mn><m:mrow><m:mtext>−</m:mtext><m:mn>7</m:mn></m:mrow></m:msup><m:mspace width="0.2em"/><m:mtext>rad</m:mtext><m:mo>.</m:mo></m:mrow></m:math></equation></item>
 <item>The distance <emphasis effect="italics">s</emphasis> between two objects a distance <emphasis effect="italics">r</emphasis> away and separated by an angle <m:math><m:mi>θ</m:mi></m:math> is <m:math><m:mrow><m:mi>s</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow></m:math><newline/>
-Substituting known values gives
+Substituting known values gives<newline/>
 <equation id="fs-id1172099477972" class="unnumbered"><label/><m:math><m:mrow><m:mi>s</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2.0</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mn>6</m:mn></m:msup><m:mspace width="0.2em"/><m:mtext>ly</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2.80</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mn>10</m:mn><m:mrow><m:mtext>−</m:mtext><m:mn>7</m:mn></m:mrow></m:msup><m:mspace width="0.2em"/><m:mtext>rad</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0.56</m:mn><m:mspace width="0.2em"/><m:mtext>ly</m:mtext><m:mo>.</m:mo></m:mrow></m:math></equation></item>
 </list>
 <para id="fs-id1172101793898"><title>Significance</title>
@@ -70,7 +70,7 @@ The angle found in part (a) is extraordinarily small (less than 1/50,000 of a de
 <note id="fs-id1172102038385" class="check-understanding">
 <exercise id="fs-id1172102131316">
 <problem id="fs-id1172101650528">
-<para id="fs-id1172101643327">What is the angular resolution of the Arecibo telescope shown in <link target-id="CNX_UPhysics_37_05_Bowl"/> when operated at 21-cm wavelength? How does it compare to the resolution of the Hubble Telescope?</para>
+<para id="fs-id1172101643327"><emphasis effect="bold">Check Your Understanding</emphasis> What is the angular resolution of the Arecibo telescope shown in <link target-id="CNX_UPhysics_37_05_Bowl"/> when operated at 21-cm wavelength? How does it compare to the resolution of the Hubble Telescope?</para>
 </problem>
 <solution id="fs-id1172099414910">
 <para id="fs-id1172102078901"><m:math><m:mrow><m:mn>8.4</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>−4</m:mn></m:mrow></m:msup><m:mspace width="0.2em"/><m:mtext>rad</m:mtext></m:mrow></m:math>, 3000 times broader than the Hubble Telescope</para>

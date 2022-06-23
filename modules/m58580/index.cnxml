@@ -4,9 +4,9 @@
 <metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m58580</md:content-id>
   <md:title>The Quantum Particle in a Box</md:title>
-  <md:abstract><para>By the end of this section, you will be able to:</para>
+  <md:abstract>By the end of this section, you will be able to: 
 <list>
-<item>Describe how to set up a boundary-value problem for the stationary Schrӧdinger equation</item>
+<item>Describe how to set up a boundary-value problem for the stationary Schrӧdinger equation</item> 
 <item>Explain why the energy of a quantum particle in a box is quantized</item>
 <item>Describe the physical meaning of stationary solutions to Schrӧdinger’s equation and the connection of these solutions with time-dependent quantum states</item>
 <item>Explain the physical meaning of Bohr’s correspondence principle</item>
@@ -121,7 +121,7 @@ We see from this example that the energy of a classical system is characterized 
 <note id="fs-id1170902677214" class="check-understanding">
 <exercise id="fs-id1170901785761">
 <problem id="fs-id1170902763295">
-<para id="fs-id1170903022556">(a) Consider an infinite square well with wall boundaries <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>L</m:mi></m:mrow></m:math>. What is the probability of finding a quantum particle in its ground state somewhere between <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>L</m:mi><m:mtext>/</m:mtext><m:mn>4</m:mn></m:mrow></m:math>? (b) Repeat question (a) for a classical particle.</para>
+<para id="fs-id1170903022556"><emphasis effect="bold">Check Your Understanding</emphasis> (a) Consider an infinite square well with wall boundaries <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>L</m:mi></m:mrow></m:math>. What is the probability of finding a quantum particle in its ground state somewhere between <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>L</m:mi><m:mtext>/</m:mtext><m:mn>4</m:mn></m:mrow></m:math>? (b) Repeat question (a) for a classical particle.</para>
 </problem>
 <solution id="fs-id1170901588905">
 <para id="fs-id1170903031194">a. 9.1%; b. 25%</para>

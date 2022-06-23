@@ -3,7 +3,7 @@
 <metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m58556</md:content-id>
   <md:title>Invariance of Physical Laws</md:title>
-  <md:abstract><para>By the end of this section, you will be able to:</para>
+  <md:abstract>By the end of this section, you will be able to:
 <list>
 <item>Describe the theoretical and experimental issues that Einstein’s theory of special relativity addressed.</item>
 <item>State the two postulates of the special theory of relativity.</item>
@@ -21,7 +21,7 @@
 <title>Inertial Reference Frame</title>
 <para id="fs-id1167793259076">An <term>inertial frame of reference</term> is a reference frame in which a body at rest remains at rest and a body in motion moves at a constant speed in a straight line unless acted upon by an outside force.</para>
 </note>
-<para id="fs-id1167793456301">For example, to a passenger inside a plane flying at constant speed and constant altitude, physics seems to work exactly the same as when the passenger is standing on the surface of Earth. When the plane is taking off, however, matters are somewhat more complicated. In this case, the passenger at rest inside the plane concludes that a net force <emphasis effect="italics">F</emphasis> on an object is not equal to the product of mass and acceleration, <emphasis effect="italics">ma</emphasis>. Instead, <emphasis effect="italics">F</emphasis> is equal to <emphasis effect="italics">ma</emphasis> plus a fictitious force. This situation is not as simple as in an inertial frame. Special relativity handles accelerating frames as a constant and velocities as relative to the observer. General relativity treats both velocity and acceleration as relative to the observer, thus making the use of curved space-time. </para>
+<para id="fs-id1167793456301">For example, to a passenger inside a plane flying at constant speed and constant altitude, physics seems to work exactly the same as when the passenger is standing on the surface of Earth. When the plane is taking off, however, matters are somewhat more complicated. In this case, the passenger at rest inside the plane concludes that a net force <emphasis effect="italics">F</emphasis> on an object is not equal to the product of mass and acceleration, <emphasis effect="italics">ma</emphasis>. Instead, <emphasis effect="italics">F</emphasis> is equal to <emphasis effect="italics">ma</emphasis> plus a fictitious force. This situation is not as simple as in an inertial frame. The term “special” in “special relativity” refers to dealing only with inertial frames of reference. Einstein’s later theory of general relativity deals with all kinds of reference frames, including accelerating, and therefore non-inertial, reference frames.</para>
 </section>
 <section id="fs-id1167793278305">
 <title>Einstein’s First Postulate</title>
@@ -52,7 +52,7 @@
 <note id="fs-id1167793489520" class="check-understanding">
 <exercise id="fs-id1167794336496">
 <problem id="fs-id1167793297289">
-<para id="fs-id1167793510829">Explain how special relativity differs from general relativity.</para>
+<para id="fs-id1167793510829"><emphasis effect="bold">Check Your Understanding</emphasis> Explain how special relativity differs from general relativity.</para>
 </problem>
 <solution id="fs-id1167794173594">
 <para id="fs-id1167794048809">Special relativity applies only to objects moving at constant velocity, whereas general relativity applies to objects that undergo acceleration.</para>

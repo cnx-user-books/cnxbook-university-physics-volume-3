@@ -4,7 +4,7 @@
 <metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m58581</md:content-id>
   <md:title>The Quantum Harmonic Oscillator</md:title>
-  <md:abstract><para>By the end of this section, you will be able to:</para>
+  <md:abstract>By the end of this section, you will be able to: 
 <list>
 <item>Describe the model of the quantum harmonic oscillator</item>
 <item>Identify differences between the classical and quantum models of the harmonic oscillator</item>
@@ -87,7 +87,7 @@ The force between atoms in an HCl molecule is surprisingly strong. The typical e
 <note id="fs-id1170903035061" class="check-understanding">
 <exercise id="fs-id1170902659909">
 <problem id="fs-id1170901585139">
-<para id="fs-id1170901481467">The vibrational frequency of the hydrogen iodide HI diatomic molecule is <m:math><m:mrow><m:mn>6.69</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mtext> </m:mtext><m:mn>13</m:mn></m:mrow></m:msup><m:mspace width="0.2em"/><m:mtext>Hz</m:mtext></m:mrow></m:math>. (a) What is the force constant of the molecular bond between the hydrogen and the iodine atoms? (b) What is the energy of the emitted photon when this molecule makes a transition between adjacent vibrational energy levels?</para>
+<para id="fs-id1170901481467"><emphasis effect="bold">Check Your Understanding</emphasis> The vibrational frequency of the hydrogen iodide HI diatomic molecule is <m:math><m:mrow><m:mn>6.69</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mtext> </m:mtext><m:mn>13</m:mn></m:mrow></m:msup><m:mspace width="0.2em"/><m:mtext>Hz</m:mtext></m:mrow></m:math>. (a) What is the force constant of the molecular bond between the hydrogen and the iodine atoms? (b) What is the energy of the emitted photon when this molecule makes a transition between adjacent vibrational energy levels?</para>
 </problem>
 <solution id="fs-id1170901576181">
 <para id="fs-id1170901972140">a. 295 N/m; b. 0.277 eV</para>
@@ -101,7 +101,7 @@ The force between atoms in an HCl molecule is surprisingly strong. The typical e
 <note id="fs-id1170903029268" class="check-understanding">
 <exercise id="fs-id1170902634008">
 <problem id="fs-id1170901771770">
-<para id="fs-id1170901680213">Find the expectation value of the position for a particle in the ground state of a harmonic oscillator using symmetry.</para>
+<para id="fs-id1170901680213"><emphasis effect="bold">Check Your Understanding</emphasis> Find the expectation value of the position for a particle in the ground state of a harmonic oscillator using symmetry.</para>
 </problem>
 <solution id="fs-id1170903117058">
 <para id="fs-id1170901634580"><m:math><m:mrow><m:mrow><m:mo>〈</m:mo><m:mi>x</m:mi><m:mo>〉</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>

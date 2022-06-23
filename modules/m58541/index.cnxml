@@ -3,7 +3,8 @@
 <metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m58541</md:content-id>
   <md:title>The Michelson Interferometer</md:title>
-  <md:abstract><para>By the end of this section, you will be able to:</para><list>
+  <md:abstract>By the end of this section, you will be able to:
+<list>
 <item>Explain changes in fringes observed with a Michelson interferometer caused by mirror movements</item>
 <item>Explain changes in fringes observed with a Michelson interferometer caused by changes in medium</item>
 </list></md:abstract>
@@ -35,7 +36,7 @@ Refer to <link target-id="CNX_UPhysics_36_05_MichInt"/> for the geometry. We use
 <para id="fs-id1170902870158"><title>Solution</title>
 For a 630-nm red laser light, and for each fringe crossing <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>m</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>, the distance traveled by <m:math><m:mrow><m:msub><m:mtext>M</m:mtext><m:mn>2</m:mn></m:msub></m:mrow></m:math> if you keep <m:math><m:mrow><m:msub><m:mtext>M</m:mtext><m:mn>1</m:mn></m:msub></m:mrow></m:math> fixed is</para>
 <equation id="fs-id1170903089393" class="unnumbered"><label/><m:math><m:mrow><m:mtext>Δ</m:mtext><m:mi>d</m:mi><m:mo>=</m:mo><m:mi>m</m:mi><m:mfrac><m:mrow><m:msub><m:mi>λ</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:mfrac><m:mrow><m:mn>630</m:mn><m:mspace width="0.2em"/><m:mtext>nm</m:mtext></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>315</m:mn><m:mspace width="0.2em"/><m:mtext>nm</m:mtext><m:mspace width="0.2em"/><m:mo>=</m:mo><m:mspace width="0.2em"/><m:mn>0.315</m:mn><m:mspace width="0.2em"/><m:mi>μ</m:mi><m:mtext>m</m:mtext></m:mrow><m:mo>.</m:mo></m:math></equation>
-<para id="fs-id1170902749416"><title>Significance</title>An important application of this measurement is the definition of the standard meter. As mentioned in <link document="m58268">Units and Measurement</link>, the length of the standard meter was once defined as the mirror displacement in a Michelson interferometer corresponding to 1,650,763.73 wavelengths of the particular fringe of krypton-86 in a gas discharge tube.</para></example>
+<para id="fs-id1170902749416"><title>Significance</title>An important application of this measurement is the definition of the standard meter. As mentioned in <link class="target-chapter" document="m58268">Units and Measurement</link>, the length of the standard meter was once defined as the mirror displacement in a Michelson interferometer corresponding to 1,650,763.73 wavelengths of the particular fringe of krypton-86 in a gas discharge tube.</para></example>
 <example id="fs-id1170902868369">
 <para id="fs-id1170902684086"><title>Measuring the Refractive Index of a Gas</title>
 In one arm of a Michelson interferometer, a glass chamber is placed with attachments for evacuating the inside and putting gases in it. The space inside the container is 2 cm wide. Initially, the container is empty. As gas is slowly let into the chamber, you observe that dark fringes move past a reference line in the field of observation. By the time the chamber is filled to the desired pressure, you have counted 122 fringes move past the reference line. The wavelength of the light used is 632.8 nm. What is the refractive index of this gas?</para>
@@ -60,7 +61,7 @@ The indices of refraction for gases are so close to that of vacuum, that we norm
 <note id="fs-id1170901531015" class="check-understanding">
 <exercise id="fs-id1170902858686">
 <problem id="fs-id1170902601478">
-<para id="fs-id1170902901077">Although <emphasis effect="italics">m</emphasis>, the number of fringes observed, is an integer, which is often regarded as having zero uncertainty, in practical terms, it is all too easy to lose track when counting fringes. In <link target-id="fs-id1170902868369"/>, if you estimate that you might have missed as many as five fringes when you reported <m:math><m:mrow><m:mi>m</m:mi><m:mo>=</m:mo><m:mn>122</m:mn></m:mrow></m:math> fringes, (a) is the value for the index of refraction worked out in <link target-id="fs-id1170902868369"/> too large or too small? (b) By how much?</para>
+<para id="fs-id1170902901077"><emphasis effect="bold">Check Your Understanding</emphasis> Although <emphasis effect="italics">m</emphasis>, the number of fringes observed, is an integer, which is often regarded as having zero uncertainty, in practical terms, it is all too easy to lose track when counting fringes. In <link target-id="fs-id1170902868369"/>, if you estimate that you might have missed as many as five fringes when you reported <m:math><m:mrow><m:mi>m</m:mi><m:mo>=</m:mo><m:mn>122</m:mn></m:mrow></m:math> fringes, (a) is the value for the index of refraction worked out in <link target-id="fs-id1170902868369"/> too large or too small? (b) By how much?</para>
 </problem>
 <solution id="fs-id1170901680509">
 <para id="fs-id1170902916144">a. too small; b. up to <m:math><m:mrow><m:mn>8</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>−5</m:mn></m:mrow></m:msup></m:mrow></m:math></para>
@@ -68,7 +69,7 @@ The indices of refraction for gases are so close to that of vacuum, that we norm
 </exercise>
 </note>
 <note id="fs-id1170902598538" class="problem-solving">
-<title>Wave Optics</title>
+<title>Problem-Solving Strategy: Wave Optics</title>
 <para id="fs-id1170902745171"><emphasis effect="bold">Step 1.</emphasis> <emphasis effect="italics">Examine the situation to determine that interference is involved</emphasis>. Identify whether slits, thin films, or interferometers are considered in the problem.</para>
 <para id="fs-id1170901627250"><emphasis effect="bold">Step 2.</emphasis> <emphasis effect="italics">If slits are involved</emphasis>, note that diffraction gratings and double slits produce very similar interference patterns, but that gratings have narrower (sharper) maxima. Single-slit patterns are characterized by a large central maximum and smaller maxima to the sides.</para>
 <para id="fs-id1170902638188"><emphasis effect="bold">Step 3.</emphasis> <emphasis effect="italics">If thin-film interference or an interferometer is involved, take note of the path length difference between the two rays that interfere</emphasis>. Be certain to use the wavelength in the medium involved, since it differs from the wavelength in vacuum. Note also that there is an additional <m:math><m:mrow><m:mi>λ</m:mi><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:math> phase shift when light reflects from a medium with a greater index of refraction.</para>
@@ -337,7 +338,7 @@ The indices of refraction for gases are so close to that of vacuum, that we norm
 <para id="fs-id1170901618806">A good quality camera “lens” is actually a system of lenses, rather than a single lens, but a side effect is that a reflection from the surface of one lens can bounce around many times within the system, creating artifacts in the photograph. To counteract this problem, one of the lenses in such a system is coated with a thin layer of material (<m:math><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1.28</m:mn></m:mrow></m:math>) on one side. The index of refraction of the lens glass is 1.68. What is the smallest thickness of the coating that reduces the reflection at 640 nm by destructive interference? (In other words, the coating’s effect is to be optimized for <m:math><m:mrow><m:mi>λ</m:mi><m:mo>=</m:mo><m:mn>640</m:mn><m:mspace width="0.2em"/><m:mtext>nm</m:mtext></m:mrow></m:math>.)</para>
 </problem>
 <solution id="fs-id1170902777147">
-<para id="fs-id1170902878333">125 nm</para>
+<para id="fs-id1170902878333">160 nm</para>
 </solution>
 </exercise>
 <exercise id="fs-id1170902669027">
@@ -386,7 +387,7 @@ The indices of refraction for gases are so close to that of vacuum, that we norm
 </exercise>
 <exercise id="fs-id1170903104997">
 <problem id="fs-id1170902620269">
-<para id="fs-id1170902929309">The thickness of an aluminum foil is measured using a Michelson interferometer that has its movable mirror mounted on a micrometer. There is a difference of 27 fringes in the observed interference pattern when the micrometer clamps down on the foil compared to when the micrometer is empty. The light source is a He-Ne laser with wavelength 632.8 nm. Calculate the thickness of the foil.</para>
+<para id="fs-id1170902929309">The thickness of an aluminum foil is measured using a Michelson interferometer that has its movable mirror mounted on a micrometer. There is a difference of 27 fringes in the observed interference pattern when the micrometer clamps down on the foil compared to when the micrometer is empty. Calculate the thickness of the foil?</para>
 </problem>
 <solution id="fs-id1170901651502">
 <para id="fs-id1170901755918"><m:math><m:mrow><m:mn>8.5</m:mn><m:mspace width="0.2em"/><m:mi>μ</m:mi><m:mtext>m</m:mtext></m:mrow></m:math></para>
@@ -444,7 +445,8 @@ The indices of refraction for gases are so close to that of vacuum, that we norm
 <para id="fs-id1170901635855"><link document="m58540" target-id="CNX_UPhysics_36_04_Slides"/> shows two 7.50-cm-long glass slides illuminated by pure 589-nm wavelength light incident perpendicularly. The top slide touches the bottom slide at one end and rests on some debris at the other end, forming a wedge of air. How thick is the debris, if the dark bands are 1.00 mm apart?</para>
 </problem>
 <solution id="fs-id1170902937419">
-<para id="fs-id1172102030945"><m:math><m:mrow><m:mn>2.21</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>−5</m:mn></m:mrow></m:msup><m:mspace width="0.2em"/><m:mtext>m</m:mtext></m:mrow></m:math></para></solution>
+<para id="fs-id1172102030945"><m:math><m:mrow><m:mn>4.42</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>−5</m:mn></m:mrow></m:msup><m:mspace width="0.2em"/><m:mtext>m</m:mtext></m:mrow></m:math></para>
+</solution>
 </exercise>
 <exercise id="fs-id1170901626096">
 <problem id="fs-id1170902690500">

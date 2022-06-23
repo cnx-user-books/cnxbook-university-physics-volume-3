@@ -4,7 +4,7 @@
 <metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m58761</md:content-id>
   <md:title>Blackbody Radiation</md:title>
-  <md:abstract><para>By the end of this section, you will be able to:</para>
+  <md:abstract>By the end of this section you will be able to:
 <list>
 <item>Apply Wien’s and Stefan’s laws to analyze radiation emitted by a blackbody</item>
 <item>Explain Planck’s hypothesis of energy quanta</item>
@@ -57,7 +57,7 @@ Note that Wien’s displacement law tells us that the higher the temperature of 
 <note id="fs-id1163713164357" class="check-understanding">
 <exercise id="fs-id1163713118929">
 <problem id="fs-id1163713199754">
-<para id="fs-id1163713537345">The flame of a peach-scented candle has a yellowish color and the flame of a Bunsen’s burner in a chemistry lab has a bluish color. Which flame has a higher temperature?</para>
+<para id="fs-id1163713537345"><emphasis effect="bold">Check Your Understanding</emphasis> The flame of a peach-scented candle has a yellowish color and the flame of a Bunsen’s burner in a chemistry lab has a bluish color. Which flame has a higher temperature?</para>
 </problem>
 <solution id="fs-id1163713183850">
 <para id="fs-id1163709766023">Bunsen’s burner</para>
@@ -93,7 +93,7 @@ To estimate the total power emitted by a white dwarf, in principle, we could use
 <note id="fs-id1163713487777" class="check-understanding">
 <exercise id="fs-id1163713099323">
 <problem id="fs-id1163713190150">
-<para id="fs-id1163713131185">An iron poker is being heated. As its temperature rises, the poker begins to glow—first dull red, then bright red, then orange, and then yellow. Use either the blackbody radiation curve or Wien’s law to explain these changes in the color of the glow.</para>
+<para id="fs-id1163713131185"><emphasis effect="bold">Check Your Understanding</emphasis> An iron poker is being heated. As its temperature rises, the poker begins to glow—first dull red, then bright red, then orange, and then yellow. Use either the blackbody radiation curve or Wien’s law to explain these changes in the color of the glow.</para>
 </problem>
 <solution id="fs-id1163713084393">
 <para id="fs-id1163713061559">The wavelength of the radiation maximum decreases with increasing temperature.</para>
@@ -103,7 +103,7 @@ To estimate the total power emitted by a white dwarf, in principle, we could use
 <note id="fs-id1163713197204" class="check-understanding">
 <exercise id="fs-id1163713289100">
 <problem id="fs-id1163713059258">
-<para id="fs-id1163713035941">Suppose that two stars, <m:math><m:mi>α</m:mi></m:math> and <m:math><m:mi>β</m:mi><m:mo>,</m:mo></m:math> radiate exactly the same total power. If the radius of star <m:math><m:mi>α</m:mi></m:math> is three times that of star <m:math><m:mi>β</m:mi><m:mo>,</m:mo></m:math> what is the ratio of the surface temperatures of these stars? Which one is hotter?</para>
+<para id="fs-id1163713035941"><emphasis effect="bold">Check Your Understanding</emphasis> Suppose that two stars, <m:math><m:mi>α</m:mi></m:math> and <m:math><m:mi>β</m:mi><m:mo>,</m:mo></m:math> radiate exactly the same total power. If the radius of star <m:math><m:mi>α</m:mi></m:math> is three times that of star <m:math><m:mi>β</m:mi><m:mo>,</m:mo></m:math> what is the ratio of the surface temperatures of these stars? Which one is hotter?</para>
 </problem>
 <solution id="fs-id1163713019593">
 <para id="fs-id1163709680514"><m:math><m:mrow><m:msub><m:mi>T</m:mi><m:mi>α</m:mi></m:msub><m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/><m:msub><m:mi>T</m:mi><m:mi>β</m:mi></m:msub><m:mo>=</m:mo><m:mrow><m:mn>1</m:mn><m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/><m:mrow><m:msqrt><m:mn>3</m:mn></m:msqrt></m:mrow></m:mrow><m:mo>≅</m:mo><m:mn>0.58</m:mn><m:mo>,</m:mo></m:mrow></m:math> so the star <m:math><m:mi>β</m:mi></m:math> is hotter.</para>
@@ -158,7 +158,7 @@ Note that we do not specify what kind of material was used to build the cavity. 
 <note id="fs-id1163713053706" class="check-understanding">
 <exercise id="fs-id1163713185506">
 <problem id="fs-id1163713430962">
-<para id="fs-id1163713321604">A molecule is vibrating at a frequency of <m:math><m:mrow><m:mn>5.0</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>14</m:mn></m:mrow></m:msup><m:mtext>Hz</m:mtext><m:mo>.</m:mo></m:mrow></m:math> What is the smallest spacing between its vibrational energy levels?</para>
+<para id="fs-id1163713321604"><emphasis effect="bold">Check Your Understanding</emphasis> A molecule is vibrating at a frequency of <m:math><m:mrow><m:mn>5.0</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>14</m:mn></m:mrow></m:msup><m:mtext>Hz</m:mtext><m:mo>.</m:mo></m:mrow></m:math> What is the smallest spacing between its vibrational energy levels?</para>
 </problem>
 <solution id="fs-id1163713010181">
 <para id="fs-id1163713204771"><m:math><m:mrow><m:mn>3.3</m:mn><m:mspace width="0.2em"/><m:mo>×</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>−19</m:mn></m:mrow></m:msup><m:mtext>J</m:mtext></m:mrow></m:math></para>
@@ -183,7 +183,7 @@ Thus, for a classical oscillator, we have <m:math><m:mrow><m:mtext>Δ</m:mtext><
 <note id="fs-id1163709828314" class="check-understanding">
 <exercise id="fs-id1163709828317">
 <problem id="fs-id1163709828319">
-<para id="fs-id1163709676662">Would the result in <link target-id="fs-id1163713010543"/> be different if the mass were not 1.0 kg but a tiny mass of 1.0 <emphasis effect="italics">µ</emphasis>g, and the amplitude of vibrations were 0.10 <emphasis effect="italics">µ</emphasis>m?</para>
+<para id="fs-id1163709676662"><emphasis effect="bold">Check Your Understanding</emphasis> Would the result in <link target-id="fs-id1163713010543"/> be different if the mass were not 1.0 kg but a tiny mass of 1.0 <emphasis effect="italics">µ</emphasis>g, and the amplitude of vibrations were 0.10 <emphasis effect="italics">µ</emphasis>m?</para>
 </problem>
 <solution id="fs-id1163709676682">
 <para id="fs-id1163709676684">No, because then <m:math><m:mrow><m:mtext>Δ</m:mtext><m:mi>E</m:mi><m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/><m:mi>E</m:mi><m:mo>≈</m:mo><m:msup><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>−21</m:mn></m:mrow></m:msup></m:mrow></m:math></para>
