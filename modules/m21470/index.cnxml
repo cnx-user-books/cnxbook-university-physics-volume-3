@@ -1,0 +1,796 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>Phasors: Light Scattering by a Slit</title>
+  <metadata>
+  <md:content-id>m21470</md:content-id><md:title>Phasors: Light Scattering by a Slit</md:title>
+  <md:abstract/>
+  <md:uuid>620d992b-a493-47ae-a5da-c4529d569c2c</md:uuid>
+</metadata>
+
+<content>
+    <note id="eip-810">This module is part of the collection, <emphasis effect="italics">A First Course in Electrical and Computer Engineering</emphasis>. The LaTeX source files for this collection were created using an optical character recognition technology, and because of this process there may be more errors than usual. Please contact us if you discover any errors.
+</note><para id="id2258257">One of the most spectacular successes for phasor analysis arises in the
+study of light diffraction by a narrow slit. The experiment is to shine laser
+light through a slit in an otherwise opaque sheet and observe the pattern of
+light that falls on a distant screen. When the slit is very narrow compared
+with the wavelength of the light, then the light that falls on the screen is nearly
+uniform in intensity. However, when the width of the slit is comparable to the
+wavelength of the light, the pattern of light that falls on the screen is scalloped
+in intensity, showing alternating light and dark bands. The experiment, and
+the observed results, are illustrated in <link target-id="uid1"/>.</para>
+    <figure id="uid1"><media id="uid1_media" alt="Figure one shows the alternating dark and light bands from the experiment on light diffraction. On the right side of the graph is a vertical line with multiple bubbled curves extending towards the left indicating the pattern of intensity of the lights. Inside the figure is also the positive axes of a cartesian graph with x labeled on the horizontal axis and y labeled on the vertical axis, with a caption that reads z out of paper. On the left side of the graph is the diagram outlining the incident light, the wavelength between the light marked as λ, and the length of the slit opening marked as L.">
+        <image mime-type="image/png" src="../../media/pic018.png" id="uid1_onlineimage" width="500"><!-- NOTE: attribute width changes image size online (pixels). original width is 241. --></image>
+        <image for="pdf" mime-type="application/postscript" src="../../media/pic018.eps" id="uid1_printimage" print-width="110mm">
+<!--NOTE: attribute width changes image size in printed PDF (if specified in .tex file)-->
+        </image>
+      </media>
+      
+    <caption>Light Diffraction by a Slit</caption></figure>
+    <para id="id2258935">Why should this experiment produce this result? Phasor analysis illuminates the question and produces an elegant mathematical description of a profoundly important optical experiment.</para>
+    <para id="id2258941"><emphasis effect="bold">Huygens's Principle.</emphasis> We will assume, as Christiaan Huygens did, that the light incident on the slit sets up a light field in the slit that may be modeled by <m:math>
+<m:mi>N</m:mi>
+</m:math> discrete sources, each of which radiates a “spherical wave of light.” This model is illustrated in <link target-id="uid2"/>. The distance between sources is <m:math>
+<m:mi>d</m:mi>
+</m:math>, and <m:math overflow="scroll"><m:mrow><m:mi>N</m:mi><m:mi>d</m:mi><m:mo>=</m:mo><m:mi>L</m:mi></m:mrow></m:math> is the width of the slit. Each source is indexed by <m:math>
+<m:mi>n</m:mi>
+</m:math>, and <m:math>
+<m:mi>n</m:mi>
+</m:math> runs from 0 to <m:math overflow="scroll"><m:mrow><m:mi>N</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:math>. The <m:math overflow="scroll"><m:msup><m:mn>0</m:mn><m:mrow><m:mi mathvariant="normal">t</m:mi><m:mi mathvariant="normal">h</m:mi></m:mrow></m:msup></m:math> source is located at the origin of our coordinate system.</para>
+    <para id="id2258194">The spherical wave radiated by the <m:math overflow="scroll"><m:msup><m:mi>n</m:mi><m:mrow><m:mi mathvariant="normal">t</m:mi><m:mi mathvariant="normal">h</m:mi></m:mrow></m:msup></m:math> source is described by the equation</para>
+    <equation id="eip-183"><m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mi>E</m:mi><m:mrow><m:mo>(</m:mo><m:msub><m:mi>r</m:mi><m:mi>n</m:mi></m:msub><m:mo>,</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi> Re </m:mi><m:mrow><m:mo>{</m:mo><m:mfrac><m:mi>A</m:mi><m:mi>N</m:mi></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mo>[</m:mo><m:mi>ω</m:mi><m:mi>t</m:mi><m:mo>-</m:mo><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>/</m:mo><m:mi>λ</m:mi><m:mo>)</m:mo></m:mrow><m:msub><m:mi>r</m:mi><m:mi>n</m:mi></m:msub><m:mo>]</m:mo></m:mrow></m:msup><m:mo>}</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:mstyle></m:math>
+</equation><para id="id2258219">The function <m:math overflow="scroll"><m:mrow><m:mi>E</m:mi><m:mo>(</m:mo><m:msub><m:mi>r</m:mi><m:mi>n</m:mi></m:msub><m:mo>,</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:math> describes the “electric field” at time <emphasis effect="italics">t</emphasis> and distance <emphasis effect="italics">r<sub>n</sub></emphasis>
+from the <m:math overflow="scroll"><m:msup><m:mi>n</m:mi><m:mrow><m:mi mathvariant="normal">t</m:mi><m:mi mathvariant="normal">h</m:mi></m:mrow></m:msup></m:math> source. The field is constant as long as the variable <m:math overflow="scroll"><m:mrow><m:mi>ω</m:mi><m:mi>t</m:mi><m:mo>-</m:mo><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>/</m:mo><m:mi>λ</m:mi><m:mo>)</m:mo></m:mrow><m:msub><m:mi>r</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math>
+is constant. Therefore, if we freeze time at <m:math overflow="scroll"><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:msub><m:mi>t</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:math>, the field will be constant
+on a sphere of radius <m:math>
+<m:msub>
+<m:mi>r</m:mi>
+<m:mi>n</m:mi></m:msub>
+</m:math>. This is illustrated in <link target-id="uid2"/>.</para>
+    <figure id="uid2"><media id="uid2_media" alt="Figure two is a diagram of Huygen's model for Light Diffraction. The diagram will be described from left to right. First are two arrows pointing at lines describing a length, d. Second is a vertical y-axis, with its negative portion containing a break in the axis with a series of seven evenly-spaced small circles following the vertical path along the same line, and then continuing below with another solid vertical line. Next to the dots is the series 0, 1, 2, ..., n, N-1. Pointing to the right from the top circle is a horizontal axis marked as x. From the fifth circle down to the right with a shallow positive slope is an arrow marked r_n. At the end of this arrow is an arc labeled E(r_n, t_0).">
+        <image mime-type="image/png" src="../../media/pic019.png" id="uid2_onlineimage" width="450"><!-- NOTE: attribute width changes image size online (pixels). original width is 238. --></image>
+        <image for="pdf" mime-type="application/postscript" src="../../media/pic019.eps" id="uid2_printimage" print-width="100mm">
+<!--NOTE: attribute width changes image size in printed PDF (if specified in .tex file)-->
+        </image>
+      </media>
+      
+    <caption>Huygens's Model for Light Diffraction</caption></figure>
+  
+<exercise id="fs-id5727375">
+<problem id="fs-id5727378">
+  <para id="id2259561">Fix <m:math>
+<m:msub>
+<m:mi>r</m:mi>
+<m:mi>n</m:mi>
+</m:msub>
+</m:math> in <m:math overflow="scroll">
+<m:mrow><m:mi>E</m:mi><m:mo>(</m:mo><m:msub><m:mi>r</m:mi><m:mi>n</m:mi></m:msub><m:mo>,</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:math> and show that <m:math overflow="scroll"><m:mrow><m:mi>E</m:mi><m:mo>(</m:mo><m:msub><m:mi>r</m:mi><m:mi>n</m:mi></m:msub><m:mo>,</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:math> varies cosinusoidally
+with time <m:math>
+<m:mi>t</m:mi>
+</m:math>. Sketch the function and interpret it. What is its period?</para></problem>
+</exercise>
+<exercise id="fs-id6283247">
+<problem id="fs-id6283249">
+    <para id="id2259645">Fix <m:math>
+<m:mi>t</m:mi>
+</m:math> in <m:math overflow="scroll"><m:mrow><m:mi>E</m:mi><m:mo>(</m:mo><m:msub><m:mi>r</m:mi><m:mi>n</m:mi></m:msub><m:mo>,</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:math> and show that <m:math overflow="scroll"><m:mrow><m:mi>E</m:mi><m:mo>(</m:mo><m:msub><m:mi>r</m:mi><m:mi>n</m:mi></m:msub><m:mo>,</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:math> varies cosinusoidally
+with radius <m:math>
+<m:msub>
+<m:mi>r</m:mi>
+<m:mi>n</m:mi>
+</m:msub>
+</m:math>. Sketch the function and interpret it. Call the “period in <m:math>
+<m:msub>
+<m:mi>r</m:mi>
+<m:mi>n</m:mi>
+</m:msub>
+</m:math>"
+the “wavelength.” Show that the wavelength is <m:math><m:mi>λ</m:mi></m:math>.</para></problem>
+</exercise>
+<exercise id="fs-id5651212">
+<problem id="fs-id5755174">
+    <para id="id2259754">The “crest of the wave <m:math overflow="scroll"><m:mrow><m:mi>E</m:mi><m:mo>(</m:mo><m:msub><m:mi>r</m:mi><m:mi>n</m:mi></m:msub><m:mo>,</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:math>" occurs when <m:math overflow="scroll"><m:mrow><m:mi>ω</m:mi><m:mi>t</m:mi><m:mo>-</m:mo><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>/</m:mo><m:mi>λ</m:mi><m:mo>)</m:mo></m:mrow><m:msub><m:mi>r</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math>.
+Show that the crest moves through space at velocity <m:math overflow="scroll"><m:mrow><m:mi>v</m:mi><m:mo>=</m:mo><m:mi>ω</m:mi><m:mi>λ</m:mi><m:mo>/</m:mo><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:math>.</para></problem>
+</exercise>
+    <para id="id2259852"><emphasis effect="bold">Geometry.</emphasis> If we now pick a point <m:math>
+<m:mi>P</m:mi>
+</m:math> on a distant screen, that point
+will be at distance <m:math>
+<m:msub>
+<m:mi>r</m:mi>
+<m:mn>0</m:mn>
+</m:msub>
+</m:math> from source <m:math overflow="scroll"><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mo>...</m:mo><m:mo>,</m:mo><m:msub><m:mi>r</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:math> from source <m:math overflow="scroll"><m:mrow><m:mi>n</m:mi><m:mo>,</m:mo><m:mo>...</m:mo></m:mrow></m:math>, and so on. If we
+isolate the sources 0 and <m:math>
+<m:mi>n</m:mi>
+</m:math>, then we have the geometric picture of <link target-id="uid3"/>.
+The angle <m:math>
+<m:mi>φ</m:mi>
+</m:math> is the angle that point <m:math>
+<m:mi>P</m:mi>
+</m:math> makes with the horizontal axis. The
+Pythagorean theorem says that the connection between distances <m:math>
+<m:msub>
+<m:mi>r</m:mi>
+<m:mn>0</m:mn>
+</m:msub>
+</m:math> and <m:math>
+<m:msub>
+<m:mi>r</m:mi>
+<m:mi>n</m:mi>
+</m:msub>
+</m:math>
+is</para>
+    
+    <equation id="eip-387"><m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:msub><m:mi>r</m:mi><m:mi>n</m:mi></m:msub><m:mo>-</m:mo><m:mi>n</m:mi><m:mi>d</m:mi></m:mrow><m:mo form="prefix"> sin </m:mo><m:mrow><m:msup><m:mrow><m:mi>φ</m:mi><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mrow><m:mo>+</m:mo><m:mo>(</m:mo><m:mi>n</m:mi><m:mi>d</m:mi></m:mrow></m:mrow>
+<m:mo form="prefix"> cos </m:mo><m:mrow><m:msup><m:mrow><m:mi>φ</m:mi><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:msubsup><m:mi>r</m:mi><m:mrow><m:mn>0</m:mn></m:mrow><m:mn>2</m:mn></m:msubsup></m:mrow><m:mo>.</m:mo></m:math></equation><figure id="uid3"><media id="uid3_media" alt="Figure three begins with a vertical line labeled opaque sheet. In the middle of the graph is a horizontal line that runs across the entire width of the figure. Below this horizontal line on the aforementioned vertical line are 8 dots spaced evenly. The First dot is also located on the aforementioned horizontal line. On the opposite side of the figure is another vertical line labeled screen. From the first dot on the horizontal line, a line segment labeled r_0 extends to the right with a shallow positive slope to a point P on the vertical screen line. The angle from this line to the horizontal line is labeled and measured Φ. From the sixth dot on the opaque sheet line, which is labeled n, a line segment stretches with a stronger positive slope to the right labeled r_n that terminates at the same point P as the aforementioned line segment r_0. From the first dot on the opaque sheet line, a line segment extends downward with a strong negative slope and is labeled nd sin Φ. From the sixth dot on the opaque sheet line is a second line segment pointing downward with the same negative slope as the nd sin Φ line segment, and is unlabeled.">
+        <image mime-type="image/png" src="../../media/pic020.png" id="uid3_onlineimage" width="450"><!-- NOTE: attribute width changes image size online (pixels). original width is 232. --></image>
+        <image for="pdf" mime-type="application/postscript" src="../../media/pic020.eps" id="uid3_printimage" print-width="100mm">
+<!--NOTE: attribute width changes image size in printed PDF (if specified in .tex file)-->
+        </image>
+      </media>
+      
+    <caption>Geometry of the Experiment</caption></figure>
+    <para id="id2260081">Let's try the solution</para>
+    
+    <equation id="eip-241"><m:math overflow="scroll"><m:mrow><m:msub><m:mi>r</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>r</m:mi><m:mn>0</m:mn></m:msub><m:mo>+</m:mo><m:mi>n</m:mi><m:mi>d</m:mi></m:mrow><m:mo form="prefix">sin</m:mo><m:mrow><m:mi>φ</m:mi><m:mo>.</m:mo></m:mrow></m:math></equation><para id="id2260128">This solution produces the approximate identity</para>
+    <para id="id2260132"><equation id="eip-id1170962354778"><m:math overflow="scroll"><m:mrow><m:msubsup><m:mi>r</m:mi><m:mrow><m:mn>0</m:mn></m:mrow><m:mn>2</m:mn></m:msubsup><m:mrow><m:mo>+</m:mo><m:mo>(</m:mo><m:mi>n</m:mi><m:mi>d</m:mi></m:mrow></m:mrow><m:mo form="prefix"> cos </m:mo><m:mrow><m:msup><m:mrow><m:mi>φ</m:mi><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>≅</m:mo><m:msubsup><m:mi>r</m:mi><m:mrow><m:mn>0</m:mn></m:mrow><m:mn>2</m:mn></m:msubsup></m:mrow></m:math></equation></para>
+    <equation id="id2260194"><m:math>
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mrow><m:msubsup><m:mi>r</m:mi><m:mrow><m:mn>0</m:mn></m:mrow><m:mn>2</m:mn></m:msubsup><m:mrow><m:mo>+</m:mo><m:mo>(</m:mo><m:mi>n</m:mi><m:mi>d</m:mi></m:mrow></m:mrow><m:mo form="prefix"> cos </m:mo><m:mrow><m:msup><m:mrow><m:mi>φ</m:mi><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>≅</m:mo><m:msubsup><m:mi>r</m:mi><m:mrow><m:mn>0</m:mn></m:mrow><m:mn>2</m:mn></m:msubsup></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+        <m:mrow>
+          <m:mn>1</m:mn>
+          <m:mo>+</m:mo>
+          <m:mspace width="4.pt"/>
+          <m:msup>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mspace width="4.pt"/>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mi>n</m:mi>
+                  <m:mi>d</m:mi>
+                </m:mrow>
+                <m:msub>
+                  <m:mi>r</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+              </m:mfrac>
+              <m:mspace width="4.pt"/>
+              <m:mi>c</m:mi>
+              <m:mi>o</m:mi>
+              <m:mi>s</m:mi>
+              <m:mspace width="4.pt"/>
+              <m:mi>φ</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>≅</m:mo>
+          <m:mn>1</m:mn>
+          <m:mo>.</m:mo>
+        </m:mrow>
+    </m:mtd>
+</m:mtr>
+</m:mtable>
+</m:math></equation>
+    <para id="id2260261">This will be close for <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mfrac><m:mrow><m:mi>n</m:mi><m:mi>d</m:mi></m:mrow><m:msub><m:mi>r</m:mi><m:mn>0</m:mn></m:msub></m:mfrac><m:mo>&lt;</m:mo><m:mo>&lt;</m:mo><m:mn>1</m:mn></m:mrow></m:mstyle></m:math>. We will assume that the slit width <m:math>
+<m:mi>L</m:mi></m:math> is small
+compared to the distance to any point on the screen. Then <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mfrac><m:mrow><m:mi>N</m:mi><m:mi>d</m:mi></m:mrow><m:mrow><m:msub><m:mi>r</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mi>L</m:mi><m:msub><m:mi>r</m:mi><m:mn>0</m:mn></m:msub></m:mfrac><m:mo>&lt;</m:mo><m:mo>&lt;</m:mo><m:mn>1</m:mn></m:mrow></m:mstyle></m:math>,
+in which case the approximate solution for <m:math>
+<m:msub>
+<m:mi>r</m:mi>
+<m:mi>n</m:mi>
+</m:msub>
+</m:math> is valid for all <m:math>
+<m:mi>n</m:mi>
+</m:math>. This means
+that, for any point <m:math>
+<m:mi>P</m:mi>
+</m:math> on the distant screen, the light contributed by the <m:math overflow="scroll"><m:msup><m:mi>n</m:mi><m:mrow><m:mi mathvariant="normal">t</m:mi><m:mi mathvariant="normal">h</m:mi></m:mrow></m:msup></m:math>
+source is approximately</para>
+    <equation id="id2260413"><m:math overflow="scroll" mode="display">
+<m:mtable>
+<m:mtr>
+<m:mtd>
+          <m:msub>
+            <m:mi>E</m:mi>
+            <m:mi>n</m:mi>
+          </m:msub>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>φ</m:mi>
+            <m:mo>,</m:mo>
+            <m:mi>t</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+</m:mtd>
+<m:mtd>       
+   <m:mo>=</m:mo>
+</m:mtd>
+<m:mtd>       
+   <m:mi> Re </m:mi>
+          <m:mrow>
+            <m:mo>{</m:mo>
+            <m:mfrac>
+              <m:mi>A</m:mi>
+              <m:mi>N</m:mi>
+            </m:mfrac>
+            <m:msup>
+              <m:mi>e</m:mi>
+              <m:mrow>
+                <m:mi>j</m:mi>
+                <m:mo>[</m:mo>
+                <m:mi>ω</m:mi>
+                <m:mi>t</m:mi>
+                <m:mo>-</m:mo>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mn>2</m:mn>
+                  <m:mi>π</m:mi>
+                  <m:mo>/</m:mo>
+                  <m:mi>λ</m:mi>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:msub>
+                    <m:mi>r</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                  <m:mo>+</m:mo>
+                  <m:mi>n</m:mi>
+                  <m:mi>d</m:mi>
+                  <m:mo form="prefix">sin</m:mo>
+                  <m:mi>φ</m:mi>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mo>]</m:mo>
+              </m:mrow>
+            </m:msup>
+            <m:mo>}</m:mo>
+          </m:mrow>
+    </m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd/>
+<m:mtd>
+          <m:mo>=</m:mo>
+</m:mtd>
+<m:mtd>
+          <m:mi> Re </m:mi>
+          <m:mo>{</m:mo>
+          <m:mfrac>
+            <m:mi>A</m:mi>
+            <m:mi>N</m:mi>
+          </m:mfrac>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mo>-</m:mo>
+              <m:mi>j</m:mi>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mn>2</m:mn>
+                <m:mi>π</m:mi>
+                <m:mo>/</m:mo>
+                <m:mi>λ</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:msub>
+                <m:mi>r</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+            </m:mrow>
+          </m:msup>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mo>-</m:mo>
+              <m:mi>j</m:mi>
+              <m:mo>(</m:mo>
+              <m:mn>2</m:mn>
+              <m:mi>π</m:mi>
+              <m:mo>/</m:mo>
+              <m:mi>λ</m:mi>
+              <m:mo>)</m:mo>
+              <m:mi>n</m:mi>
+              <m:mi>d</m:mi>
+              <m:mo form="prefix">sin</m:mo>
+              <m:mi>φ</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mi>ω</m:mi>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:mo>}</m:mo>
+          <m:mo>.</m:mo>
+       </m:mtd>
+</m:mtr>
+</m:mtable>
+</m:math></equation>
+    
+    <para id="id2260622">The phasor representation for this function is just</para>
+    <equation id="eip-100"><m:math overflow="scroll">
+        <m:mstyle scriptlevel="0" displaystyle="true">
+          <m:mrow>
+            <m:msub>
+              <m:mi>E</m:mi>
+              <m:mi>n</m:mi>
+            </m:msub>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>φ</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mi>A</m:mi>
+              <m:mi>N</m:mi>
+            </m:mfrac>
+            <m:msup>
+              <m:mi>e</m:mi>
+              <m:mrow>
+                <m:mo>-</m:mo>
+                <m:mi>j</m:mi>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mn>2</m:mn>
+                  <m:mi>π</m:mi>
+                  <m:mo>/</m:mo>
+                  <m:mi>λ</m:mi>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:msub>
+                  <m:mi>r</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+              </m:mrow>
+            </m:msup>
+            <m:msup>
+              <m:mi>e</m:mi>
+              <m:mrow>
+                <m:mo>-</m:mo>
+                <m:mi>j</m:mi>
+                <m:mo>(</m:mo>
+                <m:mn>2</m:mn>
+                <m:mi>π</m:mi>
+                <m:mo>/</m:mo>
+                <m:mi>λ</m:mi>
+                <m:mo>)</m:mo>
+                <m:mi>n</m:mi>
+                <m:mi>d</m:mi>
+                <m:mo form="prefix">sin</m:mo>
+                <m:mi>φ</m:mi>
+              </m:mrow>
+            </m:msup>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:mstyle>
+      </m:math>
+    </equation>
+    <para id="id2260733">Note that <m:math overflow="scroll"><m:mrow><m:msub><m:mi>E</m:mi><m:mn>0</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>φ</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math>, the phasor associated with the <m:math overflow="scroll"><m:msup><m:mn>0</m:mn><m:mrow><m:mi mathvariant="normal">t</m:mi><m:mi mathvariant="normal">h</m:mi></m:mrow></m:msup></m:math> source, is <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mfrac><m:mi>A</m:mi><m:mi>N</m:mi></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mo>-</m:mo><m:mi>j</m:mi><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>/</m:mo><m:mi>λ</m:mi><m:mo>)</m:mo></m:mrow><m:msub><m:mi>r</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:msup></m:mrow></m:mstyle></m:math>.
+Therefore we may write the phasor representation for the light contributed by the <m:math overflow="scroll"><m:msup><m:mi>n</m:mi><m:mrow><m:mi mathvariant="normal">t</m:mi><m:mi mathvariant="normal">h</m:mi></m:mrow></m:msup></m:math> source to be</para>
+    <equation id="eip-255"><m:math overflow="scroll"><m:mrow><m:msub><m:mi>E</m:mi><m:mi>n</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mi>φ</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>E</m:mi><m:mn>0</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>φ</m:mi><m:mo>)</m:mo></m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mo>-</m:mo><m:mi>j</m:mi><m:mo>(</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>/</m:mo><m:mi>λ</m:mi><m:mo>)</m:mo><m:mi>n</m:mi><m:mi>d</m:mi><m:mo form="prefix">sin</m:mo><m:mi>φ</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math>
+</equation><para id="id2260855">This result is very important because it shows the light arriving at point <emphasis effect="italics">P</emphasis>
+from different sources to be “out of phase” by an amount that depends on the
+ratio <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mfrac><m:mrow><m:mi>n</m:mi><m:mi>d</m:mi><m:mo form="prefix">sin</m:mo><m:mi>φ</m:mi></m:mrow><m:mi>λ</m:mi></m:mfrac></m:mstyle></m:math></para>
+    <para id="id2260972"><emphasis effect="bold">Phasors and Interference.</emphasis> The phasor representation for the field observed at point <m:math>
+<m:mi>P</m:mi>
+</m:math> on the screen is the sum of the phasors contributed by each source:</para>
+    <equation id="eip-663"><m:math overflow="scroll">
+        <m:mstyle scriptlevel="0" displaystyle="true">
+          <m:mrow>
+            <m:mi>E</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>φ</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:munderover>
+              <m:mo>∑</m:mo>
+              <m:mrow>
+                <m:mi>n</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>0</m:mn>
+              </m:mrow>
+              <m:mrow>
+                <m:mi>N</m:mi>
+                <m:mo>-</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+            </m:munderover>
+            <m:msub>
+              <m:mi>E</m:mi>
+              <m:mi>n</m:mi>
+            </m:msub>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>φ</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>E</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>φ</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:munderover>
+              <m:mo>∑</m:mo>
+              <m:mrow>
+                <m:mi>n</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>0</m:mn>
+              </m:mrow>
+              <m:mrow>
+                <m:mi>N</m:mi>
+                <m:mo>-</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+            </m:munderover>
+            <m:msup>
+              <m:mi>e</m:mi>
+              <m:mrow>
+                <m:mo>-</m:mo>
+                <m:mi>j</m:mi>
+                <m:mo>(</m:mo>
+                <m:mn>2</m:mn>
+                <m:mi>π</m:mi>
+                <m:mo>/</m:mo>
+                <m:mi>λ</m:mi>
+                <m:mo>)</m:mo>
+                <m:mi>n</m:mi>
+                <m:mi>d</m:mi>
+                <m:mo form="prefix">sin</m:mo>
+                <m:mi>φ</m:mi>
+              </m:mrow>
+            </m:msup>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:mstyle>
+      </m:math>
+    </equation>
+    <para id="id2261127">This is a sum of the form</para>
+    <equation id="eip-319"><m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mi>E</m:mi><m:mrow><m:mo>(</m:mo><m:mi>φ</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>E</m:mi><m:mn>0</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>φ</m:mi><m:mo>)</m:mo></m:mrow><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow><m:mrow><m:mi>N</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:munderover><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>n</m:mi><m:mi>θ</m:mi></m:mrow></m:msup></m:mrow></m:mstyle></m:math>
+</equation><para id="id2261131">where the angle <m:math>
+<m:mi>θ</m:mi>
+</m:math> is <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>/</m:mo><m:mi>λ</m:mi><m:mo>)</m:mo><m:mi>d</m:mi></m:mrow><m:mo form="prefix">sin</m:mo><m:mi>φ</m:mi>
+</m:math>. This sum is illustrated in <link target-id="uid4"/> for
+several representative values of <m:math>
+<m:mi>θ</m:mi>
+</m:math>. Note that for small <m:math><m:mi>θ</m:mi></m:math>, meaning small <m:math><m:mi>φ</m:mi></m:math>,
+the sum has large magnitude, whereas for <m:math><m:mi>θ</m:mi></m:math> on the order of <m:math overflow="scroll"><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>/</m:mo><m:mi>N</m:mi></m:mrow></m:math>, the sum
+is small. This simple geometric interpretation shows that for some values of
+<m:math><m:mi>φ</m:mi></m:math>, corresponding to some points <m:math><m:mi>P</m:mi></m:math> on the screen, there will be constructive
+interference between the phasors, while for other values of <m:math>
+<m:mi>φ</m:mi></m:math> there will be
+destructive interference. Constructive interference produces bright light, and
+destructive interference produces darkness.</para>
+    <figure id="uid4"><media id="uid4_media" alt="Figure four is a cartesian graph with a series of line segments with arrows all pointing towards a common counter-clockwise direction. There are portions of polygons created by the connected arrows. Over the origin and vertical axis is a hexagon, then further outside to the right is half a dodecagon, with a dashed line from its furthest end point back to the origin, labeled as E ( Φ_2). To the left of the hexagon at its top horizontal side is a horizontal lines segment labeled 2π/λ d sin Φ_3. On the nearly vertical side of the dodecagon is another short line segment with a strong positive slope, and it is labeled 2π/λ d sin ( Φ_2). Furthest to the right is one quarter of a large polygon, which if completed would perhaps have 24 sides of equal length. Half the way up this quarter of a polygon is another short line segment with strong positive slope, labeled 2π/λ d sin Φ_1. At the end of this quarter of a polygon is a dashed line drawn from its end point to the origin, and the point is labeled E (Φ_1).">
+        <image mime-type="image/png" src="../../media/pic021.png" id="uid4_onlineimage" width="500"><!-- NOTE: attribute width changes image size online (pixels). original width is 233. --></image>
+        <image for="pdf" mime-type="application/postscript" src="../../media/pic021.eps" id="uid4_printimage" print-width="110mm">
+<!--NOTE: attribute width changes image size in printed PDF (if specified in .tex file)-->
+        </image>
+      </media>
+      
+    <caption>Phasor Sums for Diffraction</caption></figure>
+    <para id="id2261348">The geometry of <link target-id="uid4"/> is illuminating. However, we already know
+from our study of complex numbers and geometric sums that the phasor sum
+of Equation 3.85 may be written as</para>
+    <equation id="eip-882"><m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mi>E</m:mi><m:mrow><m:mo>(</m:mo><m:mi>φ</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>E</m:mi><m:mn>0</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>φ</m:mi><m:mo>)</m:mo></m:mrow><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo>-</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>-</m:mo><m:mi>j</m:mi><m:mo>(</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>/</m:mo><m:mi>λ</m:mi><m:mo>)</m:mo><m:mi>N</m:mi><m:mi>d</m:mi><m:mo form="prefix">sin</m:mo><m:mi>φ</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>-</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>-</m:mo><m:mi>j</m:mi><m:mo>(</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>/</m:mo><m:mi>λ</m:mi><m:mo>)</m:mo><m:mi>d</m:mi><m:mo form="prefix">sin</m:mo><m:mi>φ</m:mi></m:mrow></m:msup></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:mstyle></m:math>
+</equation><para id="id2261354">This result may be manipulated to produce the form</para>
+    
+    <equation id="eip-527"><m:math overflow="scroll">
+        <m:mstyle scriptlevel="0" displaystyle="true">
+          <m:mrow>
+            <m:mi>E</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>φ</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mi>A</m:mi>
+              <m:mi>N</m:mi>
+            </m:mfrac>
+            <m:msup>
+              <m:mi>e</m:mi>
+              <m:mrow>
+                <m:mo>-</m:mo>
+                <m:mi>j</m:mi>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mn>2</m:mn>
+                  <m:mi>π</m:mi>
+                  <m:mo>/</m:mo>
+                  <m:mi>λ</m:mi>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:msub>
+                  <m:mi>r</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+              </m:mrow>
+            </m:msup>
+            <m:msup>
+              <m:mi>e</m:mi>
+              <m:mrow>
+                <m:mo>-</m:mo>
+                <m:mi>j</m:mi>
+                <m:mo>(</m:mo>
+                <m:mi>π</m:mi>
+                <m:mo>/</m:mo>
+                <m:mi>λ</m:mi>
+                <m:mo>)</m:mo>
+                <m:mo>(</m:mo>
+                <m:mi>N</m:mi>
+                <m:mo>-</m:mo>
+                <m:mn>1</m:mn>
+                <m:mo>)</m:mo>
+                <m:mi>d</m:mi>
+                <m:mo form="prefix">sin</m:mo>
+                <m:mi>φ</m:mi>
+              </m:mrow>
+            </m:msup>
+            <m:mfrac>
+              <m:mrow>
+                <m:mo form="prefix">sin</m:mo>
+                <m:mo>(</m:mo>
+                <m:mi>N</m:mi>
+                <m:mi>π</m:mi>
+                <m:mfrac>
+                  <m:mi>d</m:mi>
+                  <m:mi>λ</m:mi>
+                </m:mfrac>
+                <m:mo form="prefix">sin</m:mo>
+                <m:mi>φ</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mrow>
+                <m:mo form="prefix">sin</m:mo>
+                <m:mo>(</m:mo>
+                <m:mi>π</m:mi>
+                <m:mfrac>
+                  <m:mi>d</m:mi>
+                  <m:mi>λ</m:mi>
+                </m:mfrac>
+                <m:mo form="prefix">sin</m:mo>
+                <m:mi>φ</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mfrac>
+          </m:mrow>
+        </m:mstyle>
+      </m:math>
+    </equation><para id="id2261635">The magnitude is the intensity of the light at angle <emphasis effect="italics">φ</emphasis> from horizontal:</para>
+    <equation id="eip-890"><m:math overflow="scroll">
+        <m:mstyle scriptlevel="0" displaystyle="true">
+          <m:mrow>
+            <m:mrow>
+              <m:mo>|</m:mo>
+              <m:mi>E</m:mi>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>φ</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>|</m:mo>
+              <m:mo>=</m:mo>
+              <m:mo>|</m:mo>
+            </m:mrow>
+            <m:mfrac>
+              <m:mi>A</m:mi>
+              <m:mi>N</m:mi>
+            </m:mfrac>
+            <m:mfrac>
+              <m:mrow>
+                <m:mo form="prefix">sin</m:mo>
+                <m:mo>(</m:mo>
+                <m:mi>N</m:mi>
+                <m:mi>π</m:mi>
+                <m:mfrac>
+                  <m:mi>d</m:mi>
+                  <m:mi>λ</m:mi>
+                </m:mfrac>
+                <m:mo form="prefix">sin</m:mo>
+                <m:mi>φ</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mrow>
+                <m:mo form="prefix">sin</m:mo>
+                <m:mo>(</m:mo>
+                <m:mi>π</m:mi>
+                <m:mfrac>
+                  <m:mi>d</m:mi>
+                  <m:mi>λ</m:mi>
+                </m:mfrac>
+                <m:mo form="prefix">sin</m:mo>
+                <m:mi>φ</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mfrac>
+            <m:mrow>
+              <m:mo>|</m:mo>
+              <m:mo>.</m:mo>
+            </m:mrow>
+          </m:mrow>
+        </m:mstyle>
+      </m:math>
+    </equation>
+<exercise id="fs-id6544004">
+<problem id="fs-id6544007">
+    <para id="id2261747">Derive <link target-id="eip-527"/> from <link target-id="eip-882"/>.</para></problem>
+</exercise>
+    <para id="id2261755"><emphasis effect="bold">Limiting Form.</emphasis> Huygens's model is exact when <m:math><m:mi>d</m:mi></m:math> shrinks to 0 and
+<m:math>
+<m:mi>N</m:mi></m:math> increases to infinity in such a way that <m:math overflow="scroll"><m:mrow><m:mi>N</m:mi><m:mi>d</m:mi><m:mo>→</m:mo><m:mi>L</m:mi></m:mrow></m:math>, the slit width. Then</para>
+    <equation id="eip-863"><m:math overflow="scroll">
+        <m:mstyle scriptlevel="0" displaystyle="true">
+          <m:mrow>
+            <m:mrow>
+              <m:mo>|</m:mo>
+              <m:mi>E</m:mi>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>φ</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>|</m:mo>
+              <m:mo>→</m:mo>
+              <m:mo>|</m:mo>
+            </m:mrow>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>A</m:mi>
+                <m:mo form="prefix">sin</m:mo>
+                <m:mo>(</m:mo>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mi>π</m:mi>
+                    <m:mi>L</m:mi>
+                  </m:mrow>
+                  <m:mi>λ</m:mi>
+                </m:mfrac>
+                <m:mo form="prefix">sin</m:mo>
+                <m:mi>φ</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mrow>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mi>π</m:mi>
+                    <m:mi>L</m:mi>
+                  </m:mrow>
+                  <m:mi>λ</m:mi>
+                </m:mfrac>
+                <m:mo form="prefix">sin</m:mo>
+                <m:mi>φ</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mrow>
+              <m:mo>|</m:mo>
+              <m:mo>.</m:mo>
+            </m:mrow>
+          </m:mrow>
+        </m:mstyle>
+      </m:math>
+    </equation>
+    <para id="id2261887">This function is plotted in <link target-id="uid5"/> for two values of <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mfrac><m:mi>L</m:mi><m:mi>λ</m:mi></m:mfrac></m:mstyle></m:math> the width of the
+slit measured in wavelengths. When <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mfrac><m:mi>L</m:mi><m:mi>λ</m:mi></m:mfrac><m:mo>&lt;</m:mo><m:mo>&lt;</m:mo><m:mn>1</m:mn></m:mrow></m:mstyle></m:math> (i.e., <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mfrac><m:mi>λ</m:mi><m:mi>L</m:mi></m:mfrac><m:mo>&gt;</m:mo><m:mo>&gt;</m:mo><m:mn>1</m:mn></m:mrow></m:mstyle></m:math>), then the light
+is uniformly distributed on the screen. However, when <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mfrac><m:mi>L</m:mi><m:mi>λ</m:mi></m:mfrac><m:mo>&gt;</m:mo><m:mn>1</m:mn><m:mrow><m:mo>(</m:mo><m:mfrac><m:mi>λ</m:mi><m:mi>L</m:mi></m:mfrac><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:mstyle></m:math>, then
+the function has many zeros for <m:math overflow="scroll"><m:mo>|</m:mo></m:math> sin <m:math overflow="scroll"><m:mrow><m:mi>φ</m:mi><m:mo>|</m:mo><m:mo>&lt;</m:mo><m:mn>1</m:mn></m:mrow></m:math>, as illustrated in the figure. These
+zeros correspond to dark spots on the screen where the fields radiated from
+the infinity of points within the slit interfere destructively.</para>
+    <figure id="uid5"><media id="uid5_media" alt="Figure five is a cartesian graph containing a series of small positive peaked curves that incrementally increase as they reach the center of the horizontal axis. The furthest point to the right and left are labeled -1 (Φ = -π/2) on the left and 1 (Φ = π/2) on the right. The right edge of the largest peaked curve is labeled as λ/L. Above the peaked curves is a large arc labeled λ/L &gt; &gt; 1. To the right of the largest peaked curve is an expression that reads λ/L &lt; 1.">
+        <image mime-type="image/png" src="../../media/pic022.png" id="uid5_onlineimage" width="500"><!-- NOTE: attribute width changes image size online (pixels). original width is 278. --></image>
+        <image for="pdf" mime-type="application/postscript" src="../../media/pic022.eps" id="uid5_printimage" print-width="110mm">
+<!--NOTE: attribute width changes image size in printed PDF (if specified in .tex file)-->
+        </image>
+      </media>
+      
+    <caption>Interference Pattern for a Slit</caption></figure>
+<exercise id="fs-id6548298">
+<problem id="fs-id6548300">
+    <para id="id2262055">Derive <link target-id="eip-863"/> from <link target-id="eip-890"/>.</para></problem>
+</exercise>
+<exercise id="fs-id6548313">
+<problem id="fs-id6548315">
+    <para id="id2262062">(MATLAB) Plot the discrete approximation</para>
+    <equation id="id2262071"><m:math overflow="scroll" mode="display">
+        <m:mrow>
+          
+            <m:mfenced open="|" close="|">
+          
+          <m:mfrac>
+            <m:mrow>
+              <m:mfrac>
+                <m:mi>A</m:mi>
+                <m:mi>N</m:mi>
+              </m:mfrac>
+              <m:mo form="prefix">sin</m:mo>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>N</m:mi>
+                <m:mi>π</m:mi>
+                <m:mfrac>
+                  <m:mi>d</m:mi>
+                  <m:mi>λ</m:mi>
+                </m:mfrac>
+                <m:mo form="prefix">sin</m:mo>
+                <m:mi>φ</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+            <m:mrow>
+              <m:mo form="prefix">sin</m:mo>
+              <m:mo>(</m:mo>
+              <m:mi>π</m:mi>
+              <m:mfrac>
+                <m:mi>d</m:mi>
+                <m:mi>λ</m:mi>
+              </m:mfrac>
+              <m:mo form="prefix">sin</m:mo>
+              <m:mi>φ</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+          </m:mfrac>
+        
+            </m:mfenced>
+          
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="id2262151">versus sin <m:math>
+<m:mi>φ</m:mi>
+</m:math> for <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mfrac><m:mi>L</m:mi><m:mi>λ</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>N</m:mi><m:mi>d</m:mi></m:mrow><m:mi>λ</m:mi></m:mfrac><m:mo>=</m:mo><m:mn>10</m:mn></m:mrow></m:mstyle></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>N</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>16</m:mn><m:mo>,</m:mo><m:mn>32</m:mn></m:mrow></m:math>. Compare with the
+continuous, limiting form</para>
+    <equation id="id2262235"><m:math overflow="scroll" mode="display">
+        <m:mrow>
+          <m:mfenced open="|" close="|">
+          <m:mfrac>
+            <m:mrow>
+              <m:mi>A</m:mi>
+              <m:mo form="prefix">sin</m:mo>
+              <m:mo>(</m:mo>
+              <m:mi>π</m:mi>
+              <m:mfrac>
+                <m:mi>L</m:mi>
+                <m:mi>λ</m:mi>
+              </m:mfrac>
+              <m:mo form="prefix">sin</m:mo>
+              <m:mi>φ</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mrow>
+              <m:mi>π</m:mi>
+              <m:mfrac>
+                <m:mi>L</m:mi>
+                <m:mi>λ</m:mi>
+              </m:mfrac>
+              <m:mo form="prefix">sin</m:mo>
+              <m:mi>φ</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          </m:mfenced>
+        </m:mrow>
+      </m:math>
+    </equation>
+</problem>
+</exercise>
+  </content>
+</document>

@@ -1,0 +1,1269 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>Phasors: Phasor Representation of Signals</title>
+  <metadata>
+  <md:content-id>m21474</md:content-id><md:title>Phasors: Phasor Representation of Signals</md:title>
+  <md:abstract/>
+  <md:uuid>733a0289-e9b2-40b2-bd0b-77666c1ba5f6</md:uuid>
+</metadata>
+
+<content>
+    <note id="eip-429">This module is part of the collection, <emphasis effect="italics">A First Course in Electrical and Computer Engineering</emphasis>. The LaTeX source files for this collection were created using an optical character recognition technology, and because of this process there may be more errors than usual. Please contact us if you discover any errors.
+</note><para id="id2258257">There are two key ideas behind the phasor representation of a signal:</para>
+<list id="fs-id17488776" list-type="enumerated" number-style="lower-roman"><item> a real, time-varying signal may be represented by a complex, time-varying signal; and</item>
+    <item> a complex, time-varying signal may be represented as the product of a complex number that is <emphasis effect="italics">independent</emphasis> of time and a complex signal that is <emphasis effect="italics">dependent</emphasis> on time.</item>
+</list>
+    <para id="id2258930">Let's be concrete. The signal</para>
+    <equation id="eip-121"><m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>A</m:mi><m:mo form="prefix">cos</m:mo><m:mo>(</m:mo><m:mi>ω</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>φ</m:mi><m:mo>)</m:mo><m:mo>,</m:mo></m:mrow></m:math>
+</equation><para id="id2258934">illustrated in <link target-id="uid1"/>, is a cosinusoidal signal with amplitude <emphasis effect="italics">A</emphasis>, frequency
+<emphasis effect="italics">ω</emphasis>, and phase <emphasis effect="italics">φ</emphasis>. The amplitude <emphasis effect="italics">A</emphasis> characterizes the peak-to-peak swing of <m:math overflow="scroll"><m:mrow><m:mn>2</m:mn><m:mi>A</m:mi></m:mrow></m:math>,
+the angular frequency <emphasis effect="italics">ω</emphasis> characterizes the period <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mi>T</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow><m:mi>ω</m:mi></m:mfrac></m:mrow></m:mstyle></m:math> between negative-
+to-positive zero crossings (or positive peaks or negative peaks), and the phase
+<emphasis effect="italics">φ</emphasis> characterizes the time <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mi>τ</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>-</m:mo><m:mi>φ</m:mi></m:mrow><m:mi>ω</m:mi></m:mfrac></m:mrow></m:mstyle></m:math> when the signal reaches its first peak. With
+<emphasis effect="italics">τ</emphasis> so defined, the signal <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:math> may also be written as</para>
+    
+    <equation id="eip-28"><m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>A</m:mi></m:mrow><m:mo form="prefix">cos</m:mo> <m:mrow><m:mi>ω</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>-</m:mo><m:mi>τ</m:mi><m:mo>)</m:mo><m:mo>.</m:mo></m:mrow></m:math></equation><figure id="uid1"><media id="uid1_media" alt="Figure one is a cartesian graph with a sinusoidal function and a couple labeled arrows. The sinusoidal curve is labeled Acos(ωt+Φ) versus t. The amplitude of the curve, or the distance from the middle of the curve at the horizontal axis to its peak is labeled A. The horizontal distance from the beginning of an upward part of the curve to the end of a downward portion of the curve, or a complete wave, is labeled T = 2π/ω. The distance from the vertical axis to the first peak in the first quadrant of the graph is labeled 𝞃 = -Φ/ω.">
+        <image mime-type="image/png" src="../../media/pic001.png" id="uid1_onlineimage" width="500"><!-- NOTE: attribute width changes image size online (pixels). original width is 264. --></image>
+        <image for="pdf" mime-type="application/postscript" src="../../media/pic001.eps" id="uid1_printimage" print-width="03in">
+<!--NOTE: attribute width changes image size in printed PDF (if specified in .tex file)-->
+        </image>
+      </media>
+      
+    <caption>A Cosinusoidal Signal</caption></figure>
+    <para id="id2259421">When <emphasis effect="italics">τ</emphasis> is positive, then <emphasis effect="italics">τ</emphasis> is a “time delay” that describes the time (greater
+than zero) when the first peak is achieved. When <emphasis effect="italics">τ</emphasis> is negative, then <emphasis effect="italics">τ</emphasis> is a
+“time advance” that describes the time (less than zero) when the last peak
+was achieved. With the substitution <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mi>ω</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow><m:mi>T</m:mi></m:mfrac></m:mrow></m:mstyle></m:math> we obtain a third way of writing
+<m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:math>:</para>
+    <equation id="id2259509"><m:math>
+<m:mi>x</m:mi>
+<m:mo>(</m:mo>
+<m:mi>t</m:mi>
+<m:mo>)</m:mo>
+<m:mo>=</m:mo>
+<m:mi>A</m:mi>
+<m:mo form="prefix">cos</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:mn>2</m:mn>
+<m:mo>π</m:mo>
+</m:mrow>
+<m:mrow>
+<m:mi>T</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>(</m:mo>
+<m:mi>t</m:mi>
+<m:mo>-</m:mo>
+<m:mi>τ</m:mi>
+<m:mo>)</m:mo>
+<m:mo>.</m:mo>
+</m:math></equation>
+    <para id="id2259523">In this form the signal is easy to plot. Simply draw a cosinusoidal wave
+with amplitude <emphasis effect="italics">A</emphasis> and period <emphasis effect="italics">T</emphasis>; then strike the origin <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:math> so that the
+signal reaches its peak at <emphasis effect="italics">τ</emphasis>. In summary, the parameters that determine a
+cosinusoidal signal have the following units:</para>
+    <para id="id2259623"><emphasis effect="italics">A</emphasis>, arbitrary (e.g., volts or meters/sec, depending upon the application)</para>
+    <para id="id2259635"><emphasis effect="italics">ω</emphasis>, in radians/sec (rad/sec)</para>
+    <para id="id2259646"><emphasis effect="italics">T</emphasis>, in seconds (sec)</para>
+    <para id="id2259657"><emphasis effect="italics">φ</emphasis>, in radians (rad)</para>
+    <para id="id2259668"><emphasis effect="italics">τ</emphasis>, in seconds (sec)</para>
+<exercise id="fs-id42108844">
+<problem id="fs-id44615720">   
+ <para id="id2259678">Show that <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mi>x</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>A</m:mi><m:mo form="prefix">cos</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow><m:mi>T</m:mi></m:mfrac><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>-</m:mo><m:mi>τ</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:mstyle></m:math> is “periodic with period <m:math>
+<m:mi>T</m:mi></m:math>,"
+meaning that <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>m</m:mi><m:mi>T</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:math> for all integer <m:math>
+<m:mi>m</m:mi></m:math>.</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id21441709">
+<problem id="fs-id6728001">
+    <para id="id2259790">The inverse of the period <m:math>
+<m:mi>T</m:mi>
+</m:math> is called the “temporal frequency”
+of the cosinusoidal signal and is given the symbol <m:math>
+<m:mi>f</m:mi>
+</m:math>; the units of <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mi>f</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>T</m:mi></m:mfrac></m:mrow></m:mstyle></m:math> are
+<m:math overflow="scroll"><m:msup><m:mrow><m:mo>(</m:mo><m:mi>s</m:mi><m:mi>e</m:mi><m:mi>c</m:mi><m:mi>o</m:mi><m:mi>n</m:mi><m:mi>d</m:mi><m:mi>s</m:mi><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:math> or hertz (Hz). Write <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:math> in terms of <m:math>
+<m:mi>f</m:mi>
+</m:math>. How is <m:math><m:mi>f</m:mi></m:math> related to <m:math><m:mi>ω</m:mi>
+</m:math>?
+Explain why <m:math>
+<m:mi>f</m:mi>
+</m:math> gives the number of cycles of <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:math> per second.</para></problem>
+</exercise>
+
+<exercise id="fs-id15873762">
+<problem id="fs-id4853256">
+    <para id="id2259946">Sketch the function <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mi>x</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>110</m:mn><m:mo form="prefix">cos</m:mo><m:mo>[</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mrow><m:mo>(</m:mo><m:mn>60</m:mn><m:mo>)</m:mo></m:mrow><m:mi>t</m:mi><m:mo>-</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>8</m:mn></m:mfrac><m:mo>]</m:mo></m:mrow></m:mstyle></m:math> versus <m:math>
+<m:mi>t</m:mi>
+</m:math>. Repeat
+for <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mi>x</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>5</m:mn><m:mo form="prefix">cos</m:mo><m:mo>[</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mrow><m:mo>(</m:mo><m:mn>16</m:mn><m:mo>×</m:mo><m:msup><m:mn>10</m:mn><m:mn>6</m:mn></m:msup><m:mo>)</m:mo></m:mrow><m:mi>t</m:mi><m:mo>+</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>4</m:mn></m:mfrac><m:mo>]</m:mo></m:mrow></m:mstyle></m:math> and <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mi>x</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:mo form="prefix">cos</m:mo><m:mo>[</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow><m:msup><m:mn>10</m:mn><m:mrow><m:mo>-</m:mo><m:mn>3</m:mn></m:mrow></m:msup></m:mfrac><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>-</m:mo><m:mfrac><m:msup><m:mn>10</m:mn><m:mrow><m:mo>-</m:mo><m:mn>3</m:mn></m:mrow></m:msup><m:mn>8</m:mn></m:mfrac><m:mo>)</m:mo></m:mrow><m:mo>]</m:mo></m:mrow></m:mstyle></m:math>. For each
+function, determine <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mo>,</m:mo><m:mi>ω</m:mi><m:mo>,</m:mo><m:mi>T</m:mi><m:mo>,</m:mo><m:mi>f</m:mi><m:mo>,</m:mo><m:mi>φ</m:mi></m:mrow></m:math>, and <m:math>
+<m:mi>τ</m:mi>
+</m:math>. Label your sketches carefully.</para></problem>
+</exercise>
+    <para id="id2260207">The signal <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>A</m:mi><m:mo form="prefix">cos</m:mo><m:mo>(</m:mo><m:mi>ω</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>φ</m:mi><m:mo>)</m:mo></m:mrow></m:math> can be <emphasis effect="italics">represented</emphasis> as the real part of a complex number:</para>
+    <equation id="id2260253"><m:math overflow="scroll" mode="display">
+<m:mtable>
+<m:mtr>
+<m:mtd>
+          <m:mi>x</m:mi>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>t</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+</m:mtd>
+<m:mtd>       
+   <m:mo>=</m:mo>
+</m:mtd>
+<m:mtd>       
+   <m:mi> Re </m:mi>
+          <m:mrow>
+            <m:mo>[</m:mo>
+            <m:mi>A</m:mi>
+            <m:msup>
+              <m:mi>e</m:mi>
+              <m:mrow>
+                <m:mi>j</m:mi>
+                <m:mo>(</m:mo>
+                <m:mi>ω</m:mi>
+                <m:mi>t</m:mi>
+                <m:mo>+</m:mo>
+                <m:mi>φ</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:msup>
+            <m:mo>]</m:mo>
+          </m:mrow>
+</m:mtd>
+</m:mtr>
+
+<m:mtr>
+<m:mtd/>
+<m:mtd>
+          <m:mo>=</m:mo>
+</m:mtd>
+<m:mtd>
+          <m:mi> Re </m:mi>
+          <m:mo>[</m:mo>
+          <m:mi>A</m:mi>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mi>φ</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mi>ω</m:mi>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:mo>]</m:mo>
+          <m:mo>.</m:mo>
+       </m:mtd>
+</m:mtr>
+</m:mtable>    
+  </m:math>
+    </equation>
+    
+    <para id="id2260351">We call <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>φ</m:mi></m:mrow></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:math> the complex representation of <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:math> and write</para>
+    <equation id="eip-122"><m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>↔</m:mo><m:mi>A</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>φ</m:mi></m:mrow></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mo>,</m:mo></m:math></equation>
+    <para id="id2260453">meaning that the signal <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:math> may be reconstructed by taking the real part of
+<m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>φ</m:mi></m:mrow></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:math>. In this representation, we call <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>φ</m:mi></m:mrow></m:msup></m:mrow></m:math> the <emphasis effect="italics">phasor</emphasis> or complex amplitude representation of <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:math> and write</para>
+    
+    <equation id="eip-126"><m:math overflow="scroll">
+        <m:mrow>
+          <m:mi>x</m:mi>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>t</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>↔</m:mo>
+          <m:mi>A</m:mi>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mi>φ</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:mo>,</m:mo>
+        </m:mrow>
+      </m:math>
+    </equation><para id="id2260584">meaning that the signal <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:math> may be reconstructed from <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>φ</m:mi></m:mrow></m:msup></m:mrow></m:math> by multiplying
+with <m:math overflow="scroll"><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:math> and taking the real part. In communication theory, we call <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>φ</m:mi></m:mrow></m:msup></m:mrow></m:math> the <emphasis effect="italics">baseband</emphasis> representation of the signal <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:math>.</para>
+
+<exercise id="fs-id21440566">
+<problem id="fs-id12885029">
+    <para id="id2260688">For each of the signals in Problem 3.3, give the corresponding
+phasor representation <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>φ</m:mi></m:mrow></m:msup></m:mrow></m:math>.</para></problem>
+</exercise>
+    <para id="id2260717"><emphasis effect="bold">Geometric Interpretation.</emphasis> Let's call</para>
+    
+    <equation id="eip-759"><m:math overflow="scroll">
+        <m:mrow>
+          <m:mi>A</m:mi>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mi>φ</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mi>ω</m:mi>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:msup>
+        </m:mrow>
+      </m:math>
+    </equation><para id="id2260759">the complex representation of the real signal <m:math><m:mi>A</m:mi><m:mrow><m:mo form="prefix">cos</m:mo><m:mo>(</m:mo><m:mi>ω</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>φ</m:mi><m:mo>)</m:mo></m:mrow></m:math>. At <m:math overflow="scroll"><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math>, the
+complex representation produces the <emphasis effect="italics">phasor</emphasis></para>
+    
+    <equation id="eip-299"><m:math overflow="scroll">
+        <m:mrow>
+          <m:mi>A</m:mi>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mi>φ</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:mo>.</m:mo>
+        </m:mrow>
+      </m:math>
+    </equation><para id="id2260834">This phasor is illustrated in <link target-id="uid2"/>. In the figure, <emphasis effect="italics">φ</emphasis> is approximately <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mfrac><m:mrow><m:mo>-</m:mo><m:mi>π</m:mi></m:mrow><m:mn>10</m:mn></m:mfrac></m:mstyle></m:math>
+If we let <m:math>
+<m:mi>t</m:mi>
+</m:math> increase to time <m:math>
+<m:msub>
+<m:mi>t</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:math>, then the complex representation produces the phasor</para>
+    
+    <figure id="uid2"><media id="uid2_media" alt="Figure two is a dashed unit circle on a cartesian graph. It is titled with the expression Ae^jΦ e^jωt_1. Along the unit circle are various line segments extending from the origin to the edge of the circle at various points. Horizontally to the right is the first line segment, labeled A (t = -Φ/ω). There is one line segment in the first quadrant, in what looks to be approximately 45 degrees from the horizontal axis. This line is labeled Ae^(jΦ) e^(jωt_1)  (t = t_1). An arrow between this line and the aforementioned line on the horizontal axis indicates movement in the clockwise direction. There is one line segment in the second quadrant beginning at the origin and extending to a point on the unit circle, in what looks to be approximately 150 degrees from the original horizontal axis on the right side of the graph. This line is labeled Ae^(jΦ) e^(jωt_2)  (t = t_2). In between this line and the previously described line in the first quadrant is an arrow pointing both in the clockwise and counter-clockwise directions, labeled ω(t_2 - t_1).  There are two line segments in the fourth quadrant, both extending from the origin to a point on the circle. The first is approximately 20 degrees to the right from the lower vertical axis. It is labeled Ae^(jΦ) e^(jωt_3)  (t = t_3). The second is approximately 20 degrees below the positive side of the horizontal axis, and is labeled Ae^(jΦ) (t = 0). In between the two line segments in the fourth quadrant is an arrow indicating movement in the counter-clockwise direction.">
+        <image mime-type="image/png" src="../../media/pic002.png" id="uid2_onlineimage" width="500"><!-- NOTE: attribute width changes image size online (pixels). original width is 236. --></image>
+        <image for="pdf" mime-type="application/postscript" src="../../media/pic002.eps" id="uid2_printimage" print-width="03in">
+<!--NOTE: attribute width changes image size in printed PDF (if specified in .tex file)-->
+        </image>
+      </media>
+      
+    <caption>Rotating Phasor</caption></figure>
+    <para id="id2260949">We know from our study of complex numbers that <m:math overflow="scroll"><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>ω</m:mi><m:msub><m:mi>t</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:msup></m:math> just rotates the phasor
+<m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>φ</m:mi></m:mrow></m:msup></m:mrow></m:math> through an angle of <m:math overflow="scroll"><m:mrow><m:mi>ω</m:mi><m:msub><m:mi>t</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> ! See <link target-id="uid2"/>. Therefore, as we run <emphasis effect="italics">t</emphasis> from 0,
+indefinitely, we rotate the phasor <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>φ</m:mi></m:mrow></m:msup></m:mrow></m:math> indefinitely, turning out the circular
+trajectory of <link target-id="uid2"/>. When <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow><m:mi>ω</m:mi></m:mfrac></m:mrow></m:mstyle></m:math> then <m:math overflow="scroll"><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math>. Therefore,
+every <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mo>(</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow><m:mi>ω</m:mi></m:mfrac><m:mo>)</m:mo></m:mrow></m:mstyle></m:math> seconds, the phasor revisits any given position on the circle of
+radius <emphasis effect="italics">A</emphasis>. We sometimes call <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>φ</m:mi></m:mrow></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:math> a <emphasis effect="italics">rotating phasor</emphasis> whose rotation rate
+is the frequency <m:math>
+<m:mi>ω</m:mi>
+</m:math>:</para>
+    <equation id="eip-511"><m:math overflow="scroll">
+        <m:mstyle scriptlevel="0" displaystyle="true">
+          <m:mrow>
+            <m:mfrac>
+              <m:mi>d</m:mi>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mi>ω</m:mi>
+            <m:mi>t</m:mi>
+            <m:mo>=</m:mo>
+            <m:mi>ω</m:mi>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:mstyle>
+      </m:math>
+    </equation>
+    <para id="id2261233">This rotation rate is also the frequency of the cosinusoidal signal <m:math><m:mi>A</m:mi><m:mrow><m:mo form="prefix">cos</m:mo><m:mo>(</m:mo><m:mi>ω</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>φ</m:mi><m:mo>)</m:mo></m:mrow></m:math>.</para>
+    <para id="id2261268">In summary, <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>φ</m:mi></m:mrow></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:math> is the complex, or rotating phasor, representation of the signal <m:math><m:mi>A</m:mi><m:mrow><m:mo form="prefix">cos</m:mo><m:mo>(</m:mo><m:mi>ω</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>φ</m:mi><m:mo>)</m:mo></m:mrow></m:math>. In this representation, <m:math overflow="scroll"><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:math> rotates the
+phasor <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>φ</m:mi></m:mrow></m:msup></m:mrow></m:math> through angles <m:math overflow="scroll"><m:mrow><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow></m:math> at the rate <m:math>
+<m:mi>ω</m:mi>
+</m:math>. The real part of the complex
+representation is the desired signal <emphasis effect="italics">A</emphasis><m:math overflow="scroll"><m:mrow><m:mo form="prefix">cos</m:mo><m:mo>(</m:mo><m:mi>ω</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>φ</m:mi><m:mo>)</m:mo></m:mrow></m:math>. This real part is read off the
+rotating phasor diagram as illustrated in <link target-id="uid3"/>. In the figure, the angle
+<emphasis effect="italics">φ</emphasis> is about <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mo>-</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow><m:mn>10</m:mn></m:mfrac></m:mrow></m:mstyle></m:math>. As we become more facile with phasor representations, we
+will write <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi> Re </m:mi><m:mrow><m:mo>[</m:mo><m:mi>X</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mo>]</m:mo></m:mrow></m:mrow></m:math> and call <m:math overflow="scroll"><m:mrow><m:mi>X</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:math> the complex representation and <m:math><m:mi>X</m:mi>
+</m:math>
+the phasor representation. The phasor <m:math>
+<m:mi>X</m:mi>
+</m:math> is, of course, just the phasor <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>φ</m:mi></m:mrow></m:msup></m:mrow></m:math>.</para>
+    
+    <figure id="uid3"><media id="uid3_media" alt="Figure three is labeled Ae^(jΦ) e^(jωt). At the top of a figure is a circle, with a horizontal and vertical line cutting the circle into four. At what looks to be the 45 degree, 135, and 315-degree marks (measured from the right horizontal axis like a unit circle) are arrows extending from the origin to points on the circle with arrows pointing away from the origin. Tangent to the rightmost and leftmost portions of the circle are vertical lines that point downward. To the right of the tangent lines is the expression Ae^(jΦ). Additionally, at the end of the arrow pointing in the 315-degree direction of the circle is another line segment pointing vertically downward. Halfway down the page is a horizontal line labeled on the left as -A and on the right as A. From this point is a sinusoidal wave-like function rotated 90 degrees so that its waves move left and right rather than up and down. This wave is bound by the tangent lines from the circle above. Two points on the vertical axis in the middle of this wave are marked. The first is near the second horizontal line down the page, is labeled -Φ/ω, and is located approximately at a peak of the wave-like curve to the right. The second is furthest down the page, is labeled 2π/ω, and is located just before another peak to the right of the wave-like curve. Below the long vertical line that is drawn from top to bottom on this graph, splitting the circle and located in the middle of the wave-like curve, is a label, t.">
+        <image mime-type="image/png" src="../../media/pic003.png" id="uid3_onlineimage" width="400"><!-- NOTE: attribute width changes image size online (pixels). original width is 127. --></image>
+        <image for="pdf" mime-type="application/postscript" src="../../media/pic003.eps" id="uid3_printimage" print-width="2.50in">
+<!--NOTE: attribute width changes image size in printed PDF (if specified in .tex file)-->
+        </image>
+      </media>
+      
+    <caption>Reading a Real Signal from a Complex, Rotating Phasor</caption></figure>
+<exercise id="fs-id17113035">
+<problem id="fs-id22500230">
+    <para id="id2261590">Sketch the imaginary part of <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>φ</m:mi></m:mrow></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:math> to show that this is
+<m:math><m:mi>A</m:mi><m:mrow><m:mo form="prefix">sin</m:mo><m:mo>(</m:mo><m:mi>ω</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>φ</m:mi><m:mo>)</m:mo></m:mrow></m:math>. What do we mean when we say that the real and imaginary
+parts of <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>φ</m:mi></m:mrow></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:math> are "<m:math overflow="scroll"><m:msup><m:mn>90</m:mn><m:mo>∘</m:mo></m:msup></m:math> out of phase"?</para></problem>
+</exercise>
+<exercise id="fs-id11342164"><problem id="fs-id18437718">
+    <para id="id2261714">(MATLAB) Modify Demo 2.1 in <link document="m21479">"The Function e<sup>x</sup> and e<sup>jθ</sup>"</link> so that <m:math overflow="scroll"><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow></m:math>, with
+<m:math><m:mi>ω</m:mi></m:math> an input frequency variable and <m:math>
+<m:mi>t</m:mi>
+</m:math> a time variable that ranges from <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>(</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow><m:mi>ω</m:mi></m:mfrac><m:mo>)</m:mo></m:mrow></m:mstyle></m:math><m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mi mathvariant="normal">t</m:mi><m:mi mathvariant="normal">o</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>(</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow><m:mi>ω</m:mi></m:mfrac><m:mo>)</m:mo></m:mrow></m:mstyle></m:math> in steps of 0.02 <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mo>(</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow><m:mi>ω</m:mi></m:mfrac><m:mo>)</m:mo></m:mrow></m:mstyle></m:math>. In your modified program, compute and plot <m:math overflow="scroll"><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mo>,</m:mo><m:mi> Re </m:mi><m:mrow><m:mo>[</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mo>]</m:mo></m:mrow></m:mrow></m:math>, and <m:math overflow="scroll"><m:mrow><m:mi> Im </m:mi><m:mo>[</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mo>]</m:mo></m:mrow></m:math> for <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mo>-</m:mo><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow><m:mi>ω</m:mi></m:mfrac><m:mo>)</m:mo></m:mrow><m:mo>≤</m:mo><m:mi>t</m:mi><m:mo>&lt;</m:mo><m:mn>2</m:mn><m:mrow><m:mo>(</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow><m:mi>ω</m:mi></m:mfrac><m:mo>)</m:mo></m:mrow></m:mrow></m:mstyle></m:math> in steps of 0.02 <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mo>(</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow><m:mi>ω</m:mi></m:mfrac><m:mo>)</m:mo></m:mrow></m:mstyle></m:math>.
+Plot <m:math overflow="scroll"><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:math> in a two-dimensional plot to get a picture like <link target-id="uid2"/> and plot
+<m:math overflow="scroll"><m:mrow><m:mi> Re </m:mi><m:mo>[</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mo>]</m:mo></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi> Im </m:mi><m:mo>[</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mo>]</m:mo></m:mrow></m:math> versus <emphasis effect="italics">t</emphasis> to get signals like those of <link target-id="uid1"/>. You
+should observe something like <link target-id="uid5"/> using the subplot features discussed
+in <link document="m21391"> An Introduction to MATLAB</link>. (In the figure, <m:math>
+<m:mi>w</m:mi>
+</m:math> represents Greek <m:math overflow="scroll"><m:mrow><m:mi>ω</m:mi><m:mo>.</m:mo></m:mrow></m:math>)</para>
+    
+</problem>
+</exercise>
+    
+    <figure id="uid5"><media id="uid5_media" alt="Figure four is comprised of two graphs. The first plots the horizontal axis as real, and the vertical axis as imaginary. Above the graph is the expression exp(jwt). The horizontal and vertical values both range from -1 to 1 in increments of 1. Inside the graph is a horizontal dotted line across the vertical value 0, a vertical dotted line across the horizontal value 0, and a circle centered at (0,0) with radius 1. The second graph is much wider. Its horizontal axis is labeled, time, and above the graph is the title Re[exp(jwt)] and Im[exp(jwt)] vs t  w = 1000*2*pi. The horizontal axis ranges in value from -2 to 2 in increments of 0.5. The vertical axis ranges in value from -1 to 1 in increments of 1. Inside the graph is one horizontal line along the vertical value of 0, one sinusoidal wave function marked by a solid line, and one sinusoidal wave function marked by a dotted line. The solid sinusoidal line begins at (-2, 1) downward and completes four troughs and three and a half peaks reaching a minimum vertical value of -1 and extending completely across the graph. The dotted curve begins at (-2, 0) and moves sinusoidally with the same wavelength and amplitude as the solid curve, completing four troughs and peaks until it also terminates at the far-right end of the graph. Below this second graph is an extra label written as x10^-3.">
+        <image mime-type="image/png" src="../../media/pic004.png" id="uid5_onlineimage" width="500"><!-- NOTE: attribute width changes image size online (pixels). original width is 257. --></image>
+        <image for="pdf" mime-type="application/postscript" src="../../media/pic004.eps" id="uid5_printimage" print-width="4.50in">
+<!--NOTE: attribute width changes image size in printed PDF (if specified in .tex file)-->
+        </image>
+      </media><caption>The Functions <m:math overflow="scroll"><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:math>, <m:math overflow="scroll"><m:mrow><m:mi>R</m:mi><m:mi>e</m:mi><m:mo>[</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mo>]</m:mo></m:mrow></m:math>, and <m:math overflow="scroll"><m:mrow><m:mi>I</m:mi><m:mi>m</m:mi><m:mo>[</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mo>]</m:mo></m:mrow></m:math></caption></figure>
+    <para id="id2262259"><emphasis effect="bold">Positive and Negative Frequencies.</emphasis> There is an alternative phasor representation for the signal <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>A</m:mi><m:mo form="prefix">cos</m:mo><m:mo>(</m:mo><m:mi>ω</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>φ</m:mi><m:mo>)</m:mo></m:mrow></m:math>. We obtain it by using the Euler formula of 
+
+<link document="m21479">"The Function e<sup>x</sup> s<sup>jθ</sup>"</link>, namely, cos <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>θ</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>-</m:mo><m:mi>j</m:mi><m:mi>θ</m:mi></m:mrow></m:msup><m:mo>)</m:mo></m:mrow></m:mrow></m:mstyle></m:math>. When this formula is applied to <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:math>, we obtain the result</para>
+    <equation id="id2262382"><m:math overflow="scroll" mode="display">
+<m:mtable>
+<m:mtr>
+<m:mtd>
+          <m:mi>x</m:mi>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>t</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+</m:mtd>
+<m:mtd>       
+   <m:mo>=</m:mo>
+</m:mtd>
+<m:mtd>       
+   <m:mfrac>
+            <m:mi>A</m:mi>
+            <m:mn>2</m:mn>
+          </m:mfrac>
+          <m:mrow>
+            <m:mo>[</m:mo>
+            <m:msup>
+              <m:mi>e</m:mi>
+              <m:mrow>
+                <m:mi>j</m:mi>
+                <m:mo>(</m:mo>
+                <m:mi>ω</m:mi>
+                <m:mi>t</m:mi>
+                <m:mo>+</m:mo>
+                <m:mi>φ</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:msup>
+            <m:mo>+</m:mo>
+            <m:msup>
+              <m:mi>e</m:mi>
+              <m:mrow>
+                <m:mo>-</m:mo>
+                <m:mi>j</m:mi>
+                <m:mo>(</m:mo>
+                <m:mi>ω</m:mi>
+                <m:mi>t</m:mi>
+                <m:mo>+</m:mo>
+                <m:mi>φ</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:msup>
+            <m:mo>]</m:mo>
+          </m:mrow>
+    </m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd/>
+<m:mtd>
+          <m:mo>=</m:mo>
+</m:mtd>
+<m:mtd>
+          <m:mfrac>
+            <m:mi>A</m:mi>
+            <m:mn>2</m:mn>
+          </m:mfrac>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mi>φ</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mi>ω</m:mi>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:mo>+</m:mo>
+          <m:mfrac>
+            <m:mi>A</m:mi>
+            <m:mn>2</m:mn>
+          </m:mfrac>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mo>-</m:mo>
+              <m:mi>j</m:mi>
+              <m:mi>φ</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mo>-</m:mo>
+              <m:mi>j</m:mi>
+              <m:mi>ω</m:mi>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:mo>.</m:mo>
+       </m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:math></equation>
+    
+    <para id="id2262544">In this formula, the term <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mfrac><m:mi>A</m:mi><m:mn>2</m:mn></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>φ</m:mi></m:mrow></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:mstyle></m:math> is a rotating phasor that begins at the
+phasor value <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>φ</m:mi></m:mrow></m:msup></m:mrow></m:math> (for <m:math overflow="scroll"><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math>) and rotates counterclockwise with frequency
+<emphasis effect="italics">ω</emphasis>. The term <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mfrac><m:mi>A</m:mi><m:mn>2</m:mn></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mo>-</m:mo><m:mi>j</m:mi><m:mi>φ</m:mi></m:mrow></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mo>-</m:mo><m:mi>j</m:mi><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:mstyle></m:math> is a rotating phasor that begins at the (complex
+conjugate) phasor value <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mfrac><m:mi>A</m:mi><m:mn>2</m:mn></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mo>-</m:mo><m:mi>j</m:mi><m:mi>φ</m:mi></m:mrow></m:msup></m:mrow></m:mstyle></m:math> (for <m:math overflow="scroll"><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math>) and rotates clockwise with (negative) ffequency <emphasis effect="italics">ω</emphasis>. The physically meaningful frequency for a cosine is <emphasis effect="italics">ω</emphasis>, a positive number like <m:math overflow="scroll"><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>(</m:mo><m:mn>60</m:mn><m:mo>)</m:mo></m:mrow></m:math> for 60 Hz power. There is no such thing as a
+negative frequency. The so-called negative frequency of the term <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mfrac><m:mi>A</m:mi><m:mn>2</m:mn></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mo>-</m:mo><m:mi>j</m:mi><m:mi>φ</m:mi></m:mrow></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mo>-</m:mo><m:mi>j</m:mi><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow></m:mstyle></m:math>
+just indicates that the direction of rotation for the rotating phasor is clock-wise and not counterclockwise. The notion of a negative frequency is just an artifact of the two-phasor representation of <emphasis effect="italics">A</emphasis><m:math overflow="scroll"><m:mrow><m:mo form="prefix">cos</m:mo><m:mo>(</m:mo><m:mi>ω</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>φ</m:mi><m:mo>)</m:mo></m:mrow></m:math>. In the one-phasor representation, when we take the “real part,” the artifact does not arise. In your study of circuits, systems theory, electromagnetics, solid-state devices,
+signal processing, control, and communications, you will encounter both the one- and two-phasor representations. Become facile with them.</para>
+<exercise id="fs-id11181546">
+<problem id="fs-id11181548">
+    <para id="id2262870">Sketch the two-phasor representation of <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mo form="prefix">cos</m:mo><m:mo>(</m:mo><m:mi>ω</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>φ</m:mi><m:mo>)</m:mo></m:mrow></m:math>. Show clearly how this representation works by discussing the counterclockwise rotation of the positive frequency part and the clockwise rotation of the negative frequency part.</para>
+</problem>
+</exercise>
+    <para id="id2262909"><emphasis effect="bold">Adding Phasors.</emphasis> The sum of two signals with common frequencies
+but different amplitudes and phases is</para>
+    <equation id="eip-415"><m:math overflow="scroll">
+        <m:mrow>
+          <m:msub>
+            <m:mi>A</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:mo form="prefix">cos</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>ω</m:mi>
+            <m:mi>t</m:mi>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>φ</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>A</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo form="prefix">cos</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>ω</m:mi>
+            <m:mi>t</m:mi>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>φ</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>.</m:mo>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="id2262995">The rotating phasor representation for this sum is</para>
+    <equation id="eip-846"><m:math overflow="scroll">
+        <m:mrow>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:msub>
+              <m:mi>A</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:msup>
+              <m:mi>e</m:mi>
+              <m:mrow>
+                <m:mi>j</m:mi>
+                <m:msub>
+                  <m:mi>φ</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+              </m:mrow>
+            </m:msup>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>A</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:msup>
+              <m:mi>e</m:mi>
+              <m:mrow>
+                <m:mi>j</m:mi>
+                <m:msub>
+                  <m:mi>φ</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+              </m:mrow>
+            </m:msup>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mi>ω</m:mi>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:mo>.</m:mo>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="id2263078">The new phasor is <m:math overflow="scroll"><m:mrow><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:msub><m:mi>φ</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:msub><m:mi>φ</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:msup></m:mrow></m:math>, and the corresponding real signal is <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi> Re </m:mi><m:mo>[</m:mo><m:mrow><m:mo>(</m:mo><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:msub><m:mi>φ</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:msub><m:mi>φ</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:msup><m:mo>)</m:mo></m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mo>]</m:mo></m:mrow></m:math>. The new phasor is illustrated in <link target-id="uid6"/>.</para>
+    <figure id="uid6"><media id="uid6_media" alt="Figure five is a cartesian graph with two concentric circles made of dashed lines centered about the origin and three arrows pointing from the origin to various points in the first quadrant. The first arrow points with the shallowest positive slope, reaches the edge of the outer circle, and is labeled A_2 e^(jΦ_2). The second arrow with a stronger positive slope extends beyond both circles and is labeled A_3 e^(jΦ_3). The third arrow points with the strongest positive slope extends only to the edge of the inside circle, and is labeled A_1 e^(jΦ_1). All arrows are pointing away from the origin.">
+        <image mime-type="image/png" src="../../media/pic005.png" id="uid6_onlineimage" width="450"><!-- NOTE: attribute width changes image size online (pixels). original width is 179. --></image>
+        <image for="pdf" mime-type="application/postscript" src="../../media/pic005.eps" id="uid6_printimage" print-width="03in">
+<!--NOTE: attribute width changes image size in printed PDF (if specified in .tex file)-->
+        </image>
+      </media>
+      
+    <caption>Adding Phasors</caption></figure>
+<exercise id="fs-id5522179">
+<problem id="fs-id5522181">
+    <para id="id2263251">Write the phasor <m:math overflow="scroll"><m:mrow><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:msub><m:mi>φ</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:msup><m:mo>+</m:mo><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:msub><m:mi>φ</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:msup></m:mrow></m:math> as <m:math overflow="scroll"><m:mrow><m:msub><m:mi>A</m:mi><m:mn>3</m:mn></m:msub><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:msub><m:mi>φ</m:mi><m:mn>3</m:mn></m:msub></m:mrow></m:msup></m:mrow></m:math> ; determine <m:math>
+<m:msub>
+<m:mi>A</m:mi>
+<m:mn>3</m:mn>
+</m:msub></m:math> and
+<m:math>
+<m:msub>
+<m:mi>φ</m:mi>
+<m:mn>3</m:mn>
+</m:msub>
+</m:math> in terms of <m:math overflow="scroll"><m:mrow><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>φ</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math>, and <m:math>
+<m:msub>
+<m:mi>φ</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+</m:math>. What is the corresponding real signal?</para></problem>
+</exercise>
+    <para id="id2263428"><emphasis effect="bold">Differentiating and Integrating Phasors.</emphasis> The derivative of the signal <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mo form="prefix">cos</m:mo><m:mo>(</m:mo><m:mi>ω</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>φ</m:mi><m:mo>)</m:mo></m:mrow></m:math> is the signal</para>
+    <equation id="id2263465"><m:math overflow="scroll" mode="display">
+<m:mtable>
+<m:mtr>
+<m:mtd>
+          <m:mfrac>
+            <m:mi>d</m:mi>
+            <m:mrow>
+              <m:mi>d</m:mi>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mspace width="4.pt"/>
+          <m:mi mathvariant="italic">A</m:mi>
+          <m:mspace width="4.pt"/>
+          <m:mo form="prefix">cos</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>ω</m:mi>
+            <m:mi>t</m:mi>
+            <m:mo>+</m:mo>
+            <m:mi>φ</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+</m:mtd>
+<m:mtd>       
+   <m:mo>=</m:mo>
+</m:mtd>
+<m:mtd>       
+   <m:mo>-</m:mo>
+          <m:mi>ω</m:mi>
+          <m:mi>A</m:mi>
+          <m:mo form="prefix">sin</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>ω</m:mi>
+            <m:mi>t</m:mi>
+            <m:mo>+</m:mo>
+            <m:mi>φ</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+  </m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd/>
+<m:mtd>
+          <m:mo>=</m:mo>
+</m:mtd>
+<m:mtd>
+          <m:mo>-</m:mo>
+          <m:mi> Im </m:mi>
+          <m:mo>[</m:mo>
+          <m:mi>ω</m:mi>
+          <m:mi>A</m:mi>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mi>φ</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mi>ω</m:mi>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:mo>]</m:mo>
+        </m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd/>
+<m:mtd>
+          <m:mo>=</m:mo>
+</m:mtd>
+<m:mtd>
+          <m:mi> Re </m:mi>
+          <m:mo>[</m:mo>
+          <m:mi>j</m:mi>
+          <m:mi>ω</m:mi>
+          <m:mi>A</m:mi>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mi>φ</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mi>ω</m:mi>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:mo>]</m:mo>
+        </m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd/>
+<m:mtd>
+          <m:mo>=</m:mo>
+</m:mtd>
+<m:mtd>
+          <m:mi> Re </m:mi>
+          <m:mo>[</m:mo>
+          <m:mi>ω</m:mi>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mi>π</m:mi>
+              <m:mo>/</m:mo>
+              <m:mn>2</m:mn>
+            </m:mrow>
+          </m:msup>
+          <m:mi>A</m:mi>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mi>φ</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mi>ω</m:mi>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:mo>]</m:mo>
+          <m:mo>.</m:mo>
+        </m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:math></equation>
+    
+    
+    
+    <para id="id2263706">This finding is very important. It says that the derivative of <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mo form="prefix">cos</m:mo><m:mo>(</m:mo><m:mi>ω</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>φ</m:mi><m:mo>)</m:mo></m:mrow></m:math>
+has the phasor representation</para>
+    
+    <equation id="eip-896"><m:math overflow="scroll">
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mfrac>
+<m:mi>d</m:mi>
+<m:mrow>
+<m:mi>d</m:mi>
+<m:mi>t</m:mi>
+</m:mrow>
+</m:mfrac>
+
+<m:mi>A</m:mi>
+
+<m:mo form="prefix">cos</m:mo>
+<m:mo>(</m:mo>
+<m:mi>ω</m:mi>
+<m:mi>t</m:mi>
+<m:mo>+</m:mo>
+<m:mi>φ</m:mi>
+<m:mo>)</m:mo>
+</m:mtd>
+<m:mtd>
+<m:mo>↔</m:mo>
+</m:mtd>
+<m:mtd>
+<m:mi>j</m:mi>
+<m:mi>ω</m:mi>
+<m:mi>A</m:mi>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mi>j</m:mi>
+<m:mi>φ</m:mi>
+</m:mrow>
+</m:msup>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd/>
+<m:mtd>
+<m:mo>↔</m:mo>
+</m:mtd>
+<m:mtd>
+<m:mi>ω</m:mi>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mi>j</m:mi>
+<m:mi>π</m:mi>
+<m:mo>/</m:mo>
+<m:mn>2</m:mn>
+</m:mrow>
+</m:msup>
+<m:mi>A</m:mi>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mi>j</m:mi>
+<m:mi>φ</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+</m:math></equation><para id="id2263864">These two phasor representations are entirely equivalent. The first says that the phasor <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>φ</m:mi></m:mrow></m:msup></m:mrow></m:math> is complex scaled by <m:math overflow="scroll"><m:mrow><m:mi>j</m:mi><m:mi>ω</m:mi></m:mrow></m:math> to produce the phasor for <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mfrac><m:mi>d</m:mi><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mrow><m:mi>A</m:mi><m:mo form="prefix">cos</m:mo><m:mo>(</m:mo><m:mi>ω</m:mi><m:mi>t</m:mi><m:mo>+</m:mo></m:mrow></m:mrow></m:mstyle></m:math><m:math overflow="scroll"><m:mrow><m:mi>φ</m:mi><m:mo>)</m:mo></m:mrow></m:math>, and the second says that it is scaled by <m:math>
+<m:mi>ω</m:mi>
+</m:math> and phased by <m:math overflow="scroll"><m:mrow><m:mo>+</m:mo><m:mi>π</m:mi><m:mo>/</m:mo><m:mn>2</m:mn></m:mrow></m:math>. The phasor representations of <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mo form="prefix">cos</m:mo><m:mo>(</m:mo><m:mi>ω</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>φ</m:mi><m:mo>)</m:mo></m:mrow></m:math> and <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mfrac><m:mi>d</m:mi><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:mi>A</m:mi><m:mo form="prefix">cos</m:mo><m:mrow><m:mo>(</m:mo><m:mi>ω</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>φ</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:mstyle></m:math> are illustrated in Figure 3.6. Note that the derivative “leads by <m:math overflow="scroll"><m:mrow><m:mi>π</m:mi><m:mo>/</m:mo><m:mn>2</m:mn></m:mrow></m:math> radians (90)."</para>
+    <figure id="uid7"><media id="uid7_media" alt="Figure six is a cartesian graph with one circle made with a dashed line centered about the origin and three line segments ending at labeled points in various directions on the graph. The first begins from the origin and extends with a shallow positive slope to a point on the circle in the first quadrant, and is labeled Ae^(jΦ). The second begins from the origin and extends with a strong negative slope into the second quadrant beyond the circle, and is labeled ωe^(jπ/2)Ae^(jΦ). The third segment begins from the origin with the same negative slope as the second segment, this time into the fourth quadrant but does not reach the edge of the circle. It is labeled 1/ω e^(-jπ/2) Ae^(jΦ).">
+        <image mime-type="image/png" src="../../media/pic006.png" id="uid7_onlineimage" width="450"><!-- NOTE: attribute width changes image size online (pixels). original width is 173. --></image>
+        <image for="pdf" mime-type="application/postscript" src="../../media/pic006.eps" id="uid7_printimage" print-width="03in">
+<!--NOTE: attribute width changes image size in printed PDF (if specified in .tex file)-->
+        </image>
+      </media>
+      
+    <caption>Differentiating and Integrating Phasors</caption></figure>
+    <para id="id2264096">The integral of <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mo form="prefix">cos</m:mo><m:mo>(</m:mo><m:mi>ω</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>φ</m:mi><m:mo>)</m:mo></m:mrow></m:math> is</para>
+    <equation id="id2264129"><m:math overflow="scroll" mode="display">
+<m:mtable>
+<m:mtr>
+<m:mtd>
+          <m:mo>∫</m:mo>
+          <m:mi>A</m:mi>
+          <m:mo form="prefix">cos</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>ω</m:mi>
+            <m:mi>t</m:mi>
+            <m:mo>+</m:mo>
+            <m:mi>φ</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mi>d</m:mi>
+          <m:mi>t</m:mi>
+</m:mtd>
+<m:mtd>
+          <m:mo>=</m:mo>
+</m:mtd>
+<m:mtd>      
+    <m:mfrac>
+            <m:mi>A</m:mi>
+            <m:mi>ω</m:mi>
+          </m:mfrac>
+          <m:mo form="prefix">sin</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>ω</m:mi>
+            <m:mi>t</m:mi>
+            <m:mo>+</m:mo>
+            <m:mi>φ</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+       </m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd/>
+<m:mtd>
+          <m:mo>=</m:mo>
+</m:mtd>
+<m:mtd>
+          <m:mi> Im </m:mi>
+          <m:mo>[</m:mo>
+          <m:mfrac>
+            <m:mi>A</m:mi>
+            <m:mi>ω</m:mi>
+          </m:mfrac>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mi>φ</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mi>ω</m:mi>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:mo>]</m:mo>
+        </m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd/>
+<m:mtd>
+<m:mo>=</m:mo>
+</m:mtd>
+<m:mtd>
+<m:mi> Re </m:mi>
+<m:mrow>
+<m:mo>[</m:mo>
+<m:mo>-</m:mo>
+<m:mi>j</m:mi>
+</m:mrow>
+
+<m:mrow><m:mfrac><m:mi>A</m:mi><m:mi>ω</m:mi></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>φ</m:mi></m:mrow></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mo>]</m:mo></m:mrow>
+</m:mtd>
+</m:mtr>
+
+<m:mtr>
+<m:mtd/>
+<m:mtd>
+          <m:mo>=</m:mo>
+</m:mtd>
+<m:mtd>
+          <m:mi> Re </m:mi>
+          <m:mo>[</m:mo>
+          <m:mfrac>
+            <m:mi>A</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mi>ω</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mi>φ</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mi>ω</m:mi>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:mo>]</m:mo>
+        </m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd/>
+<m:mtd>
+          <m:mo>=</m:mo>
+</m:mtd>
+<m:mtd>
+          <m:mi> Re </m:mi>
+          <m:mo>[</m:mo>
+          <m:mfrac>
+            <m:mn>1</m:mn>
+            <m:mi>ω</m:mi>
+          </m:mfrac>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mo>-</m:mo>
+              <m:mi>j</m:mi>
+              <m:mi>π</m:mi>
+              <m:mo>/</m:mo>
+              <m:mn>2</m:mn>
+            </m:mrow>
+          </m:msup>
+          <m:mi>A</m:mi>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mi>φ</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mi>ω</m:mi>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:mo>]</m:mo>
+          <m:mo>.</m:mo>
+       </m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:math></equation>
+    
+    
+    
+    
+    <para id="id2264430">This finding shows that the integral of <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mo form="prefix">cos</m:mo><m:mo>(</m:mo><m:mi>ω</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>φ</m:mi><m:mo>)</m:mo></m:mrow></m:math> has the phasor representation</para>
+    <equation id="id2264464"><m:math overflow="scroll" mode="display">
+<m:mtable>
+<m:mtr>
+<m:mtd>
+          <m:mo>∫</m:mo>
+          <m:mi>A</m:mi>
+          <m:mo form="prefix">cos</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>ω</m:mi>
+            <m:mi>t</m:mi>
+            <m:mo>+</m:mo>
+            <m:mi>φ</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mi>d</m:mi>
+          <m:mi>t</m:mi>
+          <m:mspace width="4.pt"/>
+</m:mtd>
+<m:mtd>       
+   <m:mo>↔</m:mo>
+</m:mtd>
+<m:mtd>       
+   <m:mspace width="4.pt"/>
+          <m:mfrac>
+            <m:mn>1</m:mn>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mi>ω</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mi>A</m:mi>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mi>φ</m:mi>
+            </m:mrow>
+          </m:msup>
+    </m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd/>
+<m:mtd>
+          <m:mo>↔</m:mo>
+</m:mtd>
+<m:mtd>
+          <m:mspace width="4.pt"/>
+          <m:mfrac>
+            <m:mn>1</m:mn>
+            <m:mi>ω</m:mi>
+          </m:mfrac>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mo>-</m:mo>
+              <m:mi>j</m:mi>
+              <m:mi>π</m:mi>
+              <m:mo>/</m:mo>
+              <m:mn>2</m:mn>
+            </m:mrow>
+          </m:msup>
+          <m:mi>A</m:mi>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mi>φ</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:mo>.</m:mo>
+        </m:mtd>
+</m:mtr>
+</m:mtable>
+</m:math></equation>
+    
+    <para id="id2264589">The phasor <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>φ</m:mi></m:mrow></m:msup></m:mrow></m:math> is complex scaled by <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>j</m:mi><m:mi>ω</m:mi></m:mrow></m:mfrac></m:mstyle></m:math> or scaled by <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mfrac><m:mn>1</m:mn><m:mi>ω</m:mi></m:mfrac></m:mstyle></m:math> and phased by
+<m:math overflow="scroll"><m:msup><m:mi>e</m:mi><m:mrow><m:mo>-</m:mo><m:mi>j</m:mi><m:mi>π</m:mi><m:mo>/</m:mo><m:mn>2</m:mn></m:mrow></m:msup></m:math> to produce the phasor for <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mo>∫</m:mo><m:mi>A</m:mi><m:mo form="prefix">cos</m:mo><m:mo>(</m:mo><m:mi>ω</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>φ</m:mi><m:mo>)</m:mo><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mstyle></m:math>. This is illustrated in
+<link target-id="uid7"/>. Note that the integral “lags by <m:math overflow="scroll"><m:mrow><m:mi>π</m:mi><m:mo>/</m:mo><m:mn>2</m:mn></m:mrow></m:math> radians (90). Keep these
+geometrical pictures of leading and lagging by <m:math overflow="scroll"><m:mrow><m:mi>π</m:mi><m:mo>/</m:mo><m:mn>2</m:mn></m:mrow></m:math> in your mind at all times
+as you continue your more advanced study of engineering.</para>
+    <para id="id2264756"><emphasis effect="bold">An Aside: The Harmonic Oscillator.</emphasis> The signal <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mo form="prefix">cos</m:mo><m:mo>(</m:mo><m:mi>ω</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>φ</m:mi><m:mo>)</m:mo></m:mrow></m:math>
+stands on its own as an interesting signal. But the fact that it reproduces
+itself (with scaling and phasing) under differentiation means that it obeys the
+second-order differential equation of the simple harmonic oscillator.<footnote id="uid8">This means, also, that we have an easy way to synthesize cosines with
+circuits that obey the equation of a simple harmonic oscillator!</footnote> That is,
+the differential equation</para>
+    <equation id="eip-535"><m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>d</m:mi><m:mn>2</m:mn></m:msup><m:mi>x</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mi>d</m:mi><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>+</m:mo><m:msup><m:mi>ω</m:mi><m:mn>2</m:mn></m:msup><m:mi>x</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:mstyle></m:math></equation><para id="id2264808">has the solution</para>
+    
+    <equation id="eip-375"><m:math overflow="scroll">
+        <m:mrow>
+          <m:mi>x</m:mi>
+          <m:mo>(</m:mo>
+          <m:mi>t</m:mi>
+          <m:mo>)</m:mo>
+          <m:mo>=</m:mo>
+          <m:mi>A</m:mi>
+          <m:mo form="prefix">cos</m:mo>
+          <m:mo>(</m:mo>
+          <m:mi>ω</m:mi>
+          <m:mi>t</m:mi>
+          <m:mo>+</m:mo>
+          <m:mi>φ</m:mi>
+          <m:mo>)</m:mo>
+          <m:mo>.</m:mo>
+        </m:mrow>
+      </m:math>
+    </equation><para id="id2264920">Try it:</para>
+    
+    <equation id="eip-656"><m:math overflow="scroll">
+        <m:mstyle scriptlevel="0" displaystyle="true">
+          <m:mrow>
+            <m:mfrac>
+              <m:msup>
+                <m:mi>d</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:msup>
+                  <m:mi>t</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+            </m:mfrac>
+            <m:mi>x</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>t</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mi>d</m:mi>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mrow>
+              <m:mo>[</m:mo>
+              <m:mo>-</m:mo>
+              <m:mi>A</m:mi>
+              <m:mi>ω</m:mi>
+              <m:mo form="prefix">sin</m:mo>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>ω</m:mi>
+                <m:mi>t</m:mi>
+                <m:mo>+</m:mo>
+                <m:mi>φ</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>]</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mo>-</m:mo>
+            <m:msup>
+              <m:mi>ω</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mi>A</m:mi>
+            <m:mo form="prefix">cos</m:mo>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>ω</m:mi>
+              <m:mi>t</m:mi>
+              <m:mo>+</m:mo>
+              <m:mi>φ</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:mstyle>
+      </m:math>
+    </equation><para id="id2265045">The constants <m:math>
+<m:mi>A</m:mi>
+</m:math> and <m:math>
+<m:mi>φ</m:mi>
+</m:math> are determined from the initial conditions</para>
+    <equation id="id2265060"><m:math overflow="scroll" mode="display">
+<m:mtable>
+<m:mtr>
+<m:mtd>
+          <m:mi>x</m:mi>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mn>0</m:mn>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mi>A</m:mi>
+          <m:mo form="prefix">cos</m:mo>
+          <m:mi>φ</m:mi>
+</m:mtd>
+<m:mtd/>
+<m:mtd>       
+   <m:msup>
+            <m:mi>x</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mn>0</m:mn>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:msup>
+            <m:mi>x</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mfrac>
+              <m:mi>π</m:mi>
+              <m:mrow>
+                <m:mn>2</m:mn>
+                <m:mi>ω</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:msup>
+            <m:mi>A</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+    </m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd/>
+<m:mtd>
+<m:mo>⇔</m:mo>
+</m:mtd>
+<m:mtd/>
+</m:mtr>
+
+<m:mtr>
+<m:mtd>
+          <m:mi>x</m:mi>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mfrac>
+              <m:mi>π</m:mi>
+              <m:mrow>
+                <m:mn>2</m:mn>
+                <m:mi>ω</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mo>-</m:mo>
+          <m:mi>A</m:mi>
+          <m:mo form="prefix">sin</m:mo>
+          <m:mi>φ</m:mi>
+</m:mtd>
+<m:mtd/>
+<m:mtd>
+          <m:mo>-</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mi>x</m:mi>
+              <m:mo>(</m:mo>
+              <m:mi>π</m:mi>
+              <m:mo>/</m:mo>
+              <m:mn>2</m:mn>
+              <m:mi>ω</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mrow>
+              <m:mi>x</m:mi>
+              <m:mo>(</m:mo>
+              <m:mn>0</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>=</m:mo>
+          <m:mo form="prefix">tan</m:mo>
+          <m:mi>φ</m:mi>
+          <m:mo>.</m:mo>
+       </m:mtd>
+</m:mtr>
+</m:mtable>
+</m:math></equation>
+    
+    
+<exercise id="fs-id17249476">
+<problem id="fs-id19082902">
+    <para id="id2265235">Show how to compute <m:math>
+<m:mi>A</m:mi>
+</m:math> and <m:math>
+<m:mi>φ</m:mi>
+</m:math> in the equation <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>A</m:mi><m:mo form="prefix">cos</m:mo><m:mo>(</m:mo><m:mi>ω</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>φ</m:mi><m:mo>)</m:mo></m:mrow></m:math> from the initial conditions <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>(</m:mo><m:mi mathvariant="normal">O</m:mi><m:mo>)</m:mo></m:mrow></m:math> and <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mfrac><m:mi>d</m:mi><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac><m:msub><m:mrow><m:mi>x</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>|</m:mo></m:mrow><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:msub></m:mrow></m:mstyle></m:math>.
+</para>
+</problem>
+</exercise>
+  </content>
+</document>

@@ -3,7 +3,7 @@
 <metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m58540</md:content-id>
   <md:title>Interference in Thin Films</md:title>
-  <md:abstract><para>By the end of this section, you will be able to:</para>
+  <md:abstract>By the end of this section, you will be able to:
 <list>
 <item>Describe the phase changes that occur upon reflection</item>
 <item>Describe fringes established by reflected rays of a common source</item>
@@ -30,7 +30,7 @@
 </figure>
 <section id="fs-id1170902866745">
 <title>Changes in Phase due to Reflection</title>
-<para id="fs-id1170903054004">We saw earlier (<link document="m58367">Waves</link>) that reflection of mechanical waves can involve a <m:math><m:mrow><m:mn>180</m:mn><m:mtext>°</m:mtext></m:mrow></m:math> phase change. For example, a traveling wave on a string is inverted (i.e., a <m:math><m:mrow><m:mn>180</m:mn><m:mtext>°</m:mtext></m:mrow></m:math> phase change) upon reflection at a boundary to which a heavier string is tied. However, if the second string is lighter (or more precisely, of a lower linear density), no inversion occurs. Light waves produce the same effect, but the deciding parameter for light is the index of refraction. Light waves undergo a <m:math><m:mrow><m:mn>180</m:mn><m:mtext>°</m:mtext></m:mrow></m:math> or <m:math><m:mi>π</m:mi></m:math> radians phase change upon reflection at an interface beyond which is a medium of higher index of refraction. No phase change takes place when reflecting from a medium of lower refractive index (<link target-id="CNX_UPhysics_36_04_PhaseChg"/>). Because of the periodic nature of waves, this phase change or inversion is equivalent to <m:math><m:mrow><m:mtext>±</m:mtext><m:mi>λ</m:mi><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:math> in distance travelled, or path length. Both the path length and refractive indices are important factors in thin-film interference.</para><figure id="CNX_UPhysics_36_04_PhaseChg">
+<para id="fs-id1170903054004">We saw earlier (<link class="target-chapter" document="m58367">Waves</link>) that reflection of mechanical waves can involve a <m:math><m:mrow><m:mn>180</m:mn><m:mtext>°</m:mtext></m:mrow></m:math> phase change. For example, a traveling wave on a string is inverted (i.e., a <m:math><m:mrow><m:mn>180</m:mn><m:mtext>°</m:mtext></m:mrow></m:math> phase change) upon reflection at a boundary to which a heavier string is tied. However, if the second string is lighter (or more precisely, of a lower linear density), no inversion occurs. Light waves produce the same effect, but the deciding parameter for light is the index of refraction. Light waves undergo a <m:math><m:mrow><m:mn>180</m:mn><m:mtext>°</m:mtext></m:mrow></m:math> or <m:math><m:mi>π</m:mi></m:math> radians phase change upon reflection at an interface beyond which is a medium of higher index of refraction. No phase change takes place when reflecting from a medium of lower refractive index (<link target-id="CNX_UPhysics_36_04_PhaseChg"/>). Because of the periodic nature of waves, this phase change or inversion is equivalent to <m:math><m:mrow><m:mtext>±</m:mtext><m:mi>λ</m:mi><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:math> in distance travelled, or path length. Both the path length and refractive indices are important factors in thin-film interference.</para><figure id="CNX_UPhysics_36_04_PhaseChg">
 <media id="fs-id1170902764700" alt="Picture is a schematic drawing of the light undergoing interference by a thin film. Wave reflected from the top of the film is inverted; wave reflected from the bottom of the film is not inverted; refracted waves are not inverted.">
 <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_36_04_PhaseChg.jpg"/>
 </media>
@@ -85,7 +85,7 @@ If the bubble were illuminated with pure red light, we would see bright and dark
 <note id="fs-id1170903036846" class="check-understanding">
 <exercise id="fs-id1170902633771">
 <problem id="fs-id1170902733382">
-<para id="fs-id1170902952763">Going further with <link target-id="fs-id1170903036304"/>, what are the next two thicknesses of soap bubble that would lead to (a) constructive interference, and (b) destructive interference?</para>
+<para id="fs-id1170902952763"><emphasis effect="bold">Check Your Understanding</emphasis> Going further with <link target-id="fs-id1170903036304"/>, what are the next two thicknesses of soap bubble that would lead to (a) constructive interference, and (b) destructive interference?</para>
 </problem>
 <solution id="fs-id1170902914512">
 <para id="fs-id1170902733455">a. 853 nm, 1097 nm; b. 731 nm, 975 nm</para>

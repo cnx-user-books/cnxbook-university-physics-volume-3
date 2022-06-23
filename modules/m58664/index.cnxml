@@ -4,7 +4,7 @@
 <metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m58664</md:content-id>
   <md:title>X-Ray Diffraction</md:title>
-  <md:abstract><para>By the end of this section, you will be able to:</para>
+  <md:abstract>By the end of this section, you will be able to:
 <list>
 <item>Describe interference and diffraction effects exhibited by X-rays in interaction with atomic-scale structures</item></list></md:abstract>
   <md:uuid>eeb3fdf2-e0ca-4c82-92db-fa1a9749f5ad</md:uuid>
@@ -46,7 +46,7 @@ The determined wavelength fits within the X-ray region of the electromagnetic sp
 <note id="fs-id1172101695371" class="check-understanding">
 <exercise id="fs-id1172102007440">
 <problem id="fs-id1172101650528">
-<para id="fs-id1172101906156">For the experiment described in <link target-id="fs-id1172102022234"/>, what are the two other angles where interference maxima may be observed? What limits the number of maxima?</para>
+<para id="fs-id1172101906156"><emphasis effect="bold">Check Your Understanding</emphasis> For the experiment described in <link target-id="fs-id1172102022234"/>, what are the two other angles where interference maxima may be observed? What limits the number of maxima?</para>
 </problem>
 <solution id="fs-id1172101619075">
 <para id="fs-id1172102020327"><m:math><m:mrow><m:mn>38.4</m:mn><m:mtext>°</m:mtext></m:mrow></m:math> and <m:math><m:mrow><m:mn>68.8</m:mn><m:mtext>°</m:mtext></m:mrow></m:math>; Between <m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mtext>°</m:mtext><m:mo stretchy="false">→</m:mo><m:mn>90</m:mn><m:mtext>°</m:mtext></m:mrow></m:math>, orders 1, 2, and 3, are all that exist.</para>

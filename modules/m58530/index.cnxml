@@ -4,7 +4,8 @@
 <metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m58530</md:content-id>
   <md:title>Thin Lenses</md:title>
-  <md:abstract><para>By the end of this section, you will be able to:</para><list>
+  <md:abstract>By the end of this section, you will be able to:
+<list>
 <item>Use ray diagrams to locate and describe the image formed by a lens</item>
 <item>Employ the thin-lens equation to describe and locate the image formed by a lens</item>
 </list></md:abstract>
@@ -29,7 +30,7 @@
 </figure>
 <para id="fs-id1167131329901">A lens is considered to be thin if its thickness <emphasis effect="italics">t</emphasis> is much less than the radii of curvature of both surfaces, as shown in <link target-id="CNX_UPhysics_35_04_thinappr"/>. In this case, the rays may be considered to bend once at the center of the lens. For the case drawn in the figure, light ray 1 is parallel to the optical axis, so the outgoing ray is bent once at the center of the lens and goes through the focal point. Another important characteristic of thin lenses is that light rays that pass through the center of the lens are undeviated, as shown by light ray 2.</para>
 <figure id="CNX_UPhysics_35_04_thinappr"><media id="fs-id1167131332784" alt="Figure shows the cross section of a bi-convex lens. The radii of curvature of the right and left surfaces are R1 and R2 respectively. The thickness of the lens is h. Light ray 1 enters the lens, deviates and passes through the focal point. Light ray 2 passes through the center of the lens without deviating.">
-<image mime-type="image/jpeg" src="../../media/CNX_UPhysics_35_04_thinappr.jpeg"/>
+<image mime-type="image/jpeg" src="../../media/CNX_UPhysics_35_04_thinappr.jpg"/>
 </media>
 
 <caption>In the thin-lens approximation, the thickness <emphasis effect="italics">t</emphasis> of the lens is much, much less than the radii <m:math><m:mrow><m:msub><m:mi>R</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> and <m:math><m:mrow><m:msub><m:mi>R</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math> of curvature of the surfaces of the lens. Light rays are considered to bend at the center of the lens, such as light ray 1. Light ray 2 passes through the center of the lens and is undeviated in the thin-lens approximation.</caption></figure><para id="fs-id1167134815940">As noted in the initial discussion of Snell’s law, the paths of light rays are exactly reversible. This means that the direction of the arrows could be reversed for all of the rays in <link target-id="CNX_UPhysics_35_04_convdiv"/>. For example, if a point-light source is placed at the focal point of a convex lens, as shown in <link target-id="CNX_UPhysics_35_04_pararays"/>, parallel light rays emerge from the other side.</para>
@@ -164,7 +165,7 @@
 </figure>
 <para id="fs-id1167134488860">Work through the following examples to better understand how thin lenses work.</para>
 <note id="fs-id1167134648053" class="problem-solving">
-<title>Lenses</title>
+<title>Problem-Solving Strategy: Lenses</title>
 <para id="fs-id1167131173316">Step 1. Determine whether ray tracing, the thin-lens equation, or both would be useful. Even if ray tracing is not used, a careful sketch is always very useful. Write symbols and values on the sketch.</para>
 <para id="fs-id1167134684568">Step 2. Identify what needs to be determined in the problem (identify the unknowns).</para>
 <para id="fs-id1167131235490">Step 3. Make a list of what is given or can be inferred from the problem (identify the knowns).</para>
@@ -323,7 +324,7 @@ b. <m:math><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>h</m:mi><m:mtext>i</m:mtext></
 </exercise>
 <exercise id="fs-id1167134861150">
 <problem id="fs-id1167134645122">
-<para id="fs-id1167134645124">The magnification of a book held 7.50 cm from a 10.0 cm-focal length lens is 4.00. (a) Find the magnification for the book when it is held 8.50 cm from the magnifier. (b) Repeat for the book held 9.50 cm from the magnifier. (c) Comment on how magnification changes as the object distance increases as in these two calculations.</para>
+<para id="fs-id1167134645124">The magnification of a book held 7.50 cm from a 10.0 cm-focal length lens is 3.00. (a) Find the magnification for the book when it is held 8.50 cm from the magnifier. (b) Repeat for the book held 9.50 cm from the magnifier. (c) Comment on how magnification changes as the object distance increases as in these two calculations.</para>
 </problem>
 <solution id="fs-id1167131430492">
 <para id="fs-id1167131182055">a. Using <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>d</m:mi><m:mtext>o</m:mtext></m:msub></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:msub><m:mi>d</m:mi><m:mtext>i</m:mtext></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>f</m:mi></m:mfrac></m:mrow></m:math>, <m:math><m:mrow><m:msub><m:mi>d</m:mi><m:mtext>i</m:mtext></m:msub><m:mo>=</m:mo><m:mn>−56.67</m:mn><m:mspace width="0.2em"/><m:mtext>cm</m:mtext></m:mrow></m:math>. Then we can determine the magnification, <m:math><m:mrow><m:mi>m</m:mi><m:mo>=</m:mo><m:mn>6.67</m:mn></m:mrow></m:math>. b. <m:math><m:mrow><m:msub><m:mi>d</m:mi><m:mtext>i</m:mtext></m:msub><m:mo>=</m:mo><m:mn>−190</m:mn><m:mspace width="0.2em"/><m:mtext>cm</m:mtext><m:mspace width="0.2em"/></m:mrow></m:math> and <m:math><m:mrow><m:mi>m</m:mi><m:mo>=</m:mo><m:mo>+</m:mo><m:mn>20.0</m:mn></m:mrow></m:math>; c. The magnification <emphasis effect="italics">m</emphasis> increases rapidly as you increase the object distance toward the focal length.</para>

@@ -4,7 +4,7 @@
 <metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m58525</md:content-id>
   <md:title>Polarization</md:title>
-  <md:abstract><para>By the end of this section, you will be able to:</para>
+  <md:abstract>By the end of this section, you will be able to:
 <list>
 <item>Explain the change in intensity as polarized light passes through a polarizing filter</item>
 <item>Calculate the effect of polarization by reflection and Brewster’s angle</item>
@@ -24,7 +24,7 @@
 </figure>
 <section id="fs-id1172100665277">
 <title>Malus’s Law</title>
-<para id="fs-id1172098373712">Light is one type of electromagnetic (EM) wave. As noted in the previous chapter on <link document="m58495">Electromagnetic Waves</link>, EM waves are <emphasis effect="italics">transverse waves</emphasis> consisting of varying electric and magnetic fields that oscillate perpendicular to the direction of propagation (<link target-id="CNX_UPhysics_34_07_EMWave"/>). However, in general, there are no specific directions for the oscillations of the electric and magnetic fields; they vibrate in any randomly oriented plane perpendicular to the direction of propagation. <emphasis effect="bold">Polarization</emphasis> is the attribute that a wave’s oscillations do have a definite direction relative to the direction of propagation of the wave. (This is not the same type of polarization as that discussed for the separation of charges.) Waves having such a direction are said to be <term>polarized</term>. For an EM wave, we define the <term>direction of polarization</term> to be the direction parallel to the electric field. Thus, we can think of the electric field arrows as showing the direction of polarization, as in <link target-id="CNX_UPhysics_34_07_EMWave"/>.</para><figure id="CNX_UPhysics_34_07_EMWave">
+<para id="fs-id1172098373712">Light is one type of electromagnetic (EM) wave. As noted in the previous chapter on <link class="target-chapter" document="m58495">Electromagnetic Waves</link>, EM waves are <emphasis effect="italics">transverse waves</emphasis> consisting of varying electric and magnetic fields that oscillate perpendicular to the direction of propagation (<link target-id="CNX_UPhysics_34_07_EMWave"/>). However, in general, there are no specific directions for the oscillations of the electric and magnetic fields; they vibrate in any randomly oriented plane perpendicular to the direction of propagation. <emphasis effect="bold">Polarization</emphasis> is the attribute that a wave’s oscillations do have a definite direction relative to the direction of propagation of the wave. (This is not the same type of polarization as that discussed for the separation of charges.) Waves having such a direction are said to be <term>polarized</term>. For an EM wave, we define the <term>direction of polarization</term> to be the direction parallel to the electric field. Thus, we can think of the electric field arrows as showing the direction of polarization, as in <link target-id="CNX_UPhysics_34_07_EMWave"/>.</para><figure id="CNX_UPhysics_34_07_EMWave">
 <media id="fs-id1172098479739" alt="A part of an electromagnetic wave moving with velocity c is shown at one instant in time. The two vector components, E and B, are shown and are perpendicular to one another and to the direction of propagation. The vectors representing the magnitude and direction of E, shown as arrows whose tails lie on the line of propagation of the wave, form a sine wave in one plane. Similarly, the B vectors form a sine wave in a plane perpendicular to the E wave. The E and B waves are in phase. The direction of polarization is given by the direction of the E vectors.">
 <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_34_07_EMWave.jpg"/>
 </media>
@@ -73,7 +73,7 @@ A fairly large angle between the direction of polarization and the filter axis i
 <note id="fs-id1172098574910" class="check-understanding">
 <exercise id="fs-id1172100757932">
 <problem id="fs-id1172100557956">
-<para id="fs-id1172100831171">Although we did not specify the direction in <link target-id="fs-id1172100714884"/>, let’s say the polarizing filter was rotated clockwise by <m:math><m:mrow><m:mn>71.6</m:mn><m:mtext>°</m:mtext></m:mrow></m:math> to reduce the light intensity by <m:math><m:mrow><m:mn>90.0</m:mn><m:mtext>%</m:mtext></m:mrow></m:math>. What would be the intensity reduction if the polarizing filter were rotated counterclockwise by <m:math><m:mrow><m:mn>71.6</m:mn><m:mtext>°</m:mtext></m:mrow></m:math>?</para>
+<para id="fs-id1172100831171"><emphasis effect="bold">Check Your Understanding</emphasis> Although we did not specify the direction in <link target-id="fs-id1172100714884"/>, let’s say the polarizing filter was rotated clockwise by <m:math><m:mrow><m:mn>71.6</m:mn><m:mtext>°</m:mtext></m:mrow></m:math> to reduce the light intensity by <m:math><m:mrow><m:mn>90.0</m:mn><m:mtext>%</m:mtext></m:mrow></m:math>. What would be the intensity reduction if the polarizing filter were rotated counterclockwise by <m:math><m:mrow><m:mn>71.6</m:mn><m:mtext>°</m:mtext></m:mrow></m:math>?</para>
 </problem>
 <solution id="fs-id1172098390808">
 <para id="fs-id1172100532304">also <m:math><m:mrow><m:mn>90.0</m:mn><m:mtext>%</m:mtext></m:mrow></m:math></para>
@@ -106,15 +106,15 @@ A fairly large angle between the direction of polarization and the filter axis i
 All we need to solve these problems are the indices of refraction. Air has <m:math><m:mrow><m:msub><m:mi>n</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>1.00</m:mn><m:mo>,</m:mo></m:mrow></m:math> water has <m:math><m:mrow><m:msub><m:mi>n</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>1.333</m:mn><m:mo>,</m:mo></m:mrow></m:math> and crown glass has <m:math><m:mrow><m:msubsup><m:mi>n</m:mi><m:mn>2</m:mn><m:mtext>′</m:mtext></m:msubsup><m:mo>=</m:mo><m:mn>1.520</m:mn><m:mo>.</m:mo></m:mrow></m:math> The equation <m:math><m:mrow><m:mtext>tan</m:mtext><m:mspace width="0.2em"/><m:msub><m:mi>θ</m:mi><m:mtext>b</m:mtext></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>n</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>n</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac></m:mrow></m:math> can be directly applied to find <m:math><m:mrow><m:msub><m:mi>θ</m:mi><m:mtext>b</m:mtext></m:msub></m:mrow></m:math> in each case.</para>
 <para id="fs-id1172101007884"><title>Solution</title></para>
 <list id="fs-id1172100958116" list-type="enumerated" number-style="lower-alpha">
-<item>Putting the known quantities into the equation
-<equation id="fs-id1172098441154" class="unnumbered"><label/><m:math><m:mrow><m:mtext>tan</m:mtext><m:mspace width="0.2em"/><m:msub><m:mi>θ</m:mi><m:mtext>b</m:mtext></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>n</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>n</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac></m:mrow></m:math></equation>
-gives
-<equation id="fs-id1172100594390" class="unnumbered"><label/><m:math><m:mrow><m:mtext>tan</m:mtext><m:mspace width="0.2em"/><m:msub><m:mi>θ</m:mi><m:mtext>b</m:mtext></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>n</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>n</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1.333</m:mn></m:mrow><m:mrow><m:mn>1.00</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1.333</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
-Solving for the angle <m:math><m:mrow><m:msub><m:mi>θ</m:mi><m:mtext>b</m:mtext></m:msub></m:mrow></m:math> yields
+<item>Putting the known quantities into the equation<newline/>
+<equation id="fs-id1172098441154" class="unnumbered"><label/><m:math><m:mrow><m:mtext>tan</m:mtext><m:mspace width="0.2em"/><m:msub><m:mi>θ</m:mi><m:mtext>b</m:mtext></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>n</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>n</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac></m:mrow></m:math></equation><newline/>
+gives<newline/>
+<equation id="fs-id1172100594390" class="unnumbered"><label/><m:math><m:mrow><m:mtext>tan</m:mtext><m:mspace width="0.2em"/><m:msub><m:mi>θ</m:mi><m:mtext>b</m:mtext></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>n</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mrow><m:msub><m:mi>n</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1.333</m:mn></m:mrow><m:mrow><m:mn>1.00</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1.333</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+Solving for the angle <m:math><m:mrow><m:msub><m:mi>θ</m:mi><m:mtext>b</m:mtext></m:msub></m:mrow></m:math> yields<newline/>
 <equation id="fs-id1172100639419" class="unnumbered"><label/><m:math><m:mrow><m:msub><m:mi>θ</m:mi><m:mtext>b</m:mtext></m:msub><m:mo>=</m:mo><m:msup><m:mrow><m:mtext>tan</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mspace width="0.2em"/><m:mn>1.333</m:mn><m:mo>=</m:mo><m:mn>53.1</m:mn><m:mtext>°</m:mtext><m:mo>.</m:mo></m:mrow></m:math></equation></item>
-<item>Similarly, for crown glass and air,
-<equation id="fs-id1172098265891" class="unnumbered"><label/><m:math><m:mrow><m:mtext>tan</m:mtext><m:mspace width="0.2em"/><m:msubsup><m:mi>θ</m:mi><m:mtext>b</m:mtext><m:mtext>′</m:mtext></m:msubsup><m:mo>=</m:mo><m:mfrac><m:mrow><m:msubsup><m:mi>n</m:mi><m:mn>2</m:mn><m:mtext>′</m:mtext></m:msubsup></m:mrow><m:mrow><m:msub><m:mi>n</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1.520</m:mn></m:mrow><m:mrow><m:mn>1.00</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1.52</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation>
-Thus,
+<item>Similarly, for crown glass and air,<newline/>
+<equation id="fs-id1172098265891" class="unnumbered"><label/><m:math><m:mrow><m:mtext>tan</m:mtext><m:mspace width="0.2em"/><m:msubsup><m:mi>θ</m:mi><m:mtext>b</m:mtext><m:mtext>′</m:mtext></m:msubsup><m:mo>=</m:mo><m:mfrac><m:mrow><m:msubsup><m:mi>n</m:mi><m:mn>2</m:mn><m:mtext>′</m:mtext></m:msubsup></m:mrow><m:mrow><m:msub><m:mi>n</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1.520</m:mn></m:mrow><m:mrow><m:mn>1.00</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1.52</m:mn><m:mo>.</m:mo></m:mrow></m:math></equation><newline/>
+Thus,<newline/>
 <equation id="fs-id1172098390363" class="unnumbered"><label/><m:math><m:mrow><m:msubsup><m:mi>θ</m:mi><m:mtext>b</m:mtext><m:mtext>′</m:mtext></m:msubsup><m:mo>=</m:mo><m:msup><m:mrow><m:mtext>tan</m:mtext></m:mrow><m:mrow><m:mn>−1</m:mn></m:mrow></m:msup><m:mspace width="0.2em"/><m:mn>1.52</m:mn><m:mo>=</m:mo><m:mn>56.7</m:mn><m:mtext>°</m:mtext><m:mo>.</m:mo></m:mrow></m:math></equation></item>
 </list>
 <para id="fs-id1172100945299"><title>Significance</title>
@@ -123,7 +123,7 @@ Light reflected at these angles could be completely blocked by a good polarizing
 <note id="fs-id1172098322409" class="check-understanding">
 <exercise id="fs-id1172098391712">
 <problem id="fs-id1172100800490">
-<para id="fs-id1172098456401">What happens at Brewster’s angle if the original incident light is already <m:math><m:mrow><m:mn>100</m:mn><m:mtext>%</m:mtext></m:mrow></m:math> vertically polarized?</para>
+<para id="fs-id1172098456401"><emphasis effect="bold">Check Your Understanding</emphasis> What happens at Brewster’s angle if the original incident light is already <m:math><m:mrow><m:mn>100</m:mn><m:mtext>%</m:mtext></m:mrow></m:math> vertically polarized?</para>
 </problem>
 <solution id="fs-id1172098266479">
 <para id="fs-id1172100854452">There will be only refraction but no reflection.</para>

@@ -1,0 +1,376 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>Phasors: Beating between Tones</title>
+  <metadata>
+  <md:content-id>m21468</md:content-id><md:title>Phasors: Beating between Tones</md:title>
+  <md:abstract/>
+  <md:uuid>c448dba4-2814-4215-82cf-c86bf56d8ef5</md:uuid>
+</metadata>
+
+<content>
+    <note id="eip-754">This module is part of the collection, <emphasis effect="italics">A First Course in Electrical and Computer Engineering</emphasis>. The LaTeX source files for this collection were created using an optical character recognition technology, and because of this process there may be more errors than usual. Please contact us if you discover any errors.
+</note><para id="id2258257">Perhaps you have heard two slightly mistuned musical instruments play
+pure tones whose frequencies are close but not equal. If so, you have sensed
+a beating phenomenon wherein a pure tone seems to wax and wane. This
+waxing and waning tone is, in fact, a tone whose frequency is the average of
+the two mismatched frequencies, amplitude modulated by a tone whose “beat”
+frequency is half the difference between the two mismatched frequencies. The
+effect is illustrated in <link target-id="uid1"/>. Let's see if we can derive a mathematical
+model for the beating of tones.</para>
+    <para id="id2258279">We begin with two pure tones whose frequencies are <m:math overflow="scroll"><m:mrow><m:msub><m:mi>ω</m:mi><m:mn>0</m:mn></m:msub><m:mo>+</m:mo><m:mi>ν</m:mi></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:msub><m:mi>ω</m:mi><m:mn>0</m:mn></m:msub><m:mo>-</m:mo><m:mi>ν</m:mi></m:mrow></m:math>
+(for example, <m:math overflow="scroll"><m:mrow><m:msub><m:mi>ω</m:mi><m:mn>0</m:mn></m:msub><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>×</m:mo><m:msup><m:mn>10</m:mn><m:mn>3</m:mn></m:msup><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mo>/</m:mo><m:mo form="prefix">sec</m:mo></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>ν</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo form="prefix">rad</m:mo><m:mo>/</m:mo><m:mo form="prefix">sec</m:mo></m:mrow></m:math>). The average
+frequency is <emphasis effect="italics">ω<sub>0</sub></emphasis>, and the difference frequency is <m:math overflow="scroll"><m:mrow><m:mn>2</m:mn><m:mi>ν</m:mi></m:mrow></m:math>. What you hear is the sum
+of the two tones:</para>
+    <equation id="eip-139"><m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>A</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mo form="prefix"> cos</m:mo><m:mrow><m:mrow><m:mo>[</m:mo><m:mrow><m:mo>(</m:mo><m:msub><m:mi>ω</m:mi><m:mn>0</m:mn></m:msub><m:mo>+</m:mo><m:mi>ν</m:mi><m:mo>)</m:mo></m:mrow><m:mi>t</m:mi><m:mo>+</m:mo><m:msub><m:mi>φ</m:mi><m:mn>1</m:mn></m:msub><m:mo>]</m:mo></m:mrow><m:mo>+</m:mo><m:msub><m:mi>A</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo form="prefix">cos</m:mo><m:mrow><m:mo>[</m:mo><m:mrow><m:mo>(</m:mo><m:msub><m:mi>ω</m:mi><m:mn>0</m:mn></m:msub><m:mo>-</m:mo><m:mi>ν</m:mi><m:mo>)</m:mo></m:mrow><m:mi>t</m:mi><m:mo>+</m:mo><m:msub><m:mi>φ</m:mi><m:mn>2</m:mn></m:msub><m:mo>]</m:mo><m:mo>.</m:mo></m:mrow></m:math>
+</equation><para id="id2259080">The first tone has amplitude <m:math>
+<m:msub>
+<m:mi>A</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:math> and phase <m:math>
+<m:msub>
+<m:mi>φ</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:math> ; the second has amplitude
+<m:math>
+<m:msub>
+<m:mi>A</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+</m:math> and phase 
+<m:math>
+<m:msub>
+<m:mi>φ</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+</m:math>. We will assume that the two amplitudes are equal to <m:math>
+<m:mi>A</m:mi>
+</m:math>.
+Furthermore, whatever the phases, we may write them as</para>
+    
+    <equation id="eip-482"><m:math overflow="scroll">
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:msub>
+<m:mi>φ</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mi>φ</m:mi>
+<m:mo>+</m:mo>
+<m:mi>ψ</m:mi>
+</m:mtd>
+<m:mtd>
+<m:mtext>
+ and 
+</m:mtext>
+</m:mtd>
+<m:mtd>
+<m:msub>
+<m:mi>φ</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mi>φ</m:mi>
+<m:mo>-</m:mo>
+<m:mi>ψ</m:mi>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+          <m:mi>φ</m:mi>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mn>1</m:mn>
+            <m:mn>2</m:mn>
+          </m:mfrac>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:msub>
+              <m:mi>φ</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>φ</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mo>)</m:mo>
+          </m:mrow>
+</m:mtd>
+<m:mtd>
+       <m:mtext>and</m:mtext>
+</m:mtd>
+<m:mtd>
+          <m:mi>ψ</m:mi>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mn>1</m:mn>
+            <m:mn>2</m:mn>
+          </m:mfrac>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:msub>
+              <m:mi>φ</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>-</m:mo>
+            <m:msub>
+              <m:mi>φ</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>.</m:mo>
+       </m:mtd>
+</m:mtr>
+</m:mtable>
+</m:math></equation>
+    <figure id="uid1"><media id="uid1_media" alt="Figure one is a set of three sinusoidal functions graphed along a horizontal axis. Two are identical in wavelength and amplitude, but inverted so that their peaks and troughs look like they are enclosing the third function, and they meet four times at the horizontal axis when they progress in the opposite directions. The third sinusoidal function is bound by these two larger first functions, changing in amplitude based on the boundaries of those functions, but retaining a short, constant wavelength throughout the graph.">
+        <image mime-type="image/png" src="../../media/pic007.png" id="uid1_onlineimage" width="500"><!-- NOTE: attribute width changes image size online (pixels). original width is 196. --></image>
+        <image for="pdf" mime-type="application/postscript" src="../../media/pic007.eps" id="uid1_printimage" print-width="3.5in">
+<!--NOTE: attribute width changes image size in printed PDF (if specified in .tex file)-->
+        </image>
+      </media>
+      
+    <caption>Beating between Tones</caption></figure>
+    <para id="id2259665">Recall our trick for representing <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:math> as a complex phasor:</para>
+    <equation id="id2259685"><m:math overflow="scroll" mode="display">
+<m:mtable>
+<m:mtr>
+<m:mtd>
+          <m:mi>x</m:mi>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>t</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+</m:mtd>
+<m:mtd>       
+   <m:mo>=</m:mo>
+</m:mtd>
+<m:mtd>       
+   <m:mi>A</m:mi>
+<m:mspace width="2pt"/>
+          <m:mi> Re </m:mi>
+          <m:mrow>
+            <m:mfenced open="{" close="}">
+            <m:msup>
+              <m:mi>e</m:mi>
+              <m:mrow>
+                <m:mi>j</m:mi>
+                <m:mo>[</m:mo>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:msub>
+                    <m:mi>ω</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                  <m:mo>+</m:mo>
+                  <m:mi>ν</m:mi>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mi>t</m:mi>
+                <m:mo>+</m:mo>
+                <m:mi>φ</m:mi>
+                <m:mo>+</m:mo>
+                <m:mi>ψ</m:mi>
+                <m:mo>]</m:mo>
+              </m:mrow>
+            </m:msup>
+            <m:mo>+</m:mo>
+            <m:msup>
+              <m:mi>e</m:mi>
+              <m:mrow>
+                <m:mi>j</m:mi>
+                <m:mo>[</m:mo>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:msub>
+                    <m:mi>ω</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                  <m:mo>-</m:mo>
+                  <m:mi>ν</m:mi>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mi>t</m:mi>
+                <m:mo>+</m:mo>
+                <m:mi>φ</m:mi>
+                <m:mo>-</m:mo>
+                <m:mi>ψ</m:mi>
+                <m:mo>]</m:mo>
+              </m:mrow>
+            </m:msup>
+            </m:mfenced>
+          </m:mrow>
+    </m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd/>
+<m:mtd>
+          <m:mo>=</m:mo>
+</m:mtd>
+<m:mtd>
+          <m:mi>A</m:mi>
+<m:mspace width="2pt"/>
+          <m:mi> Re </m:mi>
+          <m:mfenced open="{" close="}">
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mo>(</m:mo>
+              <m:msub>
+                <m:mi>ω</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+              <m:mi>t</m:mi>
+              <m:mo>+</m:mo>
+              <m:mi>φ</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+          </m:msup>
+          <m:mrow>
+            <m:mo>[</m:mo>
+            <m:msup>
+              <m:mi>e</m:mi>
+              <m:mrow>
+                <m:mi>j</m:mi>
+                <m:mo>(</m:mo>
+                <m:mi>ν</m:mi>
+                <m:mi>t</m:mi>
+                <m:mo>+</m:mo>
+                <m:mi>ψ</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:msup>
+            <m:mo>+</m:mo>
+            <m:msup>
+              <m:mi>e</m:mi>
+              <m:mrow>
+                <m:mo>-</m:mo>
+                <m:mi>j</m:mi>
+                <m:mo>(</m:mo>
+                <m:mi>ν</m:mi>
+                <m:mi>t</m:mi>
+                <m:mo>+</m:mo>
+                <m:mi>ψ</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:msup>
+            <m:mo>]</m:mo>
+          </m:mrow>
+          </m:mfenced>
+        </m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd/>
+<m:mtd>
+          <m:mo>=</m:mo>
+</m:mtd>
+<m:mtd>        
+  <m:mn>2</m:mn>
+          <m:mi>A</m:mi>
+<m:mspace width="2pt"/>
+          <m:mi> Re </m:mi>
+          <m:mfenced open="{" close="}">
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mo>(</m:mo>
+              <m:msub>
+                <m:mi>ω</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+              <m:mi>t</m:mi>
+              <m:mo>+</m:mo>
+              <m:mi>φ</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+          </m:msup>
+          <m:mo form="prefix">cos</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>ν</m:mi>
+            <m:mi>t</m:mi>
+            <m:mo>+</m:mo>
+            <m:mi>ψ</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          </m:mfenced>
+        </m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd/>
+<m:mtd>
+          <m:mo>=</m:mo>
+</m:mtd>
+<m:mtd>
+          <m:mn>2</m:mn>
+          <m:mi>A</m:mi>
+<m:mspace width="2pt"/>
+          <m:mo form="prefix">cos</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:msub>
+              <m:mi>ω</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mi>t</m:mi>
+            <m:mo>+</m:mo>
+            <m:mi>φ</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo form="prefix">cos</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>ν</m:mi>
+            <m:mi>t</m:mi>
+            <m:mo>+</m:mo>
+            <m:mi>ψ</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>.</m:mo>
+       </m:mtd>
+</m:mtr>
+</m:mtable>
+</m:math></equation>
+    
+    
+    
+    <para id="id2260026">This is an amplitude modulated wave, wherein a low frequency signal with
+beat frequency <m:math overflow="scroll"><m:mrow><m:mi>ν</m:mi></m:mrow></m:math> rad/sec modulates a high frequency signal with carrier frequency <m:math overflow="scroll"><m:mrow><m:msub><m:mi>ω</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:math> rad/sec. Over short periods of time, the modulating term <m:math overflow="scroll"><m:mrow><m:mo form="prefix">cos</m:mo><m:mo>(</m:mo><m:mi>ν</m:mi><m:mi>t</m:mi><m:mo>+</m:mo></m:mrow></m:math><m:math overflow="scroll"><m:mrow><m:mi>ψ</m:mi><m:mo>)</m:mo></m:mrow></m:math> remains essentially constant while the carrier term <m:math overflow="scroll"><m:mrow><m:mo form="prefix">cos</m:mo><m:mo>(</m:mo><m:msub><m:mi>ω</m:mi><m:mn>0</m:mn></m:msub><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>φ</m:mi><m:mo>)</m:mo></m:mrow></m:math> turns out
+many cycles of its tone. For example, if <m:math><m:mi>t</m:mi>
+</m:math> runs from 0 to <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow><m:mrow><m:mn>10</m:mn><m:mi>ν</m:mi></m:mrow></m:mfrac></m:mstyle></m:math> (about 0.1 seconds in our example), then the modulating wave turns out just 1/10 cycle while the carrier turns out <m:math overflow="scroll"><m:mrow><m:mover><m:mn>1</m:mn><m:mo>¯</m:mo></m:mover><m:mn>0</m:mn><m:mover><m:mi>ν</m:mi><m:mo>¯</m:mo></m:mover><m:msub><m:mi>ω</m:mi><m:mi>Δ</m:mi></m:msub></m:mrow></m:math> cycles (about 100 in our example). Every time <m:math overflow="scroll"><m:mrow><m:mi>ν</m:mi><m:mi>t</m:mi></m:mrow></m:math> changes by <m:math overflow="scroll"><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:math> radians, then the modulating term goes from a maximum (a wax) through a minimum (a wane) and back to a maximum. This cycle takes</para>
+    <equation id="eip-484"><m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mrow><m:mi>ν</m:mi><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>⇔</m:mo><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow><m:mi>ν</m:mi></m:mfrac></m:mrow></m:mstyle>
+<m:mtext>seconds</m:mtext>
+<m:mo>,</m:mo></m:math></equation>
+    <para id="id2260301">which is 1 second in our example. In this 1 second the carrier turns out 1000
+cycles.</para>
+<exercise id="fs-id24440652">
+<problem id="fs-id8713433">
+    <para id="id2260306">Find out the frequency of <m:math>
+<m:mi>A</m:mi>
+</m:math> above middle <m:math>
+<m:mi>C</m:mi>
+</m:math> on a piano. Assume two pianos are mistuned by <m:math overflow="scroll"><m:mrow><m:mo>±</m:mo><m:mn>1</m:mn><m:mi mathvariant="normal">H</m:mi><m:mi mathvariant="normal">z</m:mi><m:mo>(</m:mo><m:mo>±</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+<m:mtext>rad/sec</m:mtext>
+<m:mo>)</m:mo></m:mrow></m:math>. Find their beat frequency <m:math><m:mi>ν</m:mi></m:math> and their carrier frequency <m:math>
+<m:msub>
+<m:mi>ω</m:mi>
+<m:mn>0</m:mn>
+</m:msub>
+</m:math>.</para></problem></exercise>
+<exercise id="fs-id25418897"><problem id="fs-id25418899">
+    <para id="id2260398">(MATLAB) Write a MATLAB program to compute and plot</para> <para id="eip-id8946456"><m:math>
+<m:mi>A</m:mi>
+<m:mo form="prefix">cos</m:mo>
+<m:mrow><m:mo>[</m:mo><m:mrow><m:mo>(</m:mo><m:msub><m:mi>ω</m:mi><m:mn>0</m:mn></m:msub><m:mo>+</m:mo><m:mi>ν</m:mi><m:mo>)</m:mo></m:mrow><m:mi>t</m:mi><m:mo>+</m:mo><m:msub><m:mi>φ</m:mi><m:mn>1</m:mn></m:msub><m:mo>]</m:mo><m:mo>,</m:mo><m:mi>A</m:mi></m:mrow></m:math> cos <m:math overflow="scroll"><m:mrow><m:mo>[</m:mo><m:mrow><m:mo>(</m:mo><m:msub><m:mi>ω</m:mi><m:mn>0</m:mn></m:msub><m:mo>-</m:mo><m:mi>ν</m:mi><m:mo>)</m:mo></m:mrow><m:mi>t</m:mi><m:mo>+</m:mo><m:msub><m:mi>φ</m:mi><m:mn>2</m:mn></m:msub><m:mo>]</m:mo></m:mrow></m:math>, and their sum. Then compute and plot <m:math overflow="scroll"><m:mrow><m:mn>2</m:mn><m:mi>A</m:mi><m:mo form="prefix">cos</m:mo><m:mrow><m:mo>(</m:mo><m:msub><m:mi>ω</m:mi><m:mn>0</m:mn></m:msub><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>φ</m:mi><m:mo>)</m:mo></m:mrow><m:mo form="prefix">cos</m:mo><m:mrow><m:mo>(</m:mo><m:mi>ν</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>ψ</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math>.</para> <para id="eip-id10796774">Verify that the sum equals this latter signal.
+</para>
+</problem>
+</exercise>
+  </content>
+</document>

@@ -1,0 +1,39 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>Phasors: Introduction</title>
+  <metadata>
+  <md:content-id>m21469</md:content-id><md:title>Phasors: Introduction</md:title>
+  <md:abstract/>
+  <md:uuid>dcc1826a-2a67-446f-b534-f974b41f582c</md:uuid>
+</metadata>
+
+<content>
+<note id="eip-910">This module is part of the collection, <emphasis effect="italics">A First Course in Electrical and Computer Engineering</emphasis>. The LaTeX source files for this collection were created using an optical character recognition technology, and because of this process there may be more errors than usual. Please contact us if you discover any errors.
+</note><section id="fs-id17163958">
+    <title>Notes to Teachers and Students:</title>
+    <para id="id2258260">Phasors! For those who understand them, they are of incomparable value for the study of elementary and advanced topics. For those who misunderstand them, they are a constant source of confusion and are of no apparent use. So, let's understand them.</para>
+    <para id="id2258268">The conceptual leap from the complex number <m:math overflow="scroll"><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>θ</m:mi></m:mrow></m:msup></m:math> to the phasor <m:math overflow="scroll"><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mo>(</m:mo><m:mi>ω</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow></m:msup></m:math>
+comes in <link document="m21474">"Phasor Representation of Signals"</link>. Take as long as necessary to understand every geometrical and algebraic nuance. Write the MATLAB program in <link document="m21474" target-id="fs-id11342164">"Exercise 6"</link> to
+fix the key ideas once and for all. Then <emphasis effect="italics">use</emphasis> phasors to study beating between
+tones, multiphase power, and Lissajous figures in <link document="m21468">"Beating between Tones"</link> through <link document="m21471">"Lissajous Figures"</link>.
+We usually conduct a classroom demonstration of beating between tones using
+two phase-locked sources, an oscilloscope, and a speaker. We also demonstrate
+Lissajous figures with this hardware.</para>
+    <para id="id2258978"><link document="m21475">"Sinusoidal Steady State and the Series RLC Circuit"</link> and <link document="m21470">Light Scattering by a Slit"</link> on sinusoidal steady state and light scattering are
+too demanding for freshmen but are right on target for sophomores. These
+sections may be covered in a sophomore course (or a supplement to a sophomore course) or skipped in a freshman course without consequence.</para>
+    <para id="id2258986">In the numerical experiment in <link document="m21473">"Numerical Experiment (Interference Patterns)"</link>, students compute and plot
+interference patterns for two sinusoids that are out of phase.</para>
+</section>
+    <section id="cid1">
+      <title>Introduction</title>
+      <para id="id2259000">In engineering and applied science, three test signals form the basis for our study of electrical and mechanical systems. The <emphasis effect="italics">impulse</emphasis> is an idealized signal that models very short excitations (like current pulses, hammer blows, pile drives, and light flashes). The <emphasis effect="italics">step</emphasis> is an idealized signal that models excitations that are switched on and stay on (like current in a relay that closes or a transistor that switches). The <emphasis effect="italics">sinusoid</emphasis> is an idealized signal that models excitations that oscillate with a regular frequency (like AC power, AM radio, pure musical tones, and harmonic vibrations). All three signals are used in the laboratory to design and analyze electrical and mechanical circuits, control systems, radio antennas, and the like. The sinusoidal signal is particularly important because it may be used to determine the frequency selectivity of a circuit (like a superheterodyne radio receiver) to excitations of different frequencies. For this reason, every manufacturer of electronics test equipment builds sinusoidal oscillators that may be swept through many octaves of Orequency. (Hewlett-Packard was started in 1940 with the famous HP audio oscillator.)</para>
+      <para id="id2259038">In this chapter we use what we have learned about complex numbers
+and the function <m:math overflow="scroll"><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mi>θ</m:mi></m:mrow></m:msup></m:math> to develop a <emphasis effect="italics">phasor calculus</emphasis> for representing and ma-
+nipulating sinusoids. This calculus operates very much like the calculus we
+developed in <link document="m21412">"Complex Numbers"</link> and <link document="m21479">"The Functions e<sup>x</sup> and e<sup>jθ</sup>"</link> for manipulating complex numbers. We ap-
+ply our calculus to the study of beating phenomena, multiphase power, series
+<emphasis effect="italics">RLC</emphasis> circuits, and light scattering by a slit.
+</para>
+    </section>
+  </content>
+</document>

@@ -1,0 +1,50 @@
+<document xmlns="http://cnx.rice.edu/cnxml" class="preface">
+
+<title>Preface Optics</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m65266</md:content-id>
+  <md:title>Preface Optics</md:title>
+  <md:abstract/>
+  <md:uuid>b51125fe-b218-46a2-9092-1e9290a82d61</md:uuid>
+</metadata>
+
+<content>
+<para id="fs-id1165039088977">This textbook was written to increase student access to high-quality learning materials, maintaining highest standards of academic rigor at little to no cost.</para><section id="fs-id1165039424848">
+<title>About OpenStax</title>
+<para id="fs-id1165039367577">OpenStax is a nonprofit based at Rice University, and it’s our mission to improve student access to education. Our first openly licensed college textbook was published in 2012 and our library has since scaled to over 20 books used by hundreds of thousands of students across the globe. Our adaptive learning technology is designed to improve learning outcomes through personalized educational paths. The OpenStax mission is made possible through the generous support of philanthropic foundations. Through these partnerships and with the help of additional low-cost resources from our OpenStax partners, OpenStax is breaking down the most common barriers to learning and empowering students and instructors to succeed.</para></section>
+<section id="fs-id1165039394449">
+<title>About <emphasis effect="italics">Optics</emphasis></title><section id="fs-id1165039111640">
+<title>Coverage and Scope</title>
+<list id="fs-id1165039286682" list-type="bulleted" bullet-style="bullet">
+<item>Chapter 1: The Nature of Light</item>
+<item>Chapter 2: Geometric Optics and Image Formation</item>
+<item>Chapter 3: Interference</item>
+<item>Chapter 4: Diffraction</item>
+</list>
+</section>
+<section id="fs-id1165038961942">
+<title>Pedagogical Foundation</title>
+<para id="fs-id1165039196055">Throughout this textbook, you will find derivations of concepts that present classical ideas and techniques, as well as modern applications and methods. Most chapters start with observations or experiments that place the material in a context of physical experience. Presentations and explanations rely on years of classroom experience on the part of long-time physics professors, striving for a balance of clarity and rigor that has proven successful with their students. Throughout the text, links enable students to review earlier material and then return to the present discussion, reinforcing connections between topics. Key historical figures and experiments are discussed in the main text (rather than in boxes or sidebars), maintaining a focus on the development of physical intuition. Key ideas, definitions, and equations are highlighted in the text and listed in summary form at the end of each chapter. Examples and chapter-opening images often include contemporary applications from daily life or modern science and engineering.</para></section>
+<section id="fs-id1165039091879">
+<title>Assessments That Reinforce Key Concepts</title>
+<para id="fs-id1165039247386">In-chapter <emphasis effect="bold">Examples</emphasis> generally follow a three-part format of Strategy, Solution, and Significance to emphasize how to approach a problem, how to work with the equations, and how to check and generalize the result. Examples are often followed by <emphasis effect="bold">Check Your Understanding</emphasis> questions and answers to help reinforce for students the important ideas of the examples. <emphasis effect="bold">Problem-Solving Strategies</emphasis> in each chapter break down methods of approaching various types of problems into steps students can follow for guidance. The book also includes exercises at the end of each chapter so students can practice what they’ve learned.</para>
+<list id="fs-id1165039044333" list-type="bulleted" bullet-style="bullet">
+<item><emphasis effect="bold">Conceptual questions</emphasis> do not require calculation but test student learning of the key concepts.</item>
+<item><emphasis effect="bold">Problems</emphasis> categorized by section test student problem-solving skills and the ability to apply ideas to practical situations.</item>
+<item><emphasis effect="bold">Additional Problems</emphasis> apply knowledge across the chapter, forcing students to identify what concepts and equations are appropriate for solving given problems. Randomly located throughout the problems are <emphasis effect="bold">Unreasonable Results</emphasis> exercises that ask students to evaluate the answer to a problem and explain why it is not reasonable and what assumptions made might not be correct.</item>
+<item><emphasis effect="bold">Challenge Problems</emphasis> extend text ideas to interesting but difficult situations.</item>
+</list>
+<para id="fs-id1165038994270">Answers for selected exercises are available in an <emphasis effect="bold">Answer Key</emphasis> at the end of the book.</para>
+</section>
+</section>
+<section id="fs-id1165039187628"><title>About the Authors</title><section id="eip-484" class="sr-contrib-auth"><title>Senior Contributing Authors</title><para id="eip-677"><emphasis>Samuel J. Ling, Truman State University</emphasis><newline/></para><para id="eip-25"><emphasis>Jeff Sanny, Loyola Marymount University</emphasis><newline/>
+</para><para id="eip-906"><emphasis>Bill Moebs, PhD</emphasis><newline/>
+</para></section>
+
+
+
+
+
+
+</section></content>
+</document>

@@ -1,0 +1,897 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>Phasors: Multiphase Power</title>
+  <metadata>
+  <md:content-id>m21472</md:content-id><md:title>Phasors: Multiphase Power</md:title>
+  <md:abstract/>
+  <md:uuid>5adc32e8-aeb3-4c7b-8385-af97196fad7f</md:uuid>
+</metadata>
+
+<content>
+    <note id="eip-662">This module is part of the collection, <emphasis effect="italics">A First Course in Electrical and Computer Engineering</emphasis>. The LaTeX source files for this collection were created using an optical character recognition technology, and because of this process there may be more errors than usual. Please contact us if you discover any errors.
+</note><para id="id2258257">The electrical service to your home is a two-phase service.<footnote id="uid1">It really is, although it is said to be “single phase” because of the way
+it is picked off a single phase of a primary source. You will hear more about
+this in circuits and power courses.</footnote> This means
+that two 110 volt, 60 Hz lines, plus neutral, terminate in the panel. The lines
+are <emphasis effect="italics">π</emphasis> radians (180) out of phase, so we can write them as</para>
+    <equation id="id2258936"><m:math overflow="scroll" mode="display">
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mtable>
+<m:mtr>
+<m:mtd>
+          <m:msub>
+            <m:mi>x</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>t</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+</m:mtd>
+<m:mtd>       
+   <m:mo>=</m:mo>
+</m:mtd>
+<m:mtd>       
+   <m:mn>110</m:mn>
+          <m:mspace width="4.pt"/>
+          <m:mi>c</m:mi>
+          <m:mi>o</m:mi>
+          <m:mi>s</m:mi>
+          <m:mspace width="4.pt"/>
+          <m:mrow>
+            <m:mo>[</m:mo>
+            <m:mn>2</m:mn>
+            <m:mi>π</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mn>60</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mi>t</m:mi>
+            <m:mo>+</m:mo>
+            <m:mi>φ</m:mi>
+            <m:mo>]</m:mo>
+          </m:mrow>
+</m:mtd>
+<m:mtd>
+          <m:mo>=</m:mo>
+</m:mtd>
+<m:mtd>       
+   <m:mi> Re </m:mi>
+          <m:mrow>
+            <m:mo>{</m:mo>
+            <m:mn>110</m:mn>
+            <m:msup>
+              <m:mi>e</m:mi>
+              <m:mrow>
+                <m:mi>j</m:mi>
+                <m:mo>[</m:mo>
+                <m:mn>2</m:mn>
+                <m:mi>π</m:mi>
+                <m:mo>(</m:mo>
+                <m:mn>60</m:mn>
+                <m:mo>)</m:mo>
+                <m:mi>t</m:mi>
+                <m:mo>+</m:mo>
+                <m:mi>φ</m:mi>
+                <m:mo>]</m:mo>
+              </m:mrow>
+            </m:msup>
+            <m:mo>}</m:mo>
+          </m:mrow>
+       </m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd/>
+<m:mtd>
+<m:mo>=</m:mo>
+</m:mtd>
+<m:mtd>
+<m:mi> Re </m:mi>
+          <m:mo>{</m:mo>
+          <m:msub>
+            <m:mi>X</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mn>2</m:mn>
+              <m:mi>π</m:mi>
+              <m:mo>(</m:mo>
+              <m:mn>60</m:mn>
+              <m:mo>)</m:mo>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:mo>}</m:mo>
+</m:mtd>
+<m:mtd/>
+<m:mtd/>
+</m:mtr>
+</m:mtable>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+        <m:mrow>
+          <m:msub>
+            <m:mi>X</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+
+   <m:mn>110</m:mn>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mi>φ</m:mi>
+            </m:mrow>
+          </m:msup>
+        </m:mrow>
+    </m:mtd>
+</m:mtr>
+
+<m:mtr>
+<m:mtd>
+<m:mtable>
+<m:mtr>
+<m:mtd>
+          <m:msub>
+            <m:mi>x</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>t</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+</m:mtd>
+<m:mtd>       
+   <m:mo>=</m:mo>
+</m:mtd>
+<m:mtd>       
+   <m:mn>110</m:mn>
+          <m:mspace width="4.pt"/>
+          <m:mi>c</m:mi>
+          <m:mi>o</m:mi>
+          <m:mi>s</m:mi>
+          <m:mspace width="4.pt"/>
+          <m:mrow>
+            <m:mo>[</m:mo>
+            <m:mn>2</m:mn>
+            <m:mi>π</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mn>60</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mi>t</m:mi>
+            <m:mo>+</m:mo>
+            <m:mi>φ</m:mi>
+            <m:mo>+</m:mo>
+            <m:mi>π</m:mi>
+            <m:mo>]</m:mo>
+          </m:mrow>
+</m:mtd>
+<m:mtd>
+          <m:mo>=</m:mo>
+</m:mtd>
+<m:mtd>       
+   <m:mi> Re </m:mi>
+          <m:mrow>
+            <m:mo>{</m:mo>
+            <m:mn>110</m:mn>
+            <m:msup>
+              <m:mi>e</m:mi>
+              <m:mrow>
+                <m:mi>j</m:mi>
+                <m:mo>[</m:mo>
+                <m:mn>2</m:mn>
+                <m:mi>π</m:mi>
+                <m:mo>(</m:mo>
+                <m:mn>60</m:mn>
+                <m:mo>)</m:mo>
+                <m:mi>t</m:mi>
+                <m:mo>+</m:mo>
+                <m:mi>φ</m:mi>
+                <m:mo>+</m:mo>
+                <m:mi>π</m:mi>
+                <m:mo>]</m:mo>
+              </m:mrow>
+            </m:msup>
+            <m:mo>}</m:mo>
+   </m:mrow>
+       </m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd/>
+<m:mtd>
+          <m:mo>=</m:mo>
+</m:mtd>
+<m:mtd>
+          <m:mi> Re </m:mi>
+          <m:mo>{</m:mo>
+          <m:msub>
+            <m:mi>X</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mn>2</m:mn>
+              <m:mi>π</m:mi>
+              <m:mo>(</m:mo>
+              <m:mn>60</m:mn>
+              <m:mo>)</m:mo>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:mo>}</m:mo>
+       </m:mtd>
+<m:mtd/>
+<m:mtd/>
+</m:mtr>
+
+
+</m:mtable>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+          <m:msub>
+            <m:mi>X</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mn>110</m:mn>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mo>(</m:mo>
+              <m:mi>φ</m:mi>
+              <m:mo>+</m:mo>
+              <m:mi>π</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+          </m:msup>
+          <m:mo>.</m:mo>
+  </m:mtd>
+</m:mtr>  
+
+</m:mtable>
+</m:math></equation>
+    
+    
+    
+    
+    
+    <para id="id2259327">These two voltages are illustrated as the phasors <emphasis effect="italics">X<sub>1</sub></emphasis> and <emphasis effect="italics">X<sub>2</sub></emphasis> in <link target-id="uid2"/>.</para>
+    <figure id="uid2"><media id="uid2_media" alt="Figure one is a cartesian graph with a line passing through the origin from the third to first quadrant with a shallow positive slope. The line on the left side is labeled X_2, and on the right side is labeled X_1. The angle from the positive horizontal axis to the portion of the line in the first quadrant is measured and labeled Φ.  The angle from the positive horizontal axis to the portion of the line in the third quadrant (angle measured in a counter-clockwise direction) is labeled Φ+π. Above the line in the first quadrant is the number 110.">
+        <image mime-type="image/png" src="../../media/pic008.png" id="uid2_onlineimage" width="500"><!-- NOTE: attribute width changes image size online (pixels). original width is 246. --></image>
+        <image for="pdf" mime-type="application/postscript" src="../../media/pic008.eps" id="uid2_printimage" print-width="3.5in">
+<!--NOTE: attribute width changes image size in printed PDF (if specified in .tex file)-->
+        </image>
+      </media>
+      
+    <caption>Phasors in Two-Phase Power</caption></figure>
+    <para id="id2259377">You may use <m:math overflow="scroll"><m:mrow><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> to drive your clock radio or your toaster and the
+difference between <m:math overflow="scroll"><m:mrow><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> to drive your range or dryer:</para>
+    
+    <equation id="eip-803"><m:math overflow="scroll">
+<m:mrow>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mrow>
+<m:mo>(</m:mo>
+<m:mi>t</m:mi>
+<m:mo>)</m:mo>
+</m:mrow>
+<m:mo>-</m:mo>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mrow>
+<m:mo>(</m:mo>
+<m:mi>t</m:mi>
+<m:mo>)</m:mo>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mn>220</m:mn>
+</m:mrow>
+<m:mo form="prefix">cos</m:mo>
+<m:mrow>
+<m:mo>[</m:mo>
+<m:mn>2</m:mn>
+<m:mi>π</m:mi>
+<m:mo>(</m:mo>
+<m:mn>60</m:mn>
+<m:mo>)</m:mo>
+<m:mi>t</m:mi>
+<m:mo>+</m:mo>
+<m:mi>φ</m:mi>
+<m:mo>]</m:mo>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math></equation><para id="id2259527">The phasor representation of this difference is</para>
+    <equation id="eip-857"><m:math overflow="scroll">
+        <m:mrow>
+          <m:msub>
+            <m:mi>X</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:mo>-</m:mo>
+          <m:msub>
+            <m:mi>X</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mn>220</m:mn>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mi>φ</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:mo>.</m:mo>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="id2259574">The breakers in a breaker box span the <m:math overflow="scroll"><m:mrow><m:msub><m:mi>x</m:mi><m:msup><m:mn>1</m:mn><m:mo>-</m:mo></m:msup></m:msub><m:mi mathvariant="normal">t</m:mi><m:mi mathvariant="normal">o</m:mi></m:mrow></m:math>-neutral bus for 110 volts and
+the <m:math overflow="scroll"><m:mrow><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math>-to-<m:math overflow="scroll"><m:mrow><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math> buses for 220 volts.</para>
+<exercise id="fs-id3895607"><problem id="fs-id3895609">
+    <para id="id2259642">Sketch the phasor <m:math overflow="scroll"><m:mrow><m:msub><m:mi>X</m:mi><m:mn>1</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:mi>X</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math> on <link target-id="uid2"/>.</para>
+    <para id="id2259675">Most industrial installations use a three-phase service consisting of the
+signals <m:math overflow="scroll"><m:mrow><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math>, and <m:math overflow="scroll"><m:mrow><m:msub><m:mi>x</m:mi><m:mn>3</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math>:</para>
+    <equation id="eip-id8929040">
+      <m:math overflow="scroll">
+        <m:mrow>
+          <m:msub>
+            <m:mi>x</m:mi>
+            <m:mi>n</m:mi>
+          </m:msub>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>t</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mn>110</m:mn>
+          <m:mi> Re </m:mi>
+          <m:mrow>
+            <m:mo>{</m:mo>
+            <m:msup>
+              <m:mi>e</m:mi>
+              <m:mrow>
+                <m:mi>j</m:mi>
+                <m:mo>[</m:mo>
+                <m:msub>
+                  <m:mi>ω</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mi>t</m:mi>
+                <m:mo>+</m:mo>
+                <m:mi>n</m:mi>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mn>2</m:mn>
+                  <m:mi>π</m:mi>
+                  <m:mo>/</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mo>]</m:mo>
+              </m:mrow>
+            </m:msup>
+            <m:mo>}</m:mo>
+          </m:mrow>
+          <m:mo>↔</m:mo>
+          <m:msub>
+            <m:mi>X</m:mi>
+            <m:mi>n</m:mi>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mn>110</m:mn>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mi>n</m:mi>
+              <m:mo>(</m:mo>
+              <m:mn>2</m:mn>
+              <m:mi>π</m:mi>
+              <m:mo>/</m:mo>
+              <m:mn>3</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+          </m:msup>
+          <m:mo>,</m:mo>
+          <m:mspace width="4pt"/>
+          <m:mi>n</m:mi>
+          <m:mo>=</m:mo>
+          <m:mn>1</m:mn>
+          <m:mo>,</m:mo>
+          <m:mn>2</m:mn>
+          <m:mo>,</m:mo>
+          <m:mn>3</m:mn>
+          <m:mo>.</m:mo>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="id2260118">The phasors for three-phase power are illustrated in <link target-id="uid3"/>.</para></problem></exercise>
+<exercise id="fs-id8059762">
+<problem id="fs-id8059764">
+    <para id="id2260122">Sketch the phasor <m:math overflow="scroll"><m:mrow><m:msub><m:mi>X</m:mi><m:mn>2</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:mi>X</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> corresponding to <m:math overflow="scroll"><m:mrow><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> on
+<link target-id="fs-id8103710"/>. Compute the voltage you can get with <m:math overflow="scroll"><m:mrow><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math>. This answer
+explains why you do not get 220 volts in three-phase circuits. What do you
+get?</para></problem>
+</exercise>
+    <figure id="uid3"><media id="uid3_media" alt="Figure two is a cartesian graph with three arrows pointing in various directions. The first is labeled X_1 and is drawn along the horizontal axis to the right. The second is labeled X_2 and is drawn with a sharp negative slope up into the second quadrant. The third is labeled X_3 and is drawn with sharp positive slope into the fourth quadrant.">
+        <image mime-type="image/png" src="../../media/pic009.png" id="uid3_onlineimage" width="450"><!-- NOTE: attribute width changes image size online (pixels). original width is 146. --></image>
+        <image for="pdf" mime-type="application/postscript" src="../../media/pic009.eps" id="uid3_printimage" print-width="03in">
+<!--NOTE: attribute width changes image size in printed PDF (if specified in .tex file)-->
+        </image>
+      </media>
+      
+    <caption>Three-Phase Power</caption></figure>
+    <para id="id2260251"><emphasis effect="bold">Constant Power.</emphasis> Two- and three-phase power generalizes in an obvious way to N-phase power. In such a scheme, the <m:math><m:mi>N</m:mi></m:math> signals <m:math overflow="scroll"><m:mrow><m:msub><m:mi>x</m:mi><m:mi>n</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>=</m:mo></m:mrow></m:mrow></m:math><m:math overflow="scroll"><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mo>...</m:mo><m:mo>,</m:mo><m:mi>N</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:math>) are</para>
+    
+    <equation id="eip-915"><m:math overflow="scroll">
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mi>n</m:mi>
+</m:msub>
+<m:mrow>
+<m:mo>(</m:mo>
+<m:mi>t</m:mi>
+<m:mo>)</m:mo>
+</m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mo>=</m:mo>
+</m:mtd>
+<m:mtd>
+<m:mi>A</m:mi>
+<m:mo form="prefix">cos</m:mo>
+<m:mstyle scriptlevel="0" displaystyle="true">
+<m:mrow>
+<m:mo>(</m:mo>
+<m:mi>ω</m:mi>
+<m:mi>t</m:mi>
+<m:mo>+</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:mn>2</m:mn>
+<m:mi>π</m:mi>
+</m:mrow>
+<m:mi>N</m:mi>
+</m:mfrac>
+<m:mi>n</m:mi>
+<m:mo>)</m:mo>
+</m:mrow>
+</m:mstyle>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd/>
+<m:mtd>
+          <m:mo>=</m:mo>
+</m:mtd>
+<m:mtd>
+          <m:mi> Re </m:mi>
+          <m:mrow>
+            <m:mo>[</m:mo>
+            <m:mi>A</m:mi>
+            <m:msup>
+              <m:mi>e</m:mi>
+              <m:mrow>
+                <m:mi>j</m:mi>
+                <m:mn>2</m:mn>
+                <m:mi>π</m:mi>
+                <m:mi>n</m:mi>
+                <m:mo>/</m:mo>
+                <m:mi>N</m:mi>
+              </m:mrow>
+            </m:msup>
+            <m:msup>
+              <m:mi>e</m:mi>
+              <m:mrow>
+                <m:mi>j</m:mi>
+                <m:mi>ω</m:mi>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:msup>
+            <m:mo>]</m:mo>
+          </m:mrow>
+          <m:mspace width="4.pt"/>
+          <m:mo>↔</m:mo>
+          <m:mspace width="4.pt"/>
+          <m:msub>
+            <m:mi>X</m:mi>
+            <m:mi>n</m:mi>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mi>A</m:mi>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mn>2</m:mn>
+              <m:mi>π</m:mi>
+              <m:mi>n</m:mi>
+              <m:mo>/</m:mo>
+              <m:mi>N</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:mo>.</m:mo>
+        </m:mtd>
+</m:mtr>
+
+
+</m:mtable>
+</m:math></equation>
+    <para id="id2260475">The phasors <m:math>
+<m:msub>
+<m:mi>X</m:mi>
+<m:mi>n</m:mi>
+</m:msub>
+</m:math> are <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mi>j</m:mi><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>/</m:mo><m:mi>N</m:mi><m:mo>)</m:mo></m:mrow></m:msup></m:mrow></m:math>. The sum of all <m:math>
+<m:mi>N</m:mi>
+</m:math> signals is zero:</para>
+    <equation id="id2260536"><m:math overflow="scroll" mode="display">
+<m:mtable>
+<m:mtr>
+<m:mtd>
+          <m:munderover>
+<m:mrow>
+            <m:mo>∑</m:mo>
+</m:mrow>        
+    <m:mrow>
+              <m:mi>n</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>0</m:mn>
+            </m:mrow>
+            <m:mrow>
+              <m:mi>N</m:mi>
+              <m:mo>-</m:mo>
+              <m:mn>1</m:mn>
+            </m:mrow>
+          </m:munderover>
+          <m:msub>
+            <m:mi>x</m:mi>
+            <m:mi>n</m:mi>
+          </m:msub>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>t</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+</m:mtd>
+<m:mtd>       
+   <m:mo>=</m:mo>
+</m:mtd>
+<m:mtd>        
+  <m:mi> Re </m:mi>
+          <m:mrow>
+            <m:mo>{</m:mo>
+            <m:mi>A</m:mi>
+            <m:munderover>
+              <m:mo>∑</m:mo>
+              <m:mrow>
+                <m:mi>n</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>0</m:mn>
+              </m:mrow>
+              <m:mrow>
+                <m:mi>N</m:mi>
+                <m:mo>-</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+            </m:munderover>
+            <m:msup>
+              <m:mi>e</m:mi>
+              <m:mrow>
+                <m:mi>j</m:mi>
+                <m:mn>2</m:mn>
+                <m:mi>π</m:mi>
+                <m:mi>n</m:mi>
+                <m:mo>/</m:mo>
+                <m:mi>N</m:mi>
+              </m:mrow>
+            </m:msup>
+            <m:msup>
+              <m:mi>e</m:mi>
+              <m:mrow>
+                <m:mi>j</m:mi>
+                <m:mi>ω</m:mi>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:msup>
+            <m:mo>}</m:mo>
+          </m:mrow>
+    </m:mtd>
+</m:mtr>
+
+<m:mtr>
+<m:mtd/>
+<m:mtd>
+          <m:mo>=</m:mo>
+</m:mtd>
+<m:mtd>
+          <m:mi> Re </m:mi>
+          <m:mo>{</m:mo>
+          <m:mi>A</m:mi>
+          <m:mfrac>
+            <m:mrow>
+              <m:mn>1</m:mn>
+              <m:mo>-</m:mo>
+              <m:msup>
+                <m:mi>e</m:mi>
+                <m:mrow>
+                  <m:mi>j</m:mi>
+                  <m:mn>2</m:mn>
+                  <m:mi>π</m:mi>
+                </m:mrow>
+              </m:msup>
+            </m:mrow>
+            <m:mrow>
+              <m:mn>1</m:mn>
+              <m:mo>-</m:mo>
+              <m:msup>
+                <m:mi>e</m:mi>
+                <m:mrow>
+                  <m:mi>j</m:mi>
+                  <m:mn>2</m:mn>
+                  <m:mi>π</m:mi>
+                  <m:mo>/</m:mo>
+                  <m:mi>N</m:mi>
+                </m:mrow>
+              </m:msup>
+            </m:mrow>
+          </m:mfrac>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mi>j</m:mi>
+              <m:mi>ω</m:mi>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:msup>
+          <m:mo>}</m:mo>
+        </m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd/>
+<m:mtd>
+          <m:mo>=</m:mo>
+</m:mtd>
+<m:mtd>
+          <m:mn>0</m:mn>
+          <m:mo>.</m:mo>
+       </m:mtd>
+</m:mtr>
+</m:mtable>
+</m:math></equation>
+    
+    
+    <para id="id2260738">But what about the sum of the instantaneous powers? Define the instantaneous power of the <m:math overflow="scroll"><m:msup><m:mi>n</m:mi><m:mrow><m:mi mathvariant="normal">t</m:mi><m:mi mathvariant="normal">h</m:mi></m:mrow></m:msup></m:math> signal to be</para>
+    <equation id="id2260766"><m:math overflow="scroll" mode="display">
+<m:mtable>
+<m:mtr>
+<m:mtd>
+          <m:msub>
+            <m:mi>p</m:mi>
+            <m:mi>n</m:mi>
+          </m:msub>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>t</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>       
+   <m:mo>=</m:mo>
+   <m:msubsup>
+            <m:mi>x</m:mi>
+            <m:mrow>
+              <m:mi>n</m:mi>
+            </m:mrow>
+            <m:mn>2</m:mn>
+          </m:msubsup>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>t</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+</m:mtd>
+<m:mtd>
+          <m:mo>=</m:mo>
+</m:mtd>
+<m:mtd>       
+   <m:msup>
+            <m:mi>A</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:msup>
+            <m:mo form="prefix">cos</m:mo>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>ω</m:mi>
+            <m:mi>t</m:mi>
+            <m:mo>+</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:mn>2</m:mn>
+                <m:mi>π</m:mi>
+              </m:mrow>
+              <m:mi>N</m:mi>
+            </m:mfrac>
+            <m:mi>n</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+    </m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd/>
+<m:mtd>
+            <m:mo>=</m:mo>
+</m:mtd>
+<m:mtd>
+            <m:mfrac>
+              <m:msup>
+                <m:mi>A</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mn>2</m:mn>
+            </m:mfrac>
+            <m:mo>+</m:mo>
+            <m:mfrac>
+              <m:msup>
+                <m:mi>A</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mn>2</m:mn>
+            </m:mfrac>
+            <m:mo form="prefix">cos</m:mo>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mn>2</m:mn>
+              <m:mi>ω</m:mi>
+              <m:mi>t</m:mi>
+              <m:mo>+</m:mo>
+              <m:mn>2</m:mn>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mi>π</m:mi>
+                </m:mrow>
+                <m:mi>N</m:mi>
+              </m:mfrac>
+              <m:mi>n</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+         </m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd/>
+<m:mtd>
+          <m:mo>=</m:mo>
+</m:mtd>
+<m:mtd>
+          <m:mfrac>
+            <m:msup>
+              <m:mi>A</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mn>2</m:mn>
+          </m:mfrac>
+          <m:mo>+</m:mo>
+          <m:mi> Re </m:mi>
+          <m:mrow>
+            <m:mo>{</m:mo>
+            <m:mfrac>
+              <m:msup>
+                <m:mi>A</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mn>2</m:mn>
+            </m:mfrac>
+            <m:msup>
+              <m:mi>e</m:mi>
+              <m:mrow>
+                <m:mi>j</m:mi>
+                <m:mo>(</m:mo>
+                <m:mn>2</m:mn>
+                <m:mi>π</m:mi>
+                <m:mo>/</m:mo>
+                <m:mi>N</m:mi>
+                <m:mo>)</m:mo>
+                <m:mn>2</m:mn>
+                <m:mi>n</m:mi>
+              </m:mrow>
+            </m:msup>
+            <m:msup>
+              <m:mi>e</m:mi>
+              <m:mrow>
+                <m:mi>j</m:mi>
+                <m:mn>2</m:mn>
+                <m:mi>ω</m:mi>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:msup>
+            <m:mo>}</m:mo>
+          </m:mrow>
+          <m:mo>.</m:mo>
+        </m:mtd>
+</m:mtr>
+</m:mtable>
+</m:math></equation>
+    
+    
+    <para id="id2261017">The sum of all instantaneous powers is (see <link target-id="fs-id8103710"/>)</para>
+    <equation id="eip-914"><m:math overflow="scroll">
+        <m:mstyle scriptlevel="0" displaystyle="true">
+          <m:mrow>
+            <m:mi>P</m:mi>
+            <m:mo>=</m:mo>
+            <m:munderover>
+              <m:mo>∑</m:mo>
+              <m:mrow>
+                <m:mi>n</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>0</m:mn>
+              </m:mrow>
+              <m:mrow>
+                <m:mi>N</m:mi>
+                <m:mo>-</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+            </m:munderover>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mi>n</m:mi>
+            </m:msub>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>t</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mi>N</m:mi>
+            <m:mfrac>
+              <m:msup>
+                <m:mi>A</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mn>2</m:mn>
+            </m:mfrac>
+            <m:mo>,</m:mo>
+          </m:mrow>
+        </m:mstyle>
+      </m:math>
+    </equation>
+    <para id="id2261093">and this is independent of time!</para>
+<exercise id="fs-id8103710">
+<problem id="fs-id8103712">
+    <para id="id2261097">Carry out the computations of Equation 3.33 to prove that
+instantaneous power <m:math>
+<m:mi>P</m:mi>
+</m:math> is constant in the N-phase power scheme.
+</para>
+</problem>
+</exercise>
+  </content>
+</document>
