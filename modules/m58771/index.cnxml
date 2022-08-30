@@ -199,7 +199,7 @@
 </row>
 <row valign="top">
 <entry valign="top" align="center">Charmed lambda</entry>
-<entry valign="top" align="center"><m:math><m:mrow><m:msubsup><m:mrow><m:mtext>Λ</m:mtext></m:mrow><m:mrow><m:mi>C</m:mi><m:mo>+</m:mo></m:mrow></m:msubsup></m:mrow></m:math></entry>
+<entry valign="top" align="center"><m:math><m:mrow><m:msub><m:mrow><m:mtext>Λ</m:mtext></m:mrow><m:mrow><m:mi>C</m:mi><m:mo>+</m:mo></m:mrow></m:msub></m:mrow></m:math></entry>
 <entry valign="top" align="center"><emphasis effect="italics">u d c</emphasis></entry>
 <entry valign="top" align="center">1</entry>
 <entry valign="top" align="center">1/2</entry>
@@ -207,7 +207,7 @@
 </row>
 <row valign="top">
 <entry valign="top" align="center">Charmed bottom</entry>
-<entry valign="top" align="center"><m:math><m:mrow><m:msubsup><m:mrow><m:mtext>Λ</m:mtext></m:mrow><m:mrow><m:mi>b</m:mi><m:mn>0</m:mn></m:mrow></m:msubsup></m:mrow></m:math></entry>
+<entry valign="top" align="center"><m:math><m:mrow><m:msub><m:mrow><m:mtext>Λ</m:mtext></m:mrow><m:mrow><m:mi>b</m:mi><m:mn>0</m:mn></m:mrow></m:msub></m:mrow></m:math></entry>
 <entry valign="top" align="center"><emphasis effect="italics">u d b</emphasis></entry>
 <entry valign="top" align="center">0</entry>
 <entry valign="top" align="center">1/2</entry>
